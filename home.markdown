@@ -1,5 +1,5 @@
 ---
-title: Index
+title: Home
 date: 2016-12-07 14:47:00 +11:00
 landing:
   headline: 

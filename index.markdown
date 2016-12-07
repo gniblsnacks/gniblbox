@@ -7,8 +7,8 @@ landing:
     body and fuel your brain for a full and productive work day.
   cta: Try Gnibl for Free
 clients:
-- name:
-  image:
+- name: 
+  image: 
 about:
   intro: The only thing sitting between you and snack time are these three simple
     steps.
@@ -23,43 +23,43 @@ about:
     sub text: Your colleagues will love their healthy, delicious new snack options
       and they’ll have you to thank. No more trips to the supermarket or fumbling
       over receipts , just nutritious snacks delivered direct.
-  cta:
+  cta: 
 promise:
   employers:
   - header: Boost Office-Wide Productivity
     sub text: Power your team with the fuel they need to stay focused and productive.
-    image:
+    image: 
   - header: Recruiting and Retention
     sub text: Let current and future employees snack on the little perk that makes
       your business a lot more attractive.
-    image:
+    image: 
   - header: Excitement at Snack Time
     sub text: Enjoy a new and rotating range of genuinely healthy snacks in each delivery.
-    image:
+    image: 
   employees:
   - header: It Never Gets Old
     sub text: Look forward to something new with every delivery. A rotating range
       of snacks brings adventure back to the snack table.
-    image:
+    image: 
   - header: It’s Healthy!
     sub text: Trust us to care of your well-being with whilst you take care of your
       deadlines.
-    image:
+    image: 
   - header: " It’s Full of Goodness"
     sub text: 'We offer a variety of 15 or more full-size snackables in each delivery. '
-    image:
+    image: 
 products:
-- name:
-  image:
-  is vegan?:
-  is high in protein?:
-  is dairy free?:
-  is gluten free?:
-  is soy free?:
+- name: 
+  image: 
+  is vegan?: 
+  is high in protein?: 
+  is dairy free?: 
+  is gluten free?: 
+  is soy free?: 
 testimonials:
-- name:
-  image:
-  review text:
+- name: 
+  image: 
+  review text: 
 faqs:
 - question: What is Gniblbox?
   answer text: 'A Gniblbox is a one-stop snack drop which includes a collection of

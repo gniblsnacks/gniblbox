@@ -7,8 +7,8 @@ landing:
     body and fuel your brain for a full and productive work day.
   cta: Try Gnibl for Free
 clients:
-- name: 
-  image: 
+- name:
+  image:
 about:
   intro: The only thing sitting between you and snack time are these three simple
     steps.
@@ -23,43 +23,43 @@ about:
     sub text: Your colleagues will love their healthy, delicious new snack options
       and they’ll have you to thank. No more trips to the supermarket or fumbling
       over receipts , just nutritious snacks delivered direct.
-  cta: 
+  cta:
 promise:
   employers:
   - header: Boost Office-Wide Productivity
     sub text: Power your team with the fuel they need to stay focused and productive.
-    image: 
+    image:
   - header: Recruiting and Retention
     sub text: Let current and future employees snack on the little perk that makes
       your business a lot more attractive.
-    image: 
+    image:
   - header: Excitement at Snack Time
     sub text: Enjoy a new and rotating range of genuinely healthy snacks in each delivery.
-    image: 
+    image:
   employees:
   - header: It Never Gets Old
     sub text: Look forward to something new with every delivery. A rotating range
       of snacks brings adventure back to the snack table.
-    image: 
+    image:
   - header: It’s Healthy!
     sub text: Trust us to care of your well-being with whilst you take care of your
       deadlines.
-    image: 
+    image:
   - header: " It’s Full of Goodness"
     sub text: 'We offer a variety of 15 or more full-size snackables in each delivery. '
-    image: 
+    image:
 products:
-- name: 
-  image: 
-  is vegan?: 
-  is high in protein?: 
-  is dairy free?: 
-  is gluten free?: 
-  is soy free?: 
+- name:
+  image:
+  is vegan?:
+  is high in protein?:
+  is dairy free?:
+  is gluten free?:
+  is soy free?:
 testimonials:
-- name: 
-  image: 
-  review text: 
+- name:
+  image:
+  review text:
 faqs:
 - question: What is Gniblbox?
   answer text: 'A Gniblbox is a one-stop snack drop which includes a collection of
@@ -106,116 +106,8 @@ layout: default
   {% include home_sections/clients.md %}
   {% include home_sections/about.md %}
   {% include home_sections/promise.md %}
-
-  <h2 class="handdrawn green-header right-header">Our Products</h2>
-  <section class="dotted-bg"> <!--PRODUCTS-->
-    <div class="wave offwhite-bg">
-    </div>
-    <div style="width: 100%; height: 400px"></div>
-    <!--TO DO CAROUSEL-->
-  </section>
-  <section> <!--INSTAGRAM FEED-->
-
-    <div class="wave dotted-bg">
-    </div>
-    <div class="container">
-      <h2 class="alt-header">Gnibl on Instagram</h2>
-      <div style="width: 100%; height: 250px"></div>
-      <!--TO DO INSTAFEED-->
-    </div>
-  </section>
-
-  <h2 class="handdrawn red-header left-header">From Our Customers</h2>
-  <section> <!--TESTIMONIALS-->
-    <div class="container">
-      <div class="col-xs-12 col-sm-4 col-sm-offset-0">
-        <div class="testimonial col-xs-8 col-sm-12 pull-right">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-             Ut enim ad...</p>
-        </div>
-        <div class="testimonial-photo col-xs-4 col-sm-12" style="background-image:url()">
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-4 col-sm-offset-0">
-        <div class="testimonial col-xs-8 col-sm-12">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-             Ut enim ad...</p>
-        </div>
-        <div class="testimonial-photo col-xs-4 col-sm-12" style="background-image:url()">
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-4 col-sm-offset-0">
-        <div class="testimonial col-xs-8 col-sm-12 pull-right">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-             Ut enim ad...</p>
-        </div>
-        <div class="testimonial-photo col-xs-4 col-sm-12" style="background-image:url()">
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="faqs"> <!--FAQS-->
-    <div class="wave offwhite-bg">
-    </div>
-    <div class="container">
-      <h2 class="alt-header">Frequently Asked Questions</h2>
-      <ul class="collapsible">
-        <div class="row"><li class="open">
-          <div class="col-xs-9 col-xs-offset-2 col-sm-10 col-sm-offset-1">
-            <h4>Lorem ipsum dolor sit amet?</h4>
-          </div>
-          <div class="col-xs-9 col-xs-offset-2 col-sm-10 col-sm-offset-1">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad...</p>
-          </div>
-        </li></div>
-        <div class="row"><li>
-          <div class="col-xs-9 col-xs-offset-2 col-sm-10 col-sm-offset-1">
-            <h4>Lorem ipsum dolor sit amet?</h4>
-          </div>
-          <div class="col-xs-9 col-xs-offset-2 col-sm-10 col-sm-offset-1">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad...</p>
-          </div>
-        </li></div>
-        <div class="row"><li>
-          <div class="col-xs-9 col-xs-offset-2 col-sm-10 col-sm-offset-1">
-            <h4>Lorem ipsum dolor sit amet?</h4>
-          </div>
-          <div class="col-xs-9 col-xs-offset-2 col-sm-10 col-sm-offset-1">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad...</p>
-          </div>
-        </li></div>
-        <div class="row"><li>
-          <div class="col-xs-9 col-xs-offset-2 col-sm-10 col-sm-offset-1">
-            <h4>Lorem ipsum dolor sit amet?</h4>
-          </div>
-          <div class="col-xs-9 col-xs-offset-2 col-sm-10 col-sm-offset-1">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad...</p>
-          </div>
-        </li></div>
-        <div class="row"><li>
-          <div class="col-xs-9 col-xs-offset-2 col-sm-10 col-sm-offset-1">
-            <h4>Lorem ipsum dolor sit amet?</h4>
-          </div>
-          <div class="col-xs-9 col-xs-offset-2 col-sm-10 col-sm-offset-1">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad...</p>
-          </div>
-        </li></div>
-      </ul>
-      <h4 class="alt-header">More questions?</h4>
-      <a class="btn btn-green">Contact Us</a>
-    </div>
-  </section>
+  {% include home_sections/products.md %}
+  {% include home_sections/instagram.md %}
+  {% include home_sections/testimonials.md %}
+  {% include home_sections/faqs.md %}
 </main>

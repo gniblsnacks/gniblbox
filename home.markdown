@@ -1,7 +1,6 @@
 ---
 title: Home
 date: 2016-12-07 14:47:00 +11:00
-published: false
 landing:
   headline:
   sub text:

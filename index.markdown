@@ -2,13 +2,23 @@
 title: Home
 date: 2016-12-07 14:47:00 +11:00
 landing:
-  headline: " Nutritious, tasty snacks for offices"
-  sub text: Join the Gnibl Club and receive tasty snacks designed to nourish your
-    body and fuel your brain for a full and productive work day.
+  headline: Snack Better, Work Better.
+  sub text: Join the Gnibl Club for healthy, tasty snacks delivered to your office.
+    Nourish your body and fuel your brain for a full and productive work day.
   cta: Try Gnibl for Free
 clients:
-- name: 
-  image: 
+- name: Employsure
+  image: "/uploads/employsure-logo.png"
+- name: Work Club Sydney
+  image: "/uploads/workclub.png"
+- name: SuperConcepts
+  image: "/uploads/superconcepts.png"
+- name: AMP
+  image: "/uploads/AMP.png"
+- name: AON
+  image: "/uploads/aon.png"
+- name: Insight Fundraising
+  image: "/uploads/ificon.png"
 about:
   intro: The only thing sitting between you and snack time are these three simple
     steps.

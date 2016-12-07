@@ -2,6 +2,9 @@
 title: Gnibl Box
 timezone: Australia/Sydney
 collections:
+  home:
+    title: Home
+    output: true
   posts:
     title: Posts
     output: true

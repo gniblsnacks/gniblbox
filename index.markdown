@@ -2,17 +2,27 @@
 title: Home
 date: 2016-12-07 14:47:00 +11:00
 landing:
-  headline: 
-  sub text: 
-  cta: 
+  headline: " Nutritious, tasty snacks delivered to offices"
+  sub text: Join the Gnibl Club and receive tasty snacks designed to nourish your
+    body and fuel your brain for a full and productive work day.
+  cta: Try Gnibl for Free
 clients:
 - name: 
   image: 
 about:
-  intro: 
+  intro: The only thing sitting between you and snack time are these three simple
+    steps.
   steps:
-  - header: 
-    sub text: 
+  - header: Select Your Team Size
+    sub text: We work with businesses big and small, who recognise that great teams
+      deserve great snacks.
+  - header: 'Select Your Subscription '
+    sub text: We offer flexible delivery options so you can enjoy a nutritious snack
+      drop every week, fortnight or month.
+  - header: Delight in Delicious Snacks
+    sub text: Your colleagues will love their healthy, delicious new snack options
+      and they’ll have you to thank. No more trips to the supermarket or fumbling
+      over receipts , just nutritious snacks delivered direct.
   cta: 
 promise:
   employers:

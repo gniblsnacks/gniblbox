@@ -38,26 +38,26 @@ promise:
   employers:
   - header: Boost Office-Wide Productivity
     sub text: Power your team with the fuel they need to stay focused and productive.
-    image: 
+    image: "/uploads/lightbulb.svg"
   - header: Recruiting and Retention
     sub text: Let current and future employees snack on the little perk that makes
       your business a lot more attractive.
-    image: 
+    image: "/uploads/checkboard.svg"
   - header: Excitement at Snack Time
     sub text: Enjoy a new and rotating range of genuinely healthy snacks in each delivery.
-    image: 
+    image: "/uploads/rocket.svg"
   employees:
   - header: It Never Gets Old
     sub text: Look forward to something new with every delivery. A rotating range
       of snacks brings adventure back to the snack table.
-    image: 
+    image: "/uploads/new.svg"
   - header: It’s Healthy!
     sub text: Trust us to care of your well-being with whilst you take care of your
       deadlines.
-    image: 
+    image: "/uploads/apple.svg"
   - header: " It’s Full of Goodness"
     sub text: 'We offer a variety of 15 or more full-size snackables in each delivery. '
-    image: 
+    image: "/uploads/heart.svg"
 products:
 - name: 
   image: 

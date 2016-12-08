@@ -67,9 +67,21 @@ products:
   is gluten free?: 
   is soy free?: 
 testimonials:
-- name: 
-  image: 
-  review text: 
+- name: Placeholder
+  image: "/uploads/placeholder.jpg"
+  review text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+- name: Placeholder
+  image: "/uploads/placeholder.jpg"
+  review text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+- name: Placeholder
+  image: "/uploads/placeholder.jpg"
+  review text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 faqs:
 - question: What is Gniblbox?
   answer text: 'A Gniblbox is a one-stop snack drop which includes a collection of

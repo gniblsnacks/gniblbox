@@ -1,29 +1,29 @@
-<section class="over offwhite-bg"> <!--OUR PROMISE-->
+<section class="offwhite-bg"> <!--OUR PROMISE-->
   <div class="container">
     <h2 class="alt-header">Our Promise</h2>
-    <div class="col-xs-12 col-sm-6 col-sm-offset-0">
+    <div class="col-sm-6">
       <h3>Employers</h3>
       {% for benefit in page.promise.employers %}
-      <div class="row">
-        <div class="col-xs-2">
+      <div class="row" style="margin: 20px 0; min-height: 160px">
+        <div class="col-xs-2" style="padding: 0">
           <img src="{{benefit.image}}">
         </div>
         <div class="col-xs-10">
-            <h4>{{benefit.header}}</h4>
+            <h4 style="margin: 0 0 10px">{{benefit.header}}</h4>
             <p>{{benefit['sub text']}}</p>
         </div>
       </div>
       {% endfor %}
     </div>
-    <div class="col-xs-12 col-sm-6 col-sm-offset-0">
+    <div class="col-sm-6">
       <h3>Employees</h3>
       {% for benefit in page.promise.employees %}
-      <div class="row">
-        <div class="col-xs-2">
+      <div class="row" style="margin: 20px 0; min-height: 160px">
+        <div class="col-xs-2" style="padding: 0">
           <img src="{{benefit.image}}">
         </div>
         <div class="col-xs-10">
-            <h4>{{benefit.header}}</h4>
+            <h4 style="margin: 0 0 10px">{{benefit.header}}</h4>
             <p>{{benefit['sub text']}}</p>
         </div>
       </div>

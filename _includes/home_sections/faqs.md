@@ -1,7 +1,7 @@
 <section class="faqs"> <!--FAQS-->
   <div class="wave offwhite-bg">
   </div>
-  <div class="container">
+  <div class="container box-bg">
     <h2 class="alt-header">Frequently Asked Questions</h2>
     <ul class="collapsible">
       {% for faq in page.faqs %}

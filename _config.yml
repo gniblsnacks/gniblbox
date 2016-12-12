@@ -24,11 +24,11 @@ permalink: pretty
 Footer Menu Links:
 - Title: 
   URL: 
-social_footer:
-- site: Facebook
+Footer Social Links:
+- website: Facebook
   url: https://facebook.com/gnibl
   image: "/uploads/Facebook.svg"
-- site: Instagram
+- website: Instagram
   url: https://instagram.com/gnibl
   image: "/uploads/Instagram.svg"
 Accepted Payments:

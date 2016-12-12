@@ -28,6 +28,9 @@ Footer Social Links:
 - site: Facebook
   url: https://facebook.com/gnibl
   image: "/uploads/Facebook.svg"
+- site: Instagram
+  url: https://instagram.com/gnibl
+  image: "/uploads/Instagram.svg"
 Accepted Payments:
 - Name: 
   Image: 

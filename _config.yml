@@ -25,9 +25,9 @@ Footer Menu Links:
 - Title: 
   URL: 
 Footer Social Links:
-- Site Title: 
-  URL: 
-  Image: 
+- site: Facebook
+  url: facebook.com/gnibl
+  image: "/uploads/Facebook.svg"
 Accepted Payments:
 - Name: 
   Image: 

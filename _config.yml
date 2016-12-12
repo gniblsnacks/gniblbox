@@ -24,7 +24,7 @@ permalink: pretty
 Footer Menu Links:
 - Title: 
   URL: 
-Footer Social Links:
+social-footer:
 - site: Facebook
   url: https://facebook.com/gnibl
   image: "/uploads/Facebook.svg"

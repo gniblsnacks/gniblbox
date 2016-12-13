@@ -35,5 +35,9 @@ Footer Social Links:
   url: https://twitter.com/gniblsnacks
   image: "/uploads/Twitter.svg"
 Accepted Payments:
-- Name: 
-  Image: 
+- Name: Visa
+  Image: "/uploads/Visa.svg"
+- Name: MasterCard
+  Image: "/uploads/Mastercard.svg"
+- Name: PayPal
+  Image: "/uploads/Paypal.svg"

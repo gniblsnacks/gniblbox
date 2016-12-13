@@ -59,13 +59,13 @@ promise:
     sub text: 'We offer a variety of 15 or more full-size snackables in each delivery. '
     image: "/uploads/heart.svg"
 products:
-- name: 
-  image: 
+- name: Raw C Pure Coconut Water & Protein
+  image: "/uploads/Raw%20C.png"
   is vegan?: 
-  is high in protein?: 
-  is dairy free?: 
-  is gluten free?: 
-  is soy free?: 
+  is high in protein?: true
+  is dairy free?: true
+  is gluten free?: true
+  has no added sugar?: 
 testimonials:
 - name: Placeholder
   image: "/uploads/placeholder.jpg"

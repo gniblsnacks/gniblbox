@@ -33,7 +33,7 @@ about:
     sub text: Your colleagues will love their healthy, delicious new snack options
       and they’ll have you to thank. No more trips to the supermarket or fumbling
       over receipts , just nutritious snacks delivered direct.
-  cta: 
+  cta: Join the Gnibl Club
 promise:
   employers:
   - header: Boost Office-Wide Productivity

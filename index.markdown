@@ -66,6 +66,27 @@ products:
   is dairy free?: true
   is gluten free?: true
   has no added sugar?: 
+- name: Raw C Pure Coconut Water & Protein
+  image: "/uploads/Raw%20C.png"
+  is vegan?: 
+  is high in protein?: true
+  is dairy free?: true
+  is gluten free?: true
+  has no added sugar?: 
+- name: Raw C Pure Coconut Water & Protein
+  image: "/uploads/Raw%20C.png"
+  is vegan?: 
+  is high in protein?: true
+  is dairy free?: true
+  is gluten free?: true
+  has no added sugar?: 
+- name: Raw C Pure Coconut Water & Protein
+  image: "/uploads/Raw%20C.png"
+  is vegan?: 
+  is high in protein?: true
+  is dairy free?: true
+  is gluten free?: true
+  has no added sugar?: 
 testimonials:
 - name: Placeholder
   image: "/uploads/placeholder.jpg"

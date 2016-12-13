@@ -31,6 +31,9 @@ Footer Social Links:
 - website: Instagram
   url: https://instagram.com/gnibl
   image: "/uploads/Instagram.svg"
+- website: Twitter
+  url: https://twitter.com/gniblsnacks
+  image: "/uploads/Twitter.svg"
 Accepted Payments:
 - Name: 
   Image: 

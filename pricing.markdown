@@ -23,9 +23,9 @@ boxes:
 size selection:
   lead: What size is your company?
   breakpoints:
-  - "< 25"
+  - "<25"
   - 25 – 50
-  - "> 50"
+  - ">50"
 frequency selection:
   lead: 'Select your delivery frequency:'
   options:

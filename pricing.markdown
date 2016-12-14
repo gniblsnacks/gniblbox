@@ -11,6 +11,7 @@ small box:
     per week: 
     per fortnight: 
     per month: 
+  Key: 
 medium box:
   name: Medium box
   image: 
@@ -18,6 +19,7 @@ medium box:
     per week: 
     per fortnight: 
     per month: 
+  number of snacks: 
 custom box:
   name: Custom box
   starting cost: 

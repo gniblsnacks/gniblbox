@@ -39,5 +39,6 @@ value props:
   image: 
 cta: Sign up now
 cta custom box: Request a quote
+layout: default
 ---
 

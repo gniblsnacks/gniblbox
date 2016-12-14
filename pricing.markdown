@@ -45,7 +45,7 @@ cta custom box: Request a quote
 layout: default
 ---
 
-<main class="pricing">\
-<div class="table hidden-xs"></div>\
-{% include pricing_sections/calculator.md %}\
+<main class="pricing">
+<div class="table hidden-xs"></div>
+{% include pricing_sections/calculator.md %}
 </main>

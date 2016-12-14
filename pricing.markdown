@@ -4,22 +4,23 @@ date: 2016-12-14 11:16:00 +11:00
 header: Join the Gnibl club
 subheader: Select your preferences and find the Gnibl membership most suited to your
   team.
-boxes:
-- name: Small box
+small box:
+  name: Small box
   image: 
-  cost per week: 
-  cost per fortnight: 
-  cost per month: 
-  number of snacks: 
-- name: Medium box
+  cost:
+    per week: 
+    per fortnight: 
+    per month: 
+medium box:
+  name: Medium box
   image: 
-  cost per week: 
-  cost per fortnight: 
-  cost per month: 
-  number of snacks: 
-- name: Custom box
-  image: 
-  starting from: 
+  cost:
+    per week: 
+    per fortnight: 
+    per month: 
+custom box:
+  name: Custom box
+  starting cost: 
 size selection:
   lead: What size is your company?
   breakpoints:

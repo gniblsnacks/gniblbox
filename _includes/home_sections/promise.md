@@ -1,4 +1,4 @@
-<section class="offwhite-bg"> <!--OUR PROMISE-->
+<section id="promise" class="offwhite-bg"> <!--OUR PROMISE-->
   <div class="container">
     <h2 class="alt-header">Our Promise</h2>
     <div class="col-sm-6">

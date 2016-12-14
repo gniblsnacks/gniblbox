@@ -1,4 +1,4 @@
-<h2 class="handdrawn red-header left-header" style="top: 40px">How does it work?</h2>
+<h2 id="about" class="handdrawn red-header left-header" style="top: 40px">How does it work?</h2>
 <section class="wood-bg about" style="padding: 80px 0; z-index: 20"> <!--HOW IT WORKS-->
   <div class="wave">
   </div>
@@ -9,6 +9,7 @@
       <h4>{{step.header}}</h4>
       <p>{{step['sub text']}}</p>
       {% endfor %}
+      <a class="btn btn-green"><span>{{page.about.cta}}</span></a>
     </div>
   </div>
   <div class="wave wave-bottom offwhite-bg">

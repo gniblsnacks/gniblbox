@@ -18,3 +18,22 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+<body {% if page.title == "Home" %} class="home" {% endif %}>
+  <header>
+    <a href="/"><img class="logo" src="/assets/images/logo.svg"></a>
+    <nav>
+      <a href="/pricing">PRICING</a>
+      <a class="btn btn-red" href="/trial"><span>Try Gnibl for free</span></a>
+    </nav>
+    {% if page.title == "Home" %}
+    <div class="subnav">
+      <div class="links">
+        <a href="#about">How it works</a>
+        <a href="#promise">Our promise</a>
+        <a href="#products">Products</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#faqs">FAQs</a>
+      </div>
+    </div>
+    {% endif %}
+  </header>

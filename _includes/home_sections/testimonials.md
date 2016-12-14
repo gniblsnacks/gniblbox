@@ -1,6 +1,6 @@
-<h2 class="handdrawn red-header left-header">From Our Customers</h2>
-<section class="offwhite-bg"> <!--TESTIMONIALS-->
-  <div class="container">
+<h2 id="testimonials" class="handdrawn red-header left-header">From Our Customers</h2>
+<!--TESTIMONIALS-->
+  <div class="container test">
     <div class="row">
     {% for testimonial in page.testimonials %}
       {% assign mod = forloop.index | modulo: 2 %}

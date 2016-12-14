@@ -1,4 +1,4 @@
-<section class="faqs"> <!--FAQS-->
+<section id="faqs" class="faqs"> <!--FAQS-->
   <div class="wave offwhite-bg">
   </div>
   <div class="container box-bg">
@@ -10,12 +10,12 @@
           <h4>{{faq.question}}</h4>
         </div>
         <div class="col-xs-9 col-xs-offset-2 col-sm-10 col-sm-offset-1">
-          <p>{{faq['answer text']}}</p>
+          <div class="answer">{{faq['answer text'] | markdownify }}</div>
         </div>
       </li></div>
       {%endfor%}
     </ul>
     <h4 class="alt-header">More questions?</h4>
-    <a class="btn btn-green">Contact Us</a>
+    <a class="btn btn-green"><span>Contact Us</span></a>
   </div>
 </section>

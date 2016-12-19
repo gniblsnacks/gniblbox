@@ -3,7 +3,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
-        <img class="logo" src="assets/images/logo.svg" alt="Gnibl" style="display: inline-block;">
+        <img class="logo" src="/assets/images/logo.svg" alt="Gnibl" style="display: inline-block;">
         <div class="social visible-xs" style="float:right">
           {%for link in site['Footer Social Links']%}
           <a href="{{link.url}}"><img src="{{link.image}}" alt="{{link.website}}"></a>
@@ -41,4 +41,6 @@
     </div>
   </div>
 </footer>
+{% if page.title == "Home" %}
 <div class="fixed-cta"><a class="btn btn-red" href="/trial"><span>Try Gnibl for free</span></a></div>
+{% endif %}

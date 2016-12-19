@@ -53,10 +53,7 @@ h2 {
   text-transform: uppercase;
   font-size: 28px;
   @media (max-width: 480px) {
-    font-size: 24px;
-  }
-  @media (max-width: 360px) {
-    font-size: 20px;
+    font-size: 18px;
   }
   &.alt-header {
     text-align: center;
@@ -100,7 +97,17 @@ input {
   border-radius: $rounded;
   border: 1px solid $midgrey;
   margin: 0 0 10px 0;
+  @media (min-width: 768px) {
+    &.half {
+      width: calc(50% - 5px);
+      float: left;
+    }
+    & ~ .half {
+      margin-left: 10px;
+    }
+  }
 }
+
 
 /*BUTTONS*/
 .btn {
@@ -204,6 +211,23 @@ ul.collapsible {
   }
 }
 
+.tabs {
+  background: #e7e7e7;
+  border-radius: 12px;
+  overflow: auto;
+  .btn-tab {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #f7f7f9;
+    font-weight: bold;
+    &.selected {
+      background: rgba(0,0,0,.05);
+    }
+  }
+}
+
 /*HAND DRAWN HEADERS*/
 .handdrawn {
   display: inline;
@@ -231,6 +255,20 @@ ul.collapsible {
     padding: 20px 20px 20px 60px;
   }
 }
+.page-header {
+  text-align: center;
+  display: table;
+  float: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: default;
+  margin: 0 auto;
+  padding: 30px 40px;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
 .main-header {
   margin: 0;
   padding: 40px 60px 40px 100px;
@@ -813,6 +851,7 @@ body.home {
 
 /*FOOTER*/
 footer {
+  clear: both;
   .logo {
     width: 100px;
   }
@@ -977,5 +1016,59 @@ footer {
   &.wave {
     background-position: 0 -500px;
 
+  }
+}
+
+.header-bg {
+  background-image: url("../images/header.jpg");
+  background-position: center -10vw;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding-top: 75px;
+
+  @media (min-width: 1366px) {
+    background-position: center -12vw;
+  }
+}
+
+@media (max-width: 991px) {
+  .trial-prop:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+.boss {
+    background: url("../images/mug.png"), url("../images/pencils.png"), url("../images/plant.png"), url("../images/notebook.png"), url("../images/light-wood-bg.jpg");
+    background-position: 120% 10%, bottom right, -10% top, bottom left, top left;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat;
+
+}
+
+main.pricing {
+  min-height: 100vh;
+  .table {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 33vh;
+    background: url("../images/wood-bg.jpg");
+  }
+}
+.calculator {
+  padding: 20px;
+  background: #f7f7f9;
+  border-radius: 12px;
+  h4 {
+    margin-bottom: 10px;
+  }
+  hr {
+    border-top: 2px solid $midgrey;
+    margin-top: 40px;
+  }
+  @media (min-width: 768px) {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
   }
 }

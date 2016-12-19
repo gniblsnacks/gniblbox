@@ -57,3 +57,8 @@ boss section:
 layout: default
 ---
 
+<main>
+{% include trial_sections/form.md %}
+{% include trial_sections/values.md %}
+{% include trial_sections/boss.md %}
+</main>

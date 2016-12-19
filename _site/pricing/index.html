@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+    <!--LEAN BOOTSTRAP-->
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <!--CUSTOM-->
+    <link rel="stylesheet" href="/assets/style/gnibl.css">
+    <script src="/assets/script/gnibl.js"></script>
+    <!--TYPEKIT-->
+    <script src="https://use.typekit.net/xhc5oia.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <!--SLICK CAROUSEL-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <!--INSTAFEED-->
+    <script src="/assets/script/instafeed.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body  >
+  <header>
+    <a href="/"><img class="logo" src="/assets/images/logo.svg"></a>
+    <nav>
+      <a href="/pricing">PRICING</a>
+      <a class="btn btn-red" href="/trial"><span>Try Gnibl for free</span></a>
+    </nav>
+    
+  </header>
+
+<main class="pricing dotted-bg">
+<div class="table hidden-xs"></div>
+<div class="col-xs-12 col-sm-6 col-lg-4 calculator">
+  <!--SIZE SELECTION-->
+  <h4>What size is your company?</h4>
+  <div class="tabs size-selection">
+  
+  <div class="btn-tab" data-box-size="small box">&lt;25</div>
+  
+  <div class="btn-tab" data-box-size="medium box">25 – 50</div>
+  
+  <div class="btn-tab" data-box-size="custom box">&gt;50</div>
+  
+  </div>
+  <!--FREQUENCY SELECTION-->
+  <h4>Select your delivery frequency:</h4>
+  <div class="tabs frequency-selection">
+  
+  <div class="btn-tab">weekly</div>
+  
+  <div class="btn-tab">fortnightly</div>
+  
+  <div class="btn-tab">monthly</div>
+  
+  </div>
+  <div class="bump-below-xs">
+  <hr class="hidden-xs" />
+  <h2 class="price" style="text-transform: none; text-align: center;">
+    <span class="cost"></span> / <span class="frequency"></span>
+  </h2>
+  <div class="row">
+  
+  <div class="col-xs-6">
+    <img src="" />
+    <p style="font-size: 14px;font-weight: bold;">Free shipping to metro areas</p>
+  </div>
+  
+  <div class="col-xs-6">
+    <img src="" />
+    <p style="font-size: 14px;font-weight: bold;">20% off your first month</p>
+  </div>
+  
+  </div>
+  <a class="btn btn-red" style="max-width: none"><span class="pricing-cta">Sign up now</span></a>
+  <p class="additional-info" style="font-size: 14px; font-weight: bold; text-align: center">
+    <span class="snack-num"></span> snacks
+    (<span class="per-snack"></span> each)
+    delivered <span class="frequency-ly"></span></p>
+  </div>
+</div>
+
+<script>
+// set number of snacks to default
+var snack_num = 100;
+
+// set cost to default
+var cost = 280;
+
+// set CTAs for reference in JS
+var cta = "Sign up now";
+var custom_cta = "Request a quote";
+
+
+function calculatePrice() {
+  if (box_size == "small box") {
+    snack_num = 50;
+    if (delivery_frequency == "week") {
+      cost = 125;
+    } else if (delivery_frequency == "month") {
+      cost = 150;
+    } else {
+      cost = 140;
+    }
+    custom_box = false;
+  } else if (box_size == "medium box") {
+    snack_num = 100;
+    if (delivery_frequency == "week") {
+      cost = 250;
+    } else if (delivery_frequency == "month") {
+      cost = 300;
+    } else {
+      cost = 280;
+    }
+    custom_box = false;
+  } else if (box_size == "custom box") {
+    cost = 300;
+    custom_box = true;
+  }
+}
+</script>
+
+</main>
+
+<footer class="cardboard-bg">
+  <div class="footer-wave wave cardboard-bg"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <img class="logo" src="/assets/images/logo.svg" alt="Gnibl" style="display: inline-block;">
+        <div class="social visible-xs" style="float:right">
+          
+          <a href="https://facebook.com/gnibl"><img src="/uploads/Facebook.svg" alt="Facebook"></a>
+          
+          <a href="https://instagram.com/gnibl_snacks"><img src="/uploads/Instagram.svg" alt="Instagram"></a>
+          
+          <a href="https://twitter.com/gniblsnacks"><img src="/uploads/Twitter.svg" alt="Twitter"></a>
+          
+        </div>
+        <div class="footer-links">
+          <a href="">Login</a>
+          <a href="">About</a>
+          <a href="">FAQ</a>
+          <a href="">Pricing</a>
+          <a href="" class="visible-xs">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="accepted-payments col-sm-4">
+        <h4>Accepted Payments</h4>
+        
+        <img src="/uploads/Visa.svg" alt="Visa"></a>
+        
+        <img src="/uploads/Mastercard.svg" alt="MasterCard"></a>
+        
+        <img src="/uploads/Paypal.svg" alt="PayPal"></a>
+        
+      </div>
+      <div class="col-sm-8 hidden-xs">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <span style="line-height: 50px">Copyright &copy;<script>document.write(new Date().getFullYear())</script></span>
+        <a style="margin-left: 20px; line-height: 50px" class="hidden-xs" href="">Terms &amp; Conditions</a>
+        <div class="social hidden-xs" style="float:right">
+          
+          <a href="https://facebook.com/gnibl"><img src="/uploads/Facebook.svg" alt="Facebook"></a>
+          
+          <a href="https://instagram.com/gnibl_snacks"><img src="/uploads/Instagram.svg" alt="Instagram"></a>
+          
+          <a href="https://twitter.com/gniblsnacks"><img src="/uploads/Twitter.svg" alt="Twitter"></a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>

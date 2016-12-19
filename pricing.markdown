@@ -6,7 +6,7 @@ subheader: Select your preferences and find the Gnibl membership most suited to 
   team.
 small box:
   name: Small box
-  image: 
+  image: "/uploads/small-box.png"
   cost:
     per week: 125
     per fortnight: 140
@@ -14,7 +14,7 @@ small box:
   number of snacks: 50
 medium box:
   name: Medium box
-  image: 
+  image: "/uploads/medium-box.png"
   cost:
     per week: 250
     per fortnight: 280

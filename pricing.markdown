@@ -40,9 +40,9 @@ frequency selection:
   - monthly
 value props:
 - value: Free shipping to metro areas
-  image: 
+  image: "/uploads/truck.svg"
 - value: 20% off your first month
-  image: 
+  image: "/uploads/sale.svg"
 cta: Sign up now
 cta custom box: Request a quote
 layout: default

@@ -67,21 +67,21 @@ products:
   is gluten free?: true
   has no added sugar?: 
 - name: Cobs Natural Popcorn
-  image: "/uploads/Cobs%20%E2%80%93%20Natural%20Popcorn%20Sea%20Salt.jpg"
+  image: 
   is vegan?: 
   is high in protein?: true
   is dairy free?: true
   is gluten free?: true
   has no added sugar?: 
 - name: 'Emma & Toms Life Bar: Cacao & Coconut'
-  image: "/uploads/585b62f27081ce2813cbe80e.jpg"
+  image: 
   is vegan?: 
   is high in protein?: true
   is dairy free?: true
   is gluten free?: true
   has no added sugar?: 
 - name: Crispy Fruits Pure Strawberry
-  image: "/uploads/585b62b6ca56be3c03a2b948.jpg"
+  image: 
   is vegan?: 
   is high in protein?: true
   is dairy free?: true

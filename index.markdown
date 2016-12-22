@@ -40,8 +40,8 @@ promise:
     sub text: Power your team with the fuel they need to stay focused and productive.
     image: "/uploads/lightbulb.svg"
   - header: Recruiting and Retention
-    sub text: Let current and future employees snack on the little perk that makes
-      your business a lot more attractive.
+    sub text: Value your staff and become an employer of choice with an everyday perk
+      that attracts top talent.
     image: "/uploads/checkboard.svg"
   - header: Excitement at Snack Time
     sub text: Enjoy a new and rotating range of genuinely healthy snacks in each delivery.

@@ -1,28 +1,36 @@
-<div class="col-xs-12 col-sm-6 col-lg-4 calculator">
+<div class="col-xs-12 col-md-5 calculator">
   <!--SIZE SELECTION-->
-  <h4>{{page['size selection'].lead}}</h4>
-  <div class="tabs size-selection">
-  {% for breakpoint in page['size selection'].breakpoints %}
-  <div class="btn-tab" data-box-size="{{breakpoint.box}}">{{breakpoint['company size']}}</div>
-  {%endfor%}
+  <div class="col-xs-12 col-sm-6 col-md-12">
+    <h4>{{page['size selection'].lead}}</h4>
+    <div class="tabs size-selection">
+      {% for breakpoint in page['size selection'].breakpoints %}
+      <div class="btn-tab {% if forloop.first %} selected-tab {% endif %}" data-box-size="{{breakpoint.box}}">
+        {{breakpoint['company size']}}
+      </div>
+      {%endfor%}
+    </div>
   </div>
   <!--FREQUENCY SELECTION-->
-  <h4>{{page['frequency selection'].lead}}</h4>
-  <div class="tabs frequency-selection">
-  {% for option in page['frequency selection'].options %}
-  <div class="btn-tab">{{option}}</div>
-  {%endfor%}
+  <div class="col-xs-12 col-sm-6 col-md-12">
+    <h4>{{page['frequency selection'].lead}}</h4>
+    <div class="tabs frequency-selection">
+      {% for option in page['frequency selection'].options %}
+      <div class="btn-tab {% if forloop.first %} selected-tab {% endif %}">
+        {{option}}
+      </div>
+      {%endfor%}
+    </div>
   </div>
-  <div class="bump-below-xs">
-  <hr class="hidden-xs">
+  <div class="hidden-sm hidden-xs">
+  <hr>
   <h2 class="price" style="text-transform: none; text-align: center;">
     <span class="cost"></span> / <span class="frequency"></span>
   </h2>
   <div class="row">
   {% for prop in page['value props'] %}
-  <div class="col-xs-6">
-    <img src="{{prop.image}}">
-    <p style="font-size: 14px;font-weight: bold;">{{prop.value}}</p>
+  <div class="col-xs-12 col-sm-6"  style="margin-bottom: 20px">
+    <img src="{{prop.image}}" style="width: 60px; float: left;">
+    <p style="font-size: 14px;font-weight: bold; width: calc(100% - 70px); margin-left: 10px; float: left">{{prop.value}}</p>
   </div>
   {% endfor %}
   </div>
@@ -36,14 +44,18 @@
 
 <script>
 // set number of snacks to default
-var snack_num = {{page['medium box']['number of snacks']}};
+var snack_num = {{page['small box']['number of snacks']}};
 
 // set cost to default
-var cost = {{page['medium box'].cost['per fortnight']}};
+var cost = {{page['small box'].cost['per week']}};
 
 // set CTAs for reference in JS
 var cta = "{{page.cta}}";
 var custom_cta = "{{page['cta custom box']}}";
+
+var smallboxname = "{{page['small box'].name}}";
+var mediumboxname = "{{page['medium box'].name}}";
+var customboxname = "{{page['custom box'].name}}";
 
 
 function calculatePrice() {

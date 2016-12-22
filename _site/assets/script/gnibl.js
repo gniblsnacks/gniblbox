@@ -35,7 +35,8 @@ function faqHeightInit() {
   }
 }
 
-function submitForm() {
+function submitLandingForm(event) {
+  event.preventDefault();
   $('#landing-form').submit();
 }
 
@@ -45,6 +46,7 @@ function scrollFunctions() {
 }
 
 function menuDisplay() {
+  if (!$('main').first().hasClass('pricing')) {
   if ($(window).scrollTop() > $(window).height() * .7) {
     $("header").addClass("visible");
     $("nav").fadeIn(500).css("display", "flex");
@@ -55,6 +57,10 @@ function menuDisplay() {
     $("nav").fadeOut(500);
     $(".subnav").fadeOut(500);
     $(".fixed-cta").fadeOut(500);
+  }} else {
+    $("header").addClass("visible");
+    $("nav").fadeIn(500).css("display", "flex");
+      $(".fixed-cta").fadeIn(500);
   }
 }
 
@@ -132,40 +138,55 @@ function productCarouselInit() {
       }
     }],
   });
+  if ($(window).width() > 1440) {
+    $(".product-wrapper").addClass("container");
+  }
 }
 
 function instafeedInit() {
   if ($("#instafeed").length) {
     var feed = new Instafeed({
           get: 'user',
-          userId: '3037191194',
-          accessToken: '3037191194.1677ed0.1acd358a06d5437da3faf04e9bf0783a',
+          userId: '3615844428',
+          accessToken: '3615844428.1677ed0.b7c62a8f299c43c183314869687e56e8',
           resolution: 'low_resolution',
-          template: '<div class="instafeed-image"><a href=""><img src="" /></a></div>',
+          template: '<div class="instafeed-image"><a href="{{link}}"><img src="{{image}}" /></a></div>',
           limit: 4
       });
       feed.run();
   }
 }
 
-var box_size = "medium box", delivery_frequency = "fortnight", custom_box = false;
+var box_size = "small box", delivery_frequency = "week", custom_box = false;
 function pricingFunctions() {
-  updatePricingHTML();
   if ($('main').first().hasClass('pricing')) {
+    updatePricingHTML();
+    boxSliderInit();
     $(".size-selection").find(".btn-tab").each(function() {
       $(this).click(function() {
-        $(".size-selection").find(".selected").removeClass('selected');
-        $(this).addClass('selected');
+        $(".size-selection").find(".selected-tab").removeClass('selected-tab');
+        $(this).addClass('selected-tab');
         box_size = $(this).data("box-size");
         updatePricingHTML(calculatePrice());
+
+        if (box_size == "small box") {
+          $('.box-carousel').slick('slickGoTo', 0);
+          $('#box-label').html(smallboxname);
+        } else if (box_size == "medium box") {
+          $('.box-carousel').slick('slickGoTo', 1);
+          $('#box-label').html(mediumboxname);
+        } else {
+          $('.box-carousel').slick('slickGoTo', 1);
+          $('#box-label').html(customboxname);
+        }
       });
     });
 
     $(".frequency-selection").find(".btn-tab").each(function() {
       $(this).click(function() {
-        $(".frequency-selection").find(".selected").removeClass('selected');
-        $(this).addClass('selected');
-        delivery_frequency = $(this).html().replace("ly", "");
+        $(".frequency-selection").find(".selected-tab").removeClass('selected-tab');
+        $(this).addClass('selected-tab');
+        delivery_frequency = $(this).html().replace("ly", "").trim();
         updatePricingHTML(calculatePrice());
       });
     });
@@ -173,18 +194,41 @@ function pricingFunctions() {
   }
 }
 
+function boxSliderInit() {
+    $('.box-carousel').slick({
+      arrows: false,
+      draggable: false,
+      infinite: false,
+      swipe: false,
+      variableWidth: true
+    });
+}
+
 function updatePricingHTML() {
-  $(".cost").html("$"+ cost);
   $(".frequency").html(delivery_frequency);
   $(".frequency-ly").html(delivery_frequency + "ly");
   $(".snack-num").html(snack_num);
   $(".per-snack").html("$" + (cost / snack_num).toFixed(2));
 
   if (custom_box) {
+    $(".cost").html("from $"+ cost);
     $(".pricing-cta").html(custom_cta);
     $(".additional-info").animate({'opacity' : '0'}, 200);
   } else {
+    $(".cost").html("$"+ cost);
     $(".pricing-cta").html(cta);
     $(".additional-info").animate({'opacity' : '1'}, 200);
   }
+}
+
+function submitTrialForm() {
+  var form = $("#trial-form").serializeArray();
+  console.log(form);
+  var json = JSON.stringify(form);
+  json = json.substr(1, json.length - 2);
+  console.log(json);
+  json = "{ 'user': "+ json +"}";
+  $.post("https://hooks.zapier.com/hooks/catch/1745150/te6aiw/", json, function() {
+    console.log("woo!");
+  });
 }

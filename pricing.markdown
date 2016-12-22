@@ -49,6 +49,10 @@ layout: default
 ---
 
 <main class="pricing dotted-bg">
-<div class="table hidden-xs"></div>
+<div class="desktop">
+<div class="table"></div>
 {% include pricing_sections/calculator.md %}
+{% include pricing_sections/boxes.md %}
+</div>
+{% include pricing_sections/mobile-section.md %}
 </main>

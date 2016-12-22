@@ -2,6 +2,7 @@
 <section id="products-container" class="dotted-bg"> <!--PRODUCTS-->
   <div class="wave offwhite-bg">
   </div>
+  <div class="product-wrapper">
   <div class="product-carousel" style="width: 100%; position: relative; top: -40px">
     {% for product in page.products %}
     <div class="product-slide">
@@ -27,5 +28,6 @@
       </div>
     </div>
     {% endfor %}
+    </div>
   </div>
 </section>

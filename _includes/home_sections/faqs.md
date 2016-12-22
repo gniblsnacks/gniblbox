@@ -1,4 +1,4 @@
-<section id="faqs" class="faqs"> <!--FAQS-->
+<section id="faqs" class="faqs" style="padding-top: 80px; padding-bottom: 80px"> <!--FAQS-->
   <div class="wave offwhite-bg">
   </div>
   <div class="container box-bg">

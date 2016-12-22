@@ -1,5 +1,5 @@
 <h2 id="about" class="handdrawn red-header left-header" style="top: 40px">How does it work?</h2>
-<section class="wood-bg about" style="padding: 80px 0; z-index: 20"> <!--HOW IT WORKS-->
+<section class="wood-bg about" style="padding: 80px 0; z-index: 20;"> <!--HOW IT WORKS-->
   <div class="wave">
   </div>
   <div class="container">

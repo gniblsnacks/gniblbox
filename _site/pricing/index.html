@@ -32,45 +32,62 @@
   </header>
 
 <main class="pricing dotted-bg">
-<div class="table hidden-xs"></div>
-<div class="col-xs-12 col-sm-6 col-lg-4 calculator">
+<div class="desktop">
+<div class="table"></div>
+<div class="col-xs-12 col-md-5 calculator">
   <!--SIZE SELECTION-->
-  <h4>What size is your company?</h4>
-  <div class="tabs size-selection">
-  
-  <div class="btn-tab" data-box-size="small box">&lt;25</div>
-  
-  <div class="btn-tab" data-box-size="medium box">25 – 50</div>
-  
-  <div class="btn-tab" data-box-size="custom box">&gt;50</div>
-  
+  <div class="col-xs-12 col-sm-6 col-md-12">
+    <h4>What size is your company?</h4>
+    <div class="tabs size-selection">
+      
+      <div class="btn-tab  selected-tab " data-box-size="small box">
+        &lt;25
+      </div>
+      
+      <div class="btn-tab " data-box-size="medium box">
+        25 – 50
+      </div>
+      
+      <div class="btn-tab " data-box-size="custom box">
+        &gt;50
+      </div>
+      
+    </div>
   </div>
   <!--FREQUENCY SELECTION-->
-  <h4>Select your delivery frequency:</h4>
-  <div class="tabs frequency-selection">
-  
-  <div class="btn-tab">weekly</div>
-  
-  <div class="btn-tab">fortnightly</div>
-  
-  <div class="btn-tab">monthly</div>
-  
+  <div class="col-xs-12 col-sm-6 col-md-12">
+    <h4>Select your delivery frequency:</h4>
+    <div class="tabs frequency-selection">
+      
+      <div class="btn-tab  selected-tab ">
+        weekly
+      </div>
+      
+      <div class="btn-tab ">
+        fortnightly
+      </div>
+      
+      <div class="btn-tab ">
+        monthly
+      </div>
+      
+    </div>
   </div>
-  <div class="bump-below-xs">
-  <hr class="hidden-xs" />
+  <div class="hidden-sm hidden-xs">
+  <hr />
   <h2 class="price" style="text-transform: none; text-align: center;">
     <span class="cost"></span> / <span class="frequency"></span>
   </h2>
   <div class="row">
   
-  <div class="col-xs-6">
-    <img src="" />
-    <p style="font-size: 14px;font-weight: bold;">Free shipping to metro areas</p>
+  <div class="col-xs-12 col-sm-6" style="margin-bottom: 20px">
+    <img src="/uploads/truck.svg" style="width: 60px; float: left;" />
+    <p style="font-size: 14px;font-weight: bold; width: calc(100% - 70px); margin-left: 10px; float: left">Free shipping to metro areas</p>
   </div>
   
-  <div class="col-xs-6">
-    <img src="" />
-    <p style="font-size: 14px;font-weight: bold;">20% off your first month</p>
+  <div class="col-xs-12 col-sm-6" style="margin-bottom: 20px">
+    <img src="/uploads/sale.svg" style="width: 60px; float: left;" />
+    <p style="font-size: 14px;font-weight: bold; width: calc(100% - 70px); margin-left: 10px; float: left">20% off your first month</p>
   </div>
   
   </div>
@@ -84,14 +101,18 @@
 
 <script>
 // set number of snacks to default
-var snack_num = 100;
+var snack_num = 50;
 
 // set cost to default
-var cost = 280;
+var cost = 125;
 
 // set CTAs for reference in JS
 var cta = "Sign up now";
 var custom_cta = "Request a quote";
+
+var smallboxname = "Small box";
+var mediumboxname = "Medium box";
+var customboxname = "Custom box";
 
 
 function calculatePrice() {
@@ -121,6 +142,45 @@ function calculatePrice() {
   }
 }
 </script>
+
+<section class="boxes">
+  <h2 id="box-label" class="handdrawn green-header left-header">Small box</h2>
+  <div class="box-carousel">
+    <div class="box-slide">
+      <div style="width: 100vw"><img src="/uploads/small-box.png" alt="Small box" /></div>
+    </div>
+    <div class="box-slide">
+      <div style="width: 100vw"><img src="/uploads/medium-box.png" alt="Medium box" /></div>
+    </div>
+  </div>
+</section>
+
+</div>
+<div class="table-bg mobile-container">
+<div class="visible-sm visible-xs container box-bg mobile-pricing">
+<h2 class="price" style="text-transform: none; text-align: center;">
+  <span class="cost"></span> / <span class="frequency"></span>
+</h2>
+<div class="row">
+
+<div class="col-xs-12 col-sm-6" style="margin-bottom: 20px">
+  <img src="/uploads/truck.svg" style="width: 60px; float: left;" />
+  <p style="font-size: 14px;font-weight: bold; width: calc(100% - 70px); margin-left: 10px; float: left">Free shipping to metro areas</p>
+</div>
+
+<div class="col-xs-12 col-sm-6" style="margin-bottom: 20px">
+  <img src="/uploads/sale.svg" style="width: 60px; float: left;" />
+  <p style="font-size: 14px;font-weight: bold; width: calc(100% - 70px); margin-left: 10px; float: left">20% off your first month</p>
+</div>
+
+</div>
+<a class="btn btn-red" style="max-width: none"><span class="pricing-cta">Sign up now</span></a>
+<p class="additional-info" style="font-size: 14px; font-weight: bold; text-align: center">
+  <span class="snack-num"></span> snacks
+  (<span class="per-snack"></span> each)
+  delivered <span class="frequency-ly"></span></p>
+</div>
+</div>
 
 </main>
 

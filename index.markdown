@@ -73,15 +73,15 @@ products:
   is dairy free?: true
   is gluten free?: true
   has no added sugar?: 
-- name: Raw C Pure Coconut Water & Protein
-  image: "/uploads/Raw%20C.png"
+- name: 'Emma & Toms Life Bar: Cacao & Coconut'
+  image: "/uploads/585b62f27081ce2813cbe80e.jpg"
   is vegan?: 
   is high in protein?: true
   is dairy free?: true
   is gluten free?: true
   has no added sugar?: 
-- name: Raw C Pure Coconut Water & Protein
-  image: "/uploads/Raw%20C.png"
+- name: Crispy Fruits Pure Strawberry
+  image: "/uploads/585b62b6ca56be3c03a2b948.jpg"
   is vegan?: 
   is high in protein?: true
   is dairy free?: true

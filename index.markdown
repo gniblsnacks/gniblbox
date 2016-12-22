@@ -66,8 +66,8 @@ products:
   is dairy free?: true
   is gluten free?: true
   has no added sugar?: 
-- name: Raw C Pure Coconut Water & Protein
-  image: "/uploads/Raw%20C.png"
+- name: Cobs Natural Popcorn
+  image: "/uploads/Cobs%20%E2%80%93%20Natural%20Popcorn%20Sea%20Salt.jpg"
   is vegan?: 
   is high in protein?: true
   is dairy free?: true

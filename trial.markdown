@@ -1,5 +1,5 @@
 ---
-title: Trial Box
+title: Trial
 date: 2016-12-14 11:03:00 +11:00
 header: Claim your free Gniblbox
 steps:

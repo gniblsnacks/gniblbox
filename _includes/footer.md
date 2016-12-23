@@ -44,3 +44,14 @@
 {% if page.title == "Home" %}
 <div class="fixed-cta"><a class="btn btn-red" href="/trial"><span>Try Gnibl for free</span></a></div>
 {% endif %}
+
+<!--LEAN BOOTSTRAP-->
+<script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<!--SLICK CAROUSEL-->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<!--VALIDATION-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js"></script>
+<!--INSTAFEED-->
+<script src="/assets/script/instafeed.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">

@@ -1,30 +1,25 @@
 <head>
-    <!--JQUERY-->
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
-      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-      crossorigin="anonymous"></script>
-    <!--LEAN BOOTSTRAP-->
-    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
-    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
-    <!--CUSTOM-->
-    <link rel="stylesheet" href="/assets/style/gnibl.css">
-    <script src="/assets/script/gnibl.js"></script>
-    <!--TYPEKIT-->
-    <script src="https://use.typekit.net/xhc5oia.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
-    <!--SLICK CAROUSEL-->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-    <!--INSTAFEED-->
-    <script src="/assets/script/instafeed.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--JQUERY-->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+  <!--LEAN BOOTSTRAP-->
+  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+  <!--TYPEKIT-->
+  <script src="https://use.typekit.net/xhc5oia.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <!--CUSTOM-->
+  <link rel="stylesheet" href="/assets/style/gnibl.css">
+  <script src="/assets/script/gnibl.js"></script>
 </head>
 <body {% if page.title == "Home" %} class="home" {% endif %} >
   <header>
     <a href="/"><img class="logo" src="/assets/images/logo.svg"></a>
     <nav>
       <a href="/pricing">PRICING</a>
+      {% if page.title != "Trial Box" %}
       <a class="btn btn-red" href="/trial"><span>Try Gnibl for free</span></a>
+      {% endif %}
     </nav>
     {% if page.title == "Home" %}
     <div class="subnav">

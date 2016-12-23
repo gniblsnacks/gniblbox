@@ -1,11 +1,14 @@
 <section class="home-hero header-bg"> <!--HOME HERO-->
-  <h1 class="handdrawn main-header <!--right-header-->">{{page.landing.headline}}</h1>
-  <!--<div class="col-xs-12 col-sm-5 col-sm-offset-7 col-lg-4 col-lg-offset-8 hero-content">-->
-  <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+  <h1 class="handdrawn main-header">{{page.landing.headline}}</h1>
+  <div class="container">
+  <div class="col-xs-12 col-sm-8 col-sm-offset-2">
     <p>{{page.landing["sub text"]}}</p>
     <form id="landing-form">
-      <input type="email" placeholder="Your email address">
-      <a class="btn btn-red" onclick="submitLandingForm()" href="/trial" style="max-width: none !important"><span>{{page.landing.cta}}</span></a>
+      <input type="email" name="email" placeholder="Your email address" required>
+      <a class="btn btn-red" onclick="$('#landing-form').submit()" style="max-width: none !important"><span>{{page.landing.cta}}</span></a>
+      <input type="submit" style="position: absolute; left: -2000px">
+      <div class="validation"></div>
     </form>
+  </div>
   </div>
 </section>

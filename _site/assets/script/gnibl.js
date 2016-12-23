@@ -7,6 +7,7 @@ function init() {
   instafeedInit();
   $(window).scroll(scrollFunctions);
   pricingFunctions();
+  validationInit();
 }
 
 $(document).ready(function() {
@@ -33,11 +34,6 @@ function faqHeightInit() {
     var container = $(".faqs").find(".container");
     container.css("height", container[0].clientHeight);
   }
-}
-
-function submitLandingForm(event) {
-  event.preventDefault();
-  $('#landing-form').submit();
 }
 
 function scrollFunctions() {
@@ -221,14 +217,107 @@ function updatePricingHTML() {
   }
 }
 
-function submitTrialForm() {
-  var form = $("#trial-form").serializeArray();
-  console.log(form);
-  var json = JSON.stringify(form);
-  json = json.substr(1, json.length - 2);
-  console.log(json);
-  json = "{ 'user': "+ json +"}";
-  $.post("https://hooks.zapier.com/hooks/catch/1745150/te6aiw/", json, function() {
-    console.log("woo!");
-  });
+
+var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : sParameterName[1];
+        }
+    }
+};
+
+function validationInit() {
+  jQuery.validator.addMethod("phone", function(value, element) {
+      var pattern = /^0[0-8]\d{8}$/g;
+      var altpattern = /^[0-8]\d{8}$/g;
+      if (pattern.test(value) || altpattern.test(value)) {
+        return true;
+      } else {
+        return false;
+      }
+  }, "Invalid");
+
+  if ($("#landing-form").length) {
+    $("#landing-form").validate({
+        rules: {
+        email: {
+          required: true,
+          email: true
+        }
+      },
+      messages: {
+        email: {
+          required: "Required",
+          email: "Invalid"
+        }
+      },
+      submitHandler: function(form) {
+        var data = $(form).serializeArray();
+        window.location.href="/trial?email="+ data[0]['value'];
+      }
+    });
+  }
+
+  if ($("#trial-form").length) {
+    $("#trial-form").validate({
+        rules: {
+        first_name: "required",
+        last_name: "required",
+        email: {
+          required: true,
+          email: true
+        },
+        company: "required",
+        job_title: "required",
+        phone: {
+          required: true,
+          phone: true
+        }
+      },
+      messages: {
+        first_name: {
+          required: "Required",
+        },
+        last_name: {
+          required: "Required",
+        },
+        email: {
+          required: "Required",
+          email: "Invalid"
+        },
+        company: {
+          required: "Required",
+        },
+        job_title: {
+          required: "Required",
+        },
+        phone: {
+          required: "Required",
+          phone: "Invalid"
+        },
+      },
+      submitHandler: function(form) {
+        if ($(".honeypot").val() == null || $(".honeypot").val() == "") {
+          var data = $(form).serializeArray().reduce(function(a, x) { a[x.name] = x.value; return a; }, {});;
+          var json = JSON.stringify(data);
+          $.post("https://hooks.zapier.com/hooks/catch/1745150/te6aiw/", json, function() {
+            $("#trial-form").fadeOut(200, function() {
+              $(".trial-success").fadeIn();
+            });
+          }).fail(function() {
+            $("#trial-form").fadeOut(200, function() {
+              $(".trial-error").fadeIn();
+            });
+          });
+        }
+      }
+    });
+  }
 }

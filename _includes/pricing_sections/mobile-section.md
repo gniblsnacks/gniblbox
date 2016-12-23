@@ -11,7 +11,7 @@
 </div>
 {% endfor %}
 </div>
-<a class="btn btn-red" style="max-width: none"><span class="pricing-cta">{{page.cta}}</span></a>
+<a class="btn btn-red product-link" style="max-width: none"><span class="pricing-cta">{{page.cta}}</span></a>
 <p class="additional-info" style="font-size: 14px; font-weight: bold; text-align: center">
   <span class="snack-num"></span> snacks
   (<span class="per-snack"></span> each)

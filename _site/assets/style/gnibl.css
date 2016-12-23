@@ -33,7 +33,7 @@ a {
   a.btn {
     text-decoration: none; }
 
-nav a, nav a:hover {
+nav a, nav a:hover, footer a, footer a:hover {
   text-decoration: none; }
 
 a:hover {
@@ -95,6 +95,16 @@ input {
       float: left; }
     input ~ .half {
       margin-left: 10px; } }
+
+textarea {
+  width: 100%;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  resize: none;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 10px;
+  margin: 0 0 10px 0; }
 
 .validation {
   box-sizing: border-box;
@@ -204,6 +214,51 @@ ul.collapsible {
     transition: .2s; }
     .tabs .btn-tab.selected-tab {
       background: rgba(0, 0, 0, 0.05); }
+
+.modal-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100000000;
+  background: rgba(204, 204, 204, 0.8); }
+  .modal-container .modal-back {
+    left: 20px;
+    top: 15px;
+    position: absolute;
+    width: auto !important;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 40px;
+    height: 40px; }
+    .modal-container .modal-back:hover {
+      cursor: pointer;
+      color: #56e172; }
+  .modal-container .modal {
+    min-height: 100px;
+    transition: 1s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #f7f7f9;
+    padding: 50px 20px 20px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 6px;
+    overflow-y: scroll; }
+    @media (max-width: 480px) {
+      .modal-container .modal {
+        position: relative;
+        height: 100%;
+        margin: 0 auto;
+        left: 0;
+        top: 0;
+        transform: none; } }
+  .modal-container .error {
+    right: 20px; }
 
 /*HAND DRAWN HEADERS*/
 .handdrawn {

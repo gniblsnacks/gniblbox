@@ -8,6 +8,7 @@ function init() {
   $(window).scroll(scrollFunctions);
   pricingFunctions();
   validationInit();
+  modalInit();
 }
 
 $(document).ready(function() {
@@ -157,6 +158,7 @@ var box_size = "small box", delivery_frequency = "week", custom_box = false;
 function pricingFunctions() {
   if ($('main').first().hasClass('pricing')) {
     updatePricingHTML();
+    updateProductLink();
     boxSliderInit();
     $(".size-selection").find(".btn-tab").each(function() {
       $(this).click(function() {
@@ -164,6 +166,7 @@ function pricingFunctions() {
         $(this).addClass('selected-tab');
         box_size = $(this).data("box-size");
         updatePricingHTML(calculatePrice());
+        updateProductLink();
 
         if (box_size == "small box") {
           $('.box-carousel').slick('slickGoTo', 0);
@@ -184,6 +187,7 @@ function pricingFunctions() {
         $(this).addClass('selected-tab');
         delivery_frequency = $(this).html().replace("ly", "").trim();
         updatePricingHTML(calculatePrice());
+        updateProductLink();
       });
     });
 
@@ -198,6 +202,32 @@ function boxSliderInit() {
       swipe: false,
       variableWidth: true
     });
+}
+
+function updateProductLink() {
+  var link = $(".product-link");
+  link.removeAttr("onclick");
+  if (box_size == "small box") {
+    if (delivery_frequency == "week") {
+      link.attr("href", "https://gnibl.samcart.com/products/small-box-weekly/");
+    } else if (delivery_frequency == "fortnight") {
+      link.attr("href", "https://gnibl.samcart.com/products/small-box-fortnightly/");
+    } else {
+      link.attr("href", "https://gnibl.samcart.com/products/small-box-monthly/");
+    }
+  } else if (box_size == "medium box") {
+    link.removeAttr("onclick");
+    if (delivery_frequency == "week") {
+      link.attr("href", "https://gnibl.samcart.com/products/medium-box-weekly/");
+    } else if (delivery_frequency == "fortnight") {
+      link.attr("href", "https://gnibl.samcart.com/products/medium-box-fortnightly/");
+    } else {
+      link.attr("href", "https://gnibl.samcart.com/products/medium-box-monthly/");
+    }
+  } else {
+    link.removeAttr("href");
+    link.attr("onclick", "$('#quote-modal').fadeIn()");
+  }
 }
 
 function updatePricingHTML() {
@@ -320,4 +350,71 @@ function validationInit() {
       }
     });
   }
+
+  if ($("#quote-form").length) {
+    $("#quote-form").validate({
+        rules: {
+        first_name: "required",
+        last_name: "required",
+        email: {
+          required: true,
+          email: true
+        },
+        company: "required",
+        phone: {
+          required: true,
+          phone: true
+        },
+        description: "required",
+      },
+      messages: {
+        first_name: {
+          required: "Required",
+        },
+        last_name: {
+          required: "Required",
+        },
+        email: {
+          required: "Required",
+          email: "Invalid"
+        },
+        company: {
+          required: "Required",
+        },
+        phone: {
+          required: "Required",
+          phone: "Invalid"
+        },
+        description: {
+          required: "Required"
+        }
+      },
+      submitHandler: function(form) {
+        if ($(".honeypot").val() == null || $(".honeypot").val() == "") {
+          var data = $(form).serializeArray().reduce(function(a, x) { a[x.name] = x.value; return a; }, {});;
+          var json = JSON.stringify(data);
+          $.post("https://hooks.zapier.com/hooks/catch/1745150/teexi2/", json, function() {
+            $(".modal-back").fadeOut(200);
+            $(".modal").css("padding-top", "10px");
+            $("#quote-form").fadeOut(200, function() {
+              $(".quote-success").fadeIn();
+              $(".modal-close-btn").fadeIn();
+            });
+          }).fail(function() {
+            $(".modal-back").fadeOut(200);
+            $(".modal").css("padding-top", "10px");
+            $("#trial-form").fadeOut(200, function() {
+              $(".quote-error").fadeIn();
+              $(".modal-close-btn").fadeIn();
+            });
+          });
+        }
+      }
+    });
+  }
+}
+function modalInit() {
+  $(".modal-close").click(function() {
+    $(this).parents(".modal-container").first().fadeOut();
+  });
 }

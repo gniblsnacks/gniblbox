@@ -55,4 +55,5 @@ layout: default
 {% include pricing_sections/boxes.md %}
 </div>
 {% include pricing_sections/mobile-section.md %}
+  {% include pricing_sections/quote-modal.md %}
 </main>

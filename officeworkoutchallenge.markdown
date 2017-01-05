@@ -18,5 +18,6 @@ Legal Description: Winner will be selected and notified on 14 March, 2017. Entri
   the Gnibl Box delivery area to accept the prize. If the winner is unable to accept
   the prize, the judges will select and notify the following runner-up until the prize
   is awarded.
+layout: default
 ---
 

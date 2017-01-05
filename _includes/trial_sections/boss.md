@@ -7,7 +7,7 @@
       {% for block in page['boss section'] %}
       <div class="row"><li {% if forloop.first %} class="open" {% endif %}>
         <div class="col-xs-9 col-xs-offset-2 col-sm-10 col-sm-offset-1">
-          <h4>{{block.header}}</h4>
+          <h4>{{block.header | markdownify | strip_html}}</h4>
         </div>
         <div class="col-xs-9 col-xs-offset-2 col-sm-10 col-sm-offset-1">
           <div class="answer">{{block.body | markdownify }}</div>

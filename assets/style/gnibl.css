@@ -11,7 +11,7 @@ html, body {
 
 @font-face {
   font-family: "HelloLucky";
-  src: url(fonts/hellolucky.otf); }
+  src: url(fonts/HelloLucky.otf); }
 * {
   font-family: "brandon-grotesque", sans-serif;
   -webkit-font-smoothing: antialiased;

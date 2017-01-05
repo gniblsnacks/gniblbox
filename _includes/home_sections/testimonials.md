@@ -6,7 +6,7 @@
       {% assign mod = forloop.index | modulo: 2 %}
       <div class="testimonial-container">
       <div class="testimonial col-xs-8 col-sm-4 {% if mod == 1 %}pull-right{%endif%}">
-        <p>{{testimonial['review text']}}</p>
+        {{testimonial['review text'] | markdownify }}
         <img class="chat-tail hidden-xs" src="assets/images/chat-tail.svg">
         <img class="chat-tail visible-xs" src="assets/images/chat-tail-alt.svg">
         <div class="testimonial-photo hidden-xs" style="background-image:url({{testimonial.image}})">

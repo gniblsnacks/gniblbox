@@ -4,12 +4,12 @@
   </div>
   <div class="container">
     <div class="col-xs-12 col-sm-8 col-sm-offset-2 box-bg">
-      <p class="intro">{{page.about.intro}}</p>
+      <p class="intro">{{page.about.intro | markdownify | strip_html}}</p>
       {% for step in page.about.steps %}
-      <h4>{{step.header}}</h4>
-      <p>{{step['sub text']}}</p>
+      <h4>{{step.header | markdownify | strip_html}}</h4>
+      {{step['sub text'] | markdownify }}
       {% endfor %}
-      <a class="btn btn-green"><span>{{page.about.cta}}</span></a>
+      <a class="btn btn-green"><span>{{page.about.cta | markdownify | strip_html}}</span></a>
     </div>
   </div>
   <div class="wave wave-bottom offwhite-bg">

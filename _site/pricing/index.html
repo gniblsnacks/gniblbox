@@ -26,44 +26,54 @@
     
   </header>
 
-<main class="pricing dotted-bg">
+<main class="pricing fixed-header dotted-bg">
 <div class="desktop">
 <div class="table"></div>
 <div class="col-xs-12 col-md-5 calculator">
   <!--SIZE SELECTION-->
   <div class="col-xs-12 col-sm-6 col-md-12">
-    <h4>What size is your company?</h4>
+    <h4>What size is your company?
+</h4>
     <div class="tabs size-selection">
       
       <div class="btn-tab  selected-tab " data-box-size="small box">
         &lt;25
+
       </div>
       
       <div class="btn-tab " data-box-size="medium box">
         25 – 50
+
       </div>
       
       <div class="btn-tab " data-box-size="custom box">
-        &gt;50
+        
+  50
+
+
       </div>
       
     </div>
   </div>
   <!--FREQUENCY SELECTION-->
   <div class="col-xs-12 col-sm-6 col-md-12">
-    <h4>Select your delivery frequency:</h4>
+    <h4>Select your delivery frequency:
+</h4>
     <div class="tabs frequency-selection">
       
       <div class="btn-tab  selected-tab ">
         weekly
+
       </div>
       
       <div class="btn-tab ">
         fortnightly
+
       </div>
       
       <div class="btn-tab ">
         monthly
+
       </div>
       
     </div>
@@ -77,16 +87,19 @@
   
   <div class="col-xs-12 col-sm-6" style="margin-bottom: 20px">
     <img src="/uploads/truck.svg" style="width: 60px; float: left;" />
-    <p style="font-size: 14px;font-weight: bold; width: calc(100% - 70px); margin-left: 10px; float: left">Free shipping to metro areas</p>
+    <p style="font-size: 14px;font-weight: bold; width: calc(100% - 70px); margin-left: 10px; float: left">Free shipping to metro areas
+</p>
   </div>
   
   <div class="col-xs-12 col-sm-6" style="margin-bottom: 20px">
     <img src="/uploads/sale.svg" style="width: 60px; float: left;" />
-    <p style="font-size: 14px;font-weight: bold; width: calc(100% - 70px); margin-left: 10px; float: left">20% off your first month</p>
+    <p style="font-size: 14px;font-weight: bold; width: calc(100% - 70px); margin-left: 10px; float: left">20% off your first month
+</p>
   </div>
   
   </div>
-  <a class="product-link btn btn-red" style="max-width: none"><span class="pricing-cta">Sign up now</span></a>
+  <a class="product-link btn btn-red" style="max-width: none"><span class="pricing-cta">Sign up now
+</span></a>
   <p class="additional-info" style="font-size: 14px; font-weight: bold; text-align: center">
     <span class="snack-num"></span> snacks
     (<span class="per-snack"></span> each)
@@ -99,7 +112,7 @@
 var snack_num = 50;
 
 // set cost to default
-var cost = 125;
+var cost = 139;
 
 // set CTAs for reference in JS
 var cta = "Sign up now";
@@ -114,21 +127,21 @@ function calculatePrice() {
   if (box_size == "small box") {
     snack_num = 50;
     if (delivery_frequency == "week") {
-      cost = 125;
+      cost = 139;
     } else if (delivery_frequency == "month") {
-      cost = 150;
+      cost = 139;
     } else {
-      cost = 140;
+      cost = 139;
     }
     custom_box = false;
   } else if (box_size == "medium box") {
     snack_num = 100;
     if (delivery_frequency == "week") {
-      cost = 250;
+      cost = 269;
     } else if (delivery_frequency == "month") {
-      cost = 300;
+      cost = 269;
     } else {
-      cost = 280;
+      cost = 269;
     }
     custom_box = false;
   } else if (box_size == "custom box") {
@@ -160,16 +173,19 @@ function calculatePrice() {
 
 <div class="col-xs-12 col-sm-6" style="margin-bottom: 20px">
   <img src="/uploads/truck.svg" style="width: 60px; float: left;" />
-  <p style="font-size: 14px;font-weight: bold; width: calc(100% - 70px); margin-left: 10px; float: left">Free shipping to metro areas</p>
+  <p style="font-size: 14px;font-weight: bold; width: calc(100% - 70px); margin-left: 10px; float: left">Free shipping to metro areas
+</p>
 </div>
 
 <div class="col-xs-12 col-sm-6" style="margin-bottom: 20px">
   <img src="/uploads/sale.svg" style="width: 60px; float: left;" />
-  <p style="font-size: 14px;font-weight: bold; width: calc(100% - 70px); margin-left: 10px; float: left">20% off your first month</p>
+  <p style="font-size: 14px;font-weight: bold; width: calc(100% - 70px); margin-left: 10px; float: left">20% off your first month
+</p>
 </div>
 
 </div>
-<a class="btn btn-red product-link" style="max-width: none"><span class="pricing-cta">Sign up now</span></a>
+<a class="btn btn-red product-link" style="max-width: none"><span class="pricing-cta">Sign up now
+</span></a>
 <p class="additional-info" style="font-size: 14px; font-weight: bold; text-align: center">
   <span class="snack-num"></span> snacks
   (<span class="per-snack"></span> each)

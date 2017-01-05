@@ -1,22 +1,22 @@
 <div class="col-xs-12 col-md-5 calculator">
   <!--SIZE SELECTION-->
   <div class="col-xs-12 col-sm-6 col-md-12">
-    <h4>{{page['size selection'].lead}}</h4>
+    <h4>{{page['size selection'].lead | markdownify | strip_html}}</h4>
     <div class="tabs size-selection">
       {% for breakpoint in page['size selection'].breakpoints %}
       <div class="btn-tab {% if forloop.first %} selected-tab {% endif %}" data-box-size="{{breakpoint.box}}">
-        {{breakpoint['company size']}}
+        {{breakpoint['company size'] | markdownify | strip_html}}
       </div>
       {%endfor%}
     </div>
   </div>
   <!--FREQUENCY SELECTION-->
   <div class="col-xs-12 col-sm-6 col-md-12">
-    <h4>{{page['frequency selection'].lead}}</h4>
+    <h4>{{page['frequency selection'].lead | markdownify | strip_html}}</h4>
     <div class="tabs frequency-selection">
       {% for option in page['frequency selection'].options %}
       <div class="btn-tab {% if forloop.first %} selected-tab {% endif %}">
-        {{option}}
+        {{option | markdownify | strip_html}}
       </div>
       {%endfor%}
     </div>
@@ -30,11 +30,11 @@
   {% for prop in page['value props'] %}
   <div class="col-xs-12 col-sm-6"  style="margin-bottom: 20px">
     <img src="{{prop.image}}" style="width: 60px; float: left;">
-    <p style="font-size: 14px;font-weight: bold; width: calc(100% - 70px); margin-left: 10px; float: left">{{prop.value}}</p>
+    <p style="font-size: 14px;font-weight: bold; width: calc(100% - 70px); margin-left: 10px; float: left">{{prop.value | markdownify | strip_html}}</p>
   </div>
   {% endfor %}
   </div>
-  <a class="product-link btn btn-red" style="max-width: none"><span class="pricing-cta">{{page.cta}}</span></a>
+  <a class="product-link btn btn-red" style="max-width: none"><span class="pricing-cta">{{page.cta | markdownify | strip_html}}</span></a>
   <p class="additional-info" style="font-size: 14px; font-weight: bold; text-align: center">
     <span class="snack-num"></span> snacks
     (<span class="per-snack"></span> each)

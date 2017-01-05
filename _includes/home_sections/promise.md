@@ -9,8 +9,8 @@
           <img src="{{benefit.image}}">
         </div>
         <div class="col-xs-10">
-            <h4 style="margin: 0 0 10px">{{benefit.header}}</h4>
-            <p>{{benefit['sub text']}}</p>
+            <h4 style="margin: 0 0 10px">{{benefit.header | markdownify | strip_html}}</h4>
+            {{benefit['sub text'] | markdownify }}
         </div>
       </div>
       {% endfor %}
@@ -23,8 +23,8 @@
           <img src="{{benefit.image}}">
         </div>
         <div class="col-xs-10">
-            <h4 style="margin: 0 0 10px">{{benefit.header}}</h4>
-            <p>{{benefit['sub text']}}</p>
+            <h4 style="margin: 0 0 10px">{{benefit.header | markdownify | strip_html}}</h4>
+            {{benefit['sub text'] | markdownify }}
         </div>
       </div>
       {% endfor %}

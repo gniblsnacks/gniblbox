@@ -1,11 +1,11 @@
 <section class="offwhite-bg header-bg">
   <div style="width: 100%; height: 120px; position: relative">
-    <h2 class="handdrawn page-header">{{page.header}}</h2>
+    <h2 class="handdrawn page-header">{{page.header | markdownify | strip_html}}</h2>
   </div>
   <div class="container">
     <div class="row box-bg no-bg-mobile" style="padding-top: 20px; padding-bottom: 20px">
       <div class="col-xs-12 col-md-6">    
-      <p>{{page['form lead']}}</p>
+      {{page['form lead'] | markdownify}}
         {% for step in page.steps %}
         <div class="step" style="display: block; clear: both; margin-bottom: 20px; overflow: auto">
           <img style="width: 60px; float: left;" src="/assets/images/numbers/{{forloop.index}}.svg">
@@ -13,7 +13,7 @@
         </div>
         {% endfor %}
         <div class="offer">
-        <p style="font-style: italic; font-size: 14px">Already decided? <a href="/pricing">Subscribe now</a> and receive {{page['subscribe now offer']}}.</p>
+        <p style="font-style: italic; font-size: 14px">Already decided? <a href="/pricing">Subscribe now</a> and receive {{page['subscribe now offer'] | markdownify | strip_html}}.</p>
         </div>
       </div>
       <div class="col-xs-12 col-md-6">

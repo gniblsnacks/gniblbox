@@ -21,6 +21,8 @@ defaults:
   values:
     layout: page
 permalink: pretty
+Meta Description: 
+OG Image: 
 Footer Menu Links:
 - Title: About
   URL: "/#about"

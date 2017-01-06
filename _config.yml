@@ -22,8 +22,12 @@ defaults:
     layout: page
 permalink: pretty
 Footer Menu Links:
-- Title: 
-  URL: 
+- Title: About
+  URL: "/#about"
+- Title: FAQs
+  URL: "/#faq"
+- Title: Pricing
+  URL: "/pricing"
 Footer Social Links:
 - website: Facebook
   url: https://facebook.com/gnibl

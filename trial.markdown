@@ -7,7 +7,7 @@ steps:
 - A friendly call from the  Gnibl team will confirm your order and give you the chance
   to ask any questions about the service.
 - We’ll charge a one-off $10 fee to your credit card for shipping and handling.
-subscribe now offer: 20% off your first month
+subscribe now offer: 50% off your first order
 form lead: You're just a few clicks away from nourishing, tasty snacks.
 subsection:
   header: Step up your snack game

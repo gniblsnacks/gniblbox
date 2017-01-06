@@ -43,5 +43,7 @@ Accepted Payments:
   image: "/uploads/Visa.svg"
 - name: MasterCard
   image: "/uploads/Mastercard.svg"
-- name: PayPal
-  image: "/uploads/Paypal.svg"
+- name: American Express
+  image: "/uploads/amex.svg"
+- name: Discover
+  image: "/uploads/discover.svg"

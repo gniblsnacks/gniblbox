@@ -10,10 +10,9 @@
           {%endfor%}
         </div>
         <div class="footer-links">
-          <a href="">Login</a>
-          <a href="">About</a>
-          <a href="">FAQ</a>
-          <a href="">Pricing</a>
+          {%for link in site['Footer Menu Links']%}
+          <a href="{{link.URL}}">{{link.Title}}</a>
+          {%endfor%}
           <a href="" class="visible-xs">Terms &amp; Conditions</a>
         </div>
       </div>

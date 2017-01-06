@@ -5,7 +5,7 @@
     <div class="tabs size-selection">
       {% for breakpoint in page['size selection'].breakpoints %}
       <div class="btn-tab {% if forloop.first %} selected-tab {% endif %}" data-box-size="{{breakpoint.box}}">
-        {{breakpoint['company size'] | markdownify | strip_html}}
+        {{breakpoint['company size']}}
       </div>
       {%endfor%}
     </div>
@@ -16,7 +16,7 @@
     <div class="tabs frequency-selection">
       {% for option in page['frequency selection'].options %}
       <div class="btn-tab {% if forloop.first %} selected-tab {% endif %}">
-        {{option | markdownify | strip_html}}
+        {{option}}
       </div>
       {%endfor%}
     </div>

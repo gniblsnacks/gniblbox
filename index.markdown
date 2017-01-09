@@ -94,6 +94,7 @@ products:
   is dairy free?: true
   is gluten free?: 
   has no added sugar?: false
+has testimonials?: false
 testimonials:
 - name: Placeholder
   image: "/uploads/placeholder.jpg"

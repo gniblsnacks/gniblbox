@@ -1,4 +1,4 @@
-<h2 id="testimonials" class="handdrawn red-header left-header">From Our Customers</h2>
+{% if page['has testimonials?']%}<h2 id="testimonials" class="handdrawn red-header left-header">From Our Customers</h2>
 <!--TESTIMONIALS-->
   <div class="container test">
     <div class="row">
@@ -19,4 +19,5 @@
     {% endfor %}
     </div>
   </div>
+  {%endif%}
 </section>

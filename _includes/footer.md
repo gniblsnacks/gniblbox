@@ -13,7 +13,7 @@
           {%for link in site['Footer Menu Links']%}
           <a href="{{link.URL}}">{{link.Title}}</a>
           {%endfor%}
-          <a href="" class="visible-xs">Terms &amp; Conditions</a>
+          <a target="_blank" href="{{site['Terms & Conditions file']}}" class="visible-xs">Terms &amp; Conditions</a>
         </div>
       </div>
     </div>
@@ -30,7 +30,7 @@
     <div class="row">
       <div class="col-sm-12">
         <span style="line-height: 50px">Copyright &copy;<script>document.write(new Date().getFullYear())</script></span>
-        <a style="margin-left: 20px; line-height: 50px" class="hidden-xs" href="">Terms &amp; Conditions</a>
+        <a target="_blank" href="{{site['Terms & Conditions file']}}" style="margin-left: 20px; line-height: 50px" class="hidden-xs" href="">Terms &amp; Conditions</a>
         <div class="social hidden-xs" style="float:right">
           {%for link in site['Footer Social Links']%}
           <a href="{{link.url}}"><img src="{{link.image}}" alt="{{link.website}}"></a>

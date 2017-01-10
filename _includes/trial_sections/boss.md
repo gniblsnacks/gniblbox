@@ -16,6 +16,6 @@
       {%endfor%}
     </ul>
     <h4 class="alt-header">Want to know more?</h4>
-    <a class="btn btn-green"><span>Get in touch</span></a>
+    <a href="mailto:{{site['Contact email']}}" class="btn btn-green"><span>Get in touch</span></a>
   </div>
 </section>

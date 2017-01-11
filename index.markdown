@@ -61,7 +61,7 @@ promise:
 products:
 - name: Raw C Pure Coconut Water & Protein
   image: "/uploads/Raw%20C.png"
-  is vegan?: 
+  is vegan?: false
   is high in protein?: true
   is dairy free?: true
   is gluten free?: true
@@ -94,6 +94,13 @@ products:
   is dairy free?: true
   is gluten free?: 
   has no added sugar?: false
+- name: Clif Choc Almond
+  image: "/uploads/Clif%20Bar%20Chocolate%20Almond%20Fudge%2068g.png"
+  is vegan?: true
+  is high in protein?: true
+  is dairy free?: 
+  is gluten free?: 
+  has no added sugar?: 
 has testimonials?: false
 testimonials:
 - name: Placeholder

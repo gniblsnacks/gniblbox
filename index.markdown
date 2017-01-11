@@ -66,6 +66,7 @@ products:
   is dairy free?: true
   is gluten free?: true
   has no added sugar?: 
+  custom feature: 
 - name: Cobs Natural Popcorn
   image: "/uploads/cobs-popcorn.png"
   is vegan?: true
@@ -73,6 +74,7 @@ products:
   is dairy free?: false
   is gluten free?: true
   has no added sugar?: 
+  custom feature: 
 - name: 'Emma & Toms Life Bar: Cacao & Coconut'
   image: "/uploads/cacao-coconut.png"
   is vegan?: true
@@ -80,6 +82,7 @@ products:
   is dairy free?: true
   is gluten free?: false
   has no added sugar?: 
+  custom feature: 
 - name: Crispy Fruits Pure Strawberry
   image: "/uploads/crispyfruits.png"
   is vegan?: 
@@ -87,6 +90,7 @@ products:
   is dairy free?: false
   is gluten free?: false
   has no added sugar?: true
+  custom feature: 
 - name: 'Emma & Toms Life Bar: Chia Bar Cacao'
   image: "/uploads/chia-cacao.png"
   is vegan?: true
@@ -94,6 +98,7 @@ products:
   is dairy free?: true
   is gluten free?: 
   has no added sugar?: false
+  custom feature: 
 - name: Clif Choc Almond
   image: "/uploads/Clif%20Bar%20Chocolate%20Almond%20Fudge%2068g.png"
   is vegan?: true
@@ -101,23 +106,32 @@ products:
   is dairy free?: 
   is gluten free?: 
   has no added sugar?: 
-has testimonials?: false
+  custom feature: 
+has testimonials?: true
 testimonials:
-- name: Placeholder
-  image: "/uploads/placeholder.jpg"
-  review text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-- name: Placeholder
-  image: "/uploads/placeholder.jpg"
-  review text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-- name: Placeholder
-  image: "/uploads/placeholder.jpg"
-  review text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+- name: David
+  position: HR Business Partner
+  company: Peakbound
+  image: "/uploads/peakbound.png"
+  review text: Being based in an office it is easy to snack on bad foods, Gnibl offers
+    a healthy alternative to staff that always tastes great – plus you don’t feel
+    guilty after your 3pm snack!
+- name: Amie
+  position: Concierge
+  company: Work Club Sydney
+  image: "/uploads/workclub.png"
+  review text: Gnibl are wonderful at tailoring our healthy snack boxes. They listen
+    to what we like and what works well for us and keep those items in the box but
+    also make great suggestions for new things to try. We are never disappointed with
+    what we receive.
+- name: Julie
+  position: Facilities Manager
+  company: Employsure
+  image: "/uploads/employsure-logo.png"
+  review text: The Gnibl offering is just what we needed as it is healthy. The staff
+    love the variety and the prices are competitive. We also love that there is a
+    change of items to bring in new ones. Together with fabulous service, Gnibl is
+    a great choice.
 faqs:
 - question: What is Gniblbox?
   answer text: 'A Gniblbox is a one-stop snack drop which includes a collection of

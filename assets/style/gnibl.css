@@ -1,4 +1,5 @@
 /*VARIABLES*/
+/*MIXINS*/
 /*GENERAL*/
 html, body {
   position: relative;
@@ -240,6 +241,10 @@ ul.collapsible {
     position: absolute;
     top: 50%;
     left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     background: #f7f7f9;
     padding: 50px 20px 20px;
@@ -290,6 +295,10 @@ ul.collapsible {
   float: none;
   position: absolute;
   left: 50%;
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   width: default;
   margin: 0 auto;
@@ -443,6 +452,10 @@ ul.collapsible {
       /* IE 9 */
       -webkit-transform: none;
       /* Chrome, Safari, Opera */
+      -moz-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
       transform: translateX(-50%);
       width: 70vw;
       max-width: 360px;
@@ -521,6 +534,10 @@ ul.collapsible {
       font-size: 40px;
       position: absolute;
       top: 50%;
+      -moz-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
       transform: translateY(-50%);
       font-weight: bold; }
     #products-container .slick-arrow:hover {
@@ -572,6 +589,10 @@ ul.collapsible {
   .product .info {
     position: absolute;
     top: 50%;
+    -moz-transform: translateY(-50%) translateY(-10px);
+    -o-transform: translateY(-50%) translateY(-10px);
+    -ms-transform: translateY(-50%) translateY(-10px);
+    -webkit-transform: translateY(-50%) translateY(-10px);
     transform: translateY(-50%) translateY(-10px);
     left: 20px;
     width: calc(50% + 10px); }
@@ -596,6 +617,10 @@ ul.collapsible {
     width: 50%;
     right: -30px;
     top: 50%;
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     position: absolute; }
 
@@ -817,6 +842,10 @@ header {
         height: 80px;
         left: 50%;
         top: 20px;
+        -moz-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
         transform: translateX(-50%); } }
 
 /*FOOTER*/
@@ -1036,6 +1065,10 @@ main.pricing {
     main.pricing .boxes .box-carousel {
       position: relative;
       top: 50%;
+      -moz-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
       transform: translateY(-50%); }
       main.pricing .boxes .box-carousel .slick-list, main.pricing .boxes .box-carousel .slick-track {
         height: 100%; }
@@ -1043,6 +1076,10 @@ main.pricing {
         main.pricing .boxes .box-carousel {
           position: relative;
           top: 0;
+          -moz-transform: translateY(-25%);
+          -o-transform: translateY(-25%);
+          -ms-transform: translateY(-25%);
+          -webkit-transform: translateY(-25%);
           transform: translateY(-25%); } }
     main.pricing .boxes .box-slide {
       position: relative; }
@@ -1065,6 +1102,10 @@ main.pricing {
         @media (min-width: 2000px) {
           main.pricing .boxes .box-slide img {
             left: 25%;
+            -moz-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
             transform: translateX(-50%); } }
 
 .calculator {
@@ -1084,6 +1125,10 @@ main.pricing {
       position: absolute;
       top: 50%;
       right: 20px;
+      -moz-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
       transform: translateY(-50%); } }
   @media (max-width: 991px) {
     .calculator {

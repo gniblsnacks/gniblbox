@@ -23,11 +23,16 @@
           {% if product['has no added sugar?'] %}
           <div class="feature"><img src="/assets/images/sugar.svg"><p>No Added Sugar</p></div>
           {% endif %}
+          {% if product['custom feature'] %}
+          <div class="feature"><img src="/assets/images/tickbox.svg"><p>{{product['custom feature']}}</p></div>
+          {% endif %}
         </div>
         <img class="product-image" src="{{product.image}}" alt="{{product.name}}">
       </div>
     </div>
     {% endfor %}
     </div>
+  </div>
+  <div class="wave dotted-bg" style="position: absolute; top: 100%">
   </div>
 </section>

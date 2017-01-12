@@ -19,6 +19,16 @@
   <!--CUSTOM-->
   <link rel="stylesheet" href="/assets/style/gnibl.css">
   <script src="/assets/script/gnibl.js"></script>
+  <!--GOOGLE ANALYTICS-->
+  <script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+   ga('create', 'UA-90177314-1', 'auto');
+   ga('send', 'pageview');
+  </script>
 </head>
 <body  class="home"  >
   <header>
@@ -26,7 +36,7 @@
     <nav>
       <a href="/pricing">PRICING</a>
       
-      <a class="btn btn-red" href="/trial"><span>Try Gnibl for free</span></a>
+      <a class="btn btn-red header-trial-button" href="/trial"><span>Try Gnibl for free</span></a>
       
     </nav>
     
@@ -35,7 +45,7 @@
         <a href="#about">How it works</a>
         <a href="#promise">Our promise</a>
         <a href="#products">Products</a>
-        
+        <a href="#testimonials">Testimonials</a>
         <a href="#faqs">FAQs</a>
       </div>
     </div>
@@ -43,7 +53,7 @@
   </header>
 
 <main>
-  <section class="home-hero header-bg"> <!--HOME HERO-->
+  <!-- <section class="home-hero header-bg">
   <h1 class="handdrawn main-header">Snack Better, Work Better.
 </h1>
   <div class="container">
@@ -51,11 +61,25 @@
     <p>Join the Gnibl Club for healthy, tasty snacks delivered to your office. Nourish your body and fuel your brain for a full and productive work day.
 </p>
     <form id="landing-form">
-      <input type="email" name="email" placeholder="Your email address" required="" />
+      <input type="email" name="email" placeholder="Your email address" required>
       <a class="btn btn-red" onclick="$('#landing-form').submit()" style="max-width: none !important"><span>Try Gnibl for Free
 </span></a>
-      <input type="submit" style="position: absolute; left: -2000px" />
+      <input type="submit" style="position: absolute; left: -2000px">
       <div class="validation"></div>
+    </form>
+  </div>
+  </div>
+</section> -->
+<section class="home-hero"> <!--HOME HERO-->
+  <div class="container">
+  <div class="col-xs-12 col-sm-5 col-sm-offset-7 hero-content">
+  <h1 class="handdrawn main-header">Snack Better, <span class="green">Work Better.</span></h1>
+    <p>Join the Gnibl Club for healthy, tasty snacks delivered to your office. Nourish your body and fuel your brain for a full and productive work day.</p>
+    <form id="landing-form">
+      <input type="email" name="email" placeholder="Your email address" />
+      <a class="btn btn-red" onclick="$('#landing-form').submit()" style="max-width: none !important"><span>Try Gnibl for Free</span></a>
+        <input type="submit" style="position: absolute; left: -2000px" />
+        <div class="validation"></div>
     </form>
   </div>
   </div>
@@ -88,18 +112,27 @@
       <p class="intro">The only thing sitting between you and snack time are these three simple steps.
 </p>
       
-      <h4>Select Your Team Size
+      <div class="step" style="display: block; clear: both; margin-bottom: 20px; overflow: auto">
+        <img style="width: 60px; float: left;" src="/assets/images/numbers/1.svg" />
+        <h4 style="margin: 10px 0 0 10px; width: calc(100% - 70px); float: left">Select Your Team Size
 </h4>
+      </div>
       <p>We work with businesses big and small, who recognise that great teams deserve great snacks.</p>
 
       
-      <h4>Select Your Subscription
+      <div class="step" style="display: block; clear: both; margin-bottom: 20px; overflow: auto">
+        <img style="width: 60px; float: left;" src="/assets/images/numbers/2.svg" />
+        <h4 style="margin: 10px 0 0 10px; width: calc(100% - 70px); float: left">Select Your Subscription
 </h4>
+      </div>
       <p>We offer flexible delivery options so you can enjoy a nutritious snack drop every week, fortnight or month.</p>
 
       
-      <h4>Delight in Delicious Snacks
+      <div class="step" style="display: block; clear: both; margin-bottom: 20px; overflow: auto">
+        <img style="width: 60px; float: left;" src="/assets/images/numbers/3.svg" />
+        <h4 style="margin: 10px 0 0 10px; width: calc(100% - 70px); float: left">Delight in Delicious Snacks
 </h4>
+      </div>
       <p>Your colleagues will love their healthy, delicious new snack options and they’ll have you to thank. No more trips to the supermarket or fumbling over receipts , just nutritious snacks delivered direct.</p>
 
       
@@ -222,6 +255,7 @@
           <div class="feature"><img src="/assets/images/gluten.svg" /><p>Gluten Free</p></div>
           
           
+          
         </div>
         <img class="product-image" src="/uploads/Raw%20C.png" alt="Raw C Pure Coconut Water &amp; Protein" />
       </div>
@@ -239,6 +273,7 @@
           
           
           <div class="feature"><img src="/assets/images/gluten.svg" /><p>Gluten Free</p></div>
+          
           
           
         </div>
@@ -260,6 +295,7 @@
           
           
           
+          
         </div>
         <img class="product-image" src="/uploads/cacao-coconut.png" alt="Emma &amp; Toms Life Bar: Cacao &amp; Coconut" />
       </div>
@@ -276,6 +312,7 @@
           
           
           <div class="feature"><img src="/assets/images/sugar.svg" /><p>No Added Sugar</p></div>
+          
           
         </div>
         <img class="product-image" src="/uploads/crispyfruits.png" alt="Crispy Fruits Pure Strawberry" />
@@ -294,23 +331,112 @@
           
           
           
+          
         </div>
         <img class="product-image" src="/uploads/chia-cacao.png" alt="Emma &amp; Toms Life Bar: Chia Bar Cacao" />
       </div>
     </div>
     
+    <div class="product-slide">
+      <div class="product">
+        <div class="info">
+          
+          <div class="feature"><img src="/assets/images/vegan.svg" /><p>Vegan</p></div>
+          
+          
+          <div class="feature"><img src="/assets/images/protein.svg" /><p>High Protein</p></div>
+          
+          
+          
+          
+          
+        </div>
+        <img class="product-image" src="/uploads/Clif%20Bar%20Chocolate%20Almond%20Fudge%2068g.png" alt="Clif Choc Almond" />
+      </div>
     </div>
+    
+    </div>
+  </div>
+  <div class="wave dotted-bg" style="position: absolute; top: 100%">
   </div>
 </section>
 
-  <section id="instagram" class="offwhite-bg"> <!--INSTAGRAM FEED-->
-  <div class="wave dotted-bg">
-  </div>
+  <section id="instagram" class="offwhite-bg" style="z-index: 0"> <!--INSTAGRAM FEED-->
   <div class="container">
     <h2 class="alt-header">Gnibl on Instagram</h2>
     <div id="instafeed" style="width: 100%; overflow: auto"></div>
   </div>
 
+  <h2 id="testimonials" class="handdrawn red-header left-header">From Our Customers</h2>
+<!--TESTIMONIALS-->
+  <div class="container test">
+    <div class="row">
+    
+      
+      <div class="testimonial-container">
+      <div class="testimonial col-xs-9 col-sm-4 pull-right">
+        <p>Being based in an office it is easy to snack on bad foods, Gnibl offers a healthy alternative to staff that always tastes great – plus you don’t feel guilty after your 3pm snack!</p>
+
+        <img class="chat-tail hidden-xs" src="assets/images/chat-tail.svg" />
+        <img class="chat-tail visible-xs" src="assets/images/chat-tail-alt.svg" />
+        <div class="testimonial-photo hidden-xs" style="background-image:url(/uploads/peakbound.png)">
+        </div>  
+        <div style="margin-top: 10px;" class="hidden-xs">
+          <span style="display: block; text-align: center">David from Peakbound</span>
+        </div>
+      </div>
+      <div class="col-xs-3 visible-xs photo-container left">
+        <div class="visible-xs">
+          <span style="display: block; text-align: center">David</span>
+        </div>
+        <div class="testimonial-photo" style="margin-top: 10px; background-image:url(/uploads/peakbound.png)"></div>        
+      </div>
+      </div>
+    
+      
+      <div class="testimonial-container">
+      <div class="testimonial col-xs-9 col-sm-4 ">
+        <p>Gnibl are wonderful at tailoring our healthy snack boxes. They listen to what we like and what works well for us and keep those items in the box but also make great suggestions for new things to try. We are never disappointed with what we receive.</p>
+
+        <img class="chat-tail hidden-xs" src="assets/images/chat-tail.svg" />
+        <img class="chat-tail visible-xs" src="assets/images/chat-tail-alt.svg" />
+        <div class="testimonial-photo hidden-xs" style="background-image:url(/uploads/workclub.png)">
+        </div>  
+        <div style="margin-top: 10px;" class="hidden-xs">
+          <span style="display: block; text-align: center">Amie from Work Club Sydney</span>
+        </div>
+      </div>
+      <div class="col-xs-3 visible-xs photo-container ">
+        <div class="visible-xs">
+          <span style="display: block; text-align: center">Amie</span>
+        </div>
+        <div class="testimonial-photo" style="margin-top: 10px; background-image:url(/uploads/workclub.png)"></div>        
+      </div>
+      </div>
+    
+      
+      <div class="testimonial-container">
+      <div class="testimonial col-xs-9 col-sm-4 pull-right">
+        <p>The Gnibl offering is just what we needed as it is healthy. The staff love the variety and the prices are competitive. We also love that there is a change of items to bring in new ones. Together with fabulous service, Gnibl is a great choice.</p>
+
+        <img class="chat-tail hidden-xs" src="assets/images/chat-tail.svg" />
+        <img class="chat-tail visible-xs" src="assets/images/chat-tail-alt.svg" />
+        <div class="testimonial-photo hidden-xs" style="background-image:url(/uploads/employsure-logo.png)">
+        </div>  
+        <div style="margin-top: 10px;" class="hidden-xs">
+          <span style="display: block; text-align: center">Julie from Employsure</span>
+        </div>
+      </div>
+      <div class="col-xs-3 visible-xs photo-container left">
+        <div class="visible-xs">
+          <span style="display: block; text-align: center">Julie</span>
+        </div>
+        <div class="testimonial-photo" style="margin-top: 10px; background-image:url(/uploads/employsure-logo.png)"></div>        
+      </div>
+      </div>
+    
+    </div>
+  </div>
   
 </section>
 
@@ -436,7 +562,7 @@ Note: If your renewal date falls between the 28th-31st, we require notice prior 
       </div>
     </div>
     <div class="row">
-      <div class="accepted-payments col-sm-4">
+      <div class="accepted-payments col-sm-6">
         <h4>Accepted Payments</h4>
         
         <img src="/uploads/Visa.svg" alt="Visa"></a>
@@ -447,8 +573,6 @@ Note: If your renewal date falls between the 28th-31st, we require notice prior 
         
         <img src="/uploads/discover.svg" alt="Discover"></a>
         
-      </div>
-      <div class="col-sm-8 hidden-xs">
       </div>
     </div>
     <div class="row">

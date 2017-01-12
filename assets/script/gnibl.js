@@ -9,10 +9,16 @@ function init() {
   pricingFunctions();
   validationInit();
   modalInit();
+  testimonialInit();
 }
 
 $(document).ready(function() {
   init();
+});
+
+$(window).resize(function() {
+  faqHeightInit();
+  testimonialInit();
 });
 
 function collapsibleInit()  {
@@ -30,6 +36,18 @@ function collapsibleInit()  {
   });
 }
 
+function testimonialInit() {
+  if ($(window).width() >= 768) {
+    var tallestTestimonial = 0;
+    $(".testimonial-container").each(function() {
+      if ($(this).find("p").height() > tallestTestimonial) {
+        tallestTestimonial = $(this).find("p").height();
+      }
+    });
+    $(".testimonial-container").find("p").height(tallestTestimonial);
+  }
+}
+
 function faqHeightInit() {
   if ($(".faqs").length) {
     var container = $(".faqs").find(".container");
@@ -38,26 +56,36 @@ function faqHeightInit() {
 }
 
 function scrollFunctions() {
-  menuDisplay();
-  subNavCheck();
+  if ($(".subnav").length) {
+    subNavCheck();
+  }
+  if ($("main").first().hasClass("fixed-header")) {
+    $("header").addClass("visible");
+    $("nav").css({"display":"flex", "display":"-webkit-flex"});
+  } else {
+    menuFade();
+  }
+  if ($("body").hasClass("home")) {
+    homeMenuFade();
+  }
 }
 
-function menuDisplay() {
-  if (!$('main').first().hasClass('pricing')) {
+function homeMenuFade() {
   if ($(window).scrollTop() > $(window).height() * .7) {
-    $("header").addClass("visible");
-    $("nav").fadeIn(500).css("display", "flex");
     $(".subnav").fadeIn(500);
     $(".fixed-cta").fadeIn(500);
   } else {
-    $("header").removeClass("visible");
-    $("nav").fadeOut(500);
     $(".subnav").fadeOut(500);
     $(".fixed-cta").fadeOut(500);
-  }} else {
-    $("header").addClass("visible");
-    $("nav").fadeIn(500).css("display", "flex");
-      $(".fixed-cta").fadeIn(500);
+  }
+}
+function menuFade() {
+  if ($(window).scrollTop() > $(window).height() * .1) {
+      $("header").addClass("visible");
+      $("nav").fadeIn(500).css("display", "flex");
+  } else {
+    $("header").removeClass("visible");
+    $("nav").fadeOut();
   }
 }
 
@@ -290,7 +318,13 @@ function validationInit() {
       },
       submitHandler: function(form) {
         var data = $(form).serializeArray();
-        window.location.href="/trial?email="+ data[0]['value'];
+        $.ajax({
+          url: "https://hooks.zapier.com/hooks/catch/1745150/hocx2n/",
+          data: $(form).serialize(),
+          complete: function() {
+            window.location.href="/trial?email="+ data[0]['value'];
+          }
+        })
       }
     });
   }
@@ -361,6 +395,7 @@ function validationInit() {
           email: true
         },
         company: "required",
+        employees: "required",
         phone: {
           required: true,
           phone: true
@@ -379,6 +414,9 @@ function validationInit() {
           email: "Invalid"
         },
         company: {
+          required: "Required",
+        },
+        employees: {
           required: "Required",
         },
         phone: {

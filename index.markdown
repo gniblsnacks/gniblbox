@@ -2,7 +2,7 @@
 title: Home
 date: 2016-12-07 14:47:00 +11:00
 landing:
-  headline: Snack Better, Work Better.
+  headline: Snack Better, <span class="green">Work Better.</span>
   sub text: Join the Gnibl Club for healthy, tasty snacks delivered to your office.
     Nourish your body and fuel your brain for a full and productive work day.
   cta: Try Gnibl for Free
@@ -65,48 +65,48 @@ products:
   is high in protein?: true
   is dairy free?: true
   is gluten free?: true
-  has no added sugar?: 
-  custom feature: 
+  has no added sugar?:
+  custom feature:
 - name: Cobs Natural Popcorn
   image: "/uploads/cobs-popcorn.png"
   is vegan?: true
   is high in protein?: true
   is dairy free?: false
   is gluten free?: true
-  has no added sugar?: 
-  custom feature: 
+  has no added sugar?:
+  custom feature:
 - name: 'Emma & Toms Life Bar: Cacao & Coconut'
   image: "/uploads/cacao-coconut.png"
   is vegan?: true
   is high in protein?: true
   is dairy free?: true
   is gluten free?: false
-  has no added sugar?: 
-  custom feature: 
+  has no added sugar?:
+  custom feature:
 - name: Crispy Fruits Pure Strawberry
   image: "/uploads/crispyfruits.png"
-  is vegan?: 
+  is vegan?:
   is high in protein?: true
   is dairy free?: false
   is gluten free?: false
   has no added sugar?: true
-  custom feature: 
+  custom feature:
 - name: 'Emma & Toms Life Bar: Chia Bar Cacao'
   image: "/uploads/chia-cacao.png"
   is vegan?: true
-  is high in protein?: 
+  is high in protein?:
   is dairy free?: true
-  is gluten free?: 
+  is gluten free?:
   has no added sugar?: false
-  custom feature: 
+  custom feature:
 - name: Clif Choc Almond
   image: "/uploads/Clif%20Bar%20Chocolate%20Almond%20Fudge%2068g.png"
   is vegan?: true
   is high in protein?: true
-  is dairy free?: 
-  is gluten free?: 
-  has no added sugar?: 
-  custom feature: 
+  is dairy free?:
+  is gluten free?:
+  has no added sugar?:
+  custom feature:
 has testimonials?: true
 testimonials:
 - name: David

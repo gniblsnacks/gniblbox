@@ -3,12 +3,17 @@
     <div class="modal-close modal-back">< BACK</div>
     <form id="quote-form" style="margin-top: 20px">
     <p style="text-align: center">We just need a bit of information from you to prepare your quote.</p>
+    <div>
     <input class="half" type="text" name="first_name" placeholder="First name" required>
     <input class="half" type="text" name="last_name" placeholder="Last name" required>
+    </div>
     <input type="email" name="email" placeholder="Email" required>
     <input type="text" name="phone" placeholder="Work phone" required>
-    <input type="text" name="company" placeholder="Company" required>
-    <textarea name="description" rows="4" required placeholder="Tell us what you're looking for. How large is your company? How many snacks? How frequent would you like delivery?"></textarea>
+    <div>
+    <input class="half" type="text" name="company" placeholder="Company" required>
+    <input class="half" type="number" name="employees" placeholder="# of employees" required>
+    </div>
+    <textarea name="description" rows="4" required placeholder="Tell us what you're looking for. How many snacks? How frequent delivery?"></textarea>
     <input type="text" class="honeypot" style="position: absolute; left: -2000px" placeholder="Please leave this empty. Thanks!">
     <a class="btn btn-red" style="max-width: none" onclick="$('#quote-form').submit()"><span>Request your quote</span></a>
     <input type="submit" style="position: absolute; left: -2000px">

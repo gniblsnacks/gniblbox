@@ -6,7 +6,10 @@
     <div class="col-xs-12 col-sm-8 col-sm-offset-2 box-bg">
       <p class="intro">{{page.about.intro | markdownify | strip_html}}</p>
       {% for step in page.about.steps %}
-      <h4>{{step.header | markdownify | strip_html}}</h4>
+      <div class="step" style="display: block; clear: both; margin-bottom: 20px; overflow: auto">
+        <img style="width: 60px; float: left;" src="/assets/images/numbers/{{forloop.index}}.svg">
+        <h4 style="margin: 10px 0 0 10px; width: calc(100% - 70px); float: left">{{step.header | markdownify | strip_html}}</h4>
+      </div>
       {{step['sub text'] | markdownify }}
       {% endfor %}
       <a href="/pricing" class="btn btn-green" href="/pricing"><span>{{page.about.cta | markdownify | strip_html}}</span></a>

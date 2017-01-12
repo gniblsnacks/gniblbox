@@ -18,13 +18,11 @@
       </div>
     </div>
     <div class="row">
-      <div class="accepted-payments col-sm-4">
+      <div class="accepted-payments col-sm-6">
         <h4>Accepted Payments</h4>
         {%for payment in site['Accepted Payments']%}
         <img src="{{payment.image}}" alt="{{payment.name}}"></a>
         {%endfor%}
-      </div>
-      <div class="col-sm-8 hidden-xs">
       </div>
     </div>
     <div class="row">

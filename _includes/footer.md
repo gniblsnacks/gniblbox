@@ -13,7 +13,8 @@
           {%for link in site['Footer Menu Links']%}
           <a href="{{link.URL}}">{{link.Title}}</a>
           {%endfor%}
-          <a target="_blank" href="{{site['Terms & Conditions file']}}" class="visible-xs">Terms &amp; Conditions</a>
+          <a target="blank" href="{{site['Terms & Conditions file']}}" class="visible-xs">Terms &amp; Conditions</a>
+          <a class="visible-xs" href="mailto:{{site['Contact email']}}">{{site['Contact email']}}</a>
         </div>
       </div>
     </div>
@@ -28,7 +29,8 @@
     <div class="row">
       <div class="col-sm-12">
         <span style="line-height: 50px">Copyright &copy;<script>document.write(new Date().getFullYear())</script></span>
-        <a target="_blank" href="{{site['Terms & Conditions file']}}" style="margin-left: 20px; line-height: 50px" class="hidden-xs" href="">Terms &amp; Conditions</a>
+        <a target="blank" href="{{site['Terms & Conditions file']}}" style="margin-left: 20px; line-height: 50px" class="hidden-xs" href="">Terms &amp; Conditions</a>
+        <a class="hidden-xs" style="margin-left: 20px" href="mailto:{{site['Contact email']}}">{{site['Contact email']}}</a>
         <div class="social hidden-xs" style="float:right">
           {%for link in site['Footer Social Links']%}
           <a href="{{link.url}}"><img src="{{link.image}}" alt="{{link.website}}"></a>

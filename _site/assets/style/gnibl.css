@@ -43,7 +43,7 @@ nav a, nav a:hover, footer a, footer a:hover {
 /*TYPOGRAPHY*/
 h1 {
   font-family: "HelloLucky";
-  font-size: 36px; }
+  font-size: 50px; }
   h1 span {
     font-family: "HelloLucky"; }
 
@@ -84,6 +84,9 @@ p {
 
 .green {
   color: #56e172; }
+
+.red {
+  color: #e63a3a; }
 
 /*FORMS*/
 input {

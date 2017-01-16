@@ -1,0 +1,45 @@
+---
+layout: textual page
+---
+
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<main class="fixed-header dotted-bg">
+  <section>
+    <h2 class="handdrawn green-header page-header">{{page.header}}</h2>
+    <div class="container">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2 box-bg">
+        {{ content | markdownify}}
+      </div>
+    </div>
+  </section>
+</main>
+{% include footer.md %}
+</body>
+<style>
+  .page-header {
+    margin: 0 auto;
+    left: 0;
+    transform: none;
+    float: none;
+    position: relative;
+    text-align: center;
+  }
+  main {
+    min-height: 90vh;
+    padding-top: 40px;
+    margin-bottom: -40px;
+  }
+  .container {
+    margin-top: -30px;
+  }
+  .box-bg {
+    padding: 30px 60px;
+  }
+  @media (max-width: 480px) {
+    .box-bg {
+      padding: 30px;
+    }
+  }
+</html>

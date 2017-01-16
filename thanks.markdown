@@ -5,4 +5,9 @@ published: false
 layout: default
 ---
 
+<main class="fixed-header>
+<section>
 <h2 class="alt-header">Thank you for your order!</h2>
+</section>
+</main>
+

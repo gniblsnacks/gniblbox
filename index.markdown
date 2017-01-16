@@ -59,7 +59,7 @@ promise:
     sub text: 'We offer a variety of 15 or more full-size snackables in each delivery. '
     image: "/uploads/heart.svg"
 products:
-- name: Raw C Pure Coconut Water & Protein
+- name: Pure Coconut Water & Protein
   image: "/uploads/Raw%20C.png"
   is vegan?: false
   is high in protein?: true
@@ -67,7 +67,7 @@ products:
   is gluten free?: true
   has no added sugar?: 
   custom feature: 
-- name: Cobs Natural Popcorn
+- name: Natural Popcorn with Sea Salt
   image: "/uploads/cobs-popcorn.png"
   is vegan?: true
   is high in protein?: true
@@ -75,7 +75,7 @@ products:
   is gluten free?: true
   has no added sugar?: 
   custom feature: 
-- name: 'Emma & Toms Life Bar: Cacao & Coconut'
+- name: Emma & Tom's Cacao & Coconut Life Bar
   image: "/uploads/cacao-coconut.png"
   is vegan?: true
   is high in protein?: true
@@ -83,7 +83,7 @@ products:
   is gluten free?: false
   has no added sugar?: 
   custom feature: 
-- name: Crispy Fruits Pure Strawberry
+- name: 100% Freeze-dried Strawberries
   image: "/uploads/crispyfruits.png"
   is vegan?: 
   is high in protein?: true
@@ -91,7 +91,7 @@ products:
   is gluten free?: false
   has no added sugar?: true
   custom feature: 
-- name: 'Emma & Toms Life Bar: Chia Bar Cacao'
+- name: Emma & Tom's Cacao & Chia Bar
   image: "/uploads/chia-cacao.png"
   is vegan?: true
   is high in protein?: 
@@ -99,7 +99,7 @@ products:
   is gluten free?: 
   has no added sugar?: false
   custom feature: 
-- name: Clif Choc Almond
+- name: Choc Almond Clif Bar
   image: "/uploads/Clif%20Bar%20Chocolate%20Almond%20Fudge%2068g.png"
   is vegan?: true
   is high in protein?: true
@@ -133,7 +133,7 @@ testimonials:
     change of items to bring in new ones. Together with fabulous service, Gnibl is
     a great choice.
 faqs:
-- question: What is Gniblbox?
+- question: What is Gnibl Box?
   answer text: 'A Gniblbox is a one-stop snack drop which includes a collection of
     nourishing, tasty, dietician-curated snacks delivered directly to your office
     weekly, fortnightly or monthly. A Gniblbox will include a range of different full-sized
@@ -148,25 +148,24 @@ faqs:
     The custom box can be configured to include as many snacks needed to suit your unique needs.
 - question: What About Billing / Shipping & Delivery / Returns ?
   answer text: |-
-    **Billing** - You will be billed on the day that you sign up to Gniblbox. Following this, you will be placed on our advanced billing cycle. If you are on a monthly subscription you will be billed on the 20th of each month, if you are on a 3,6 or 12 month subscription you will be billed every 3, 6 or 12 months on the 20th of the month paying for the month ahead.
+    **Billing** - You will be billed on the day that you sign up to Gnibl Box. Following this, you will be placed on our advanced billing cycle: Weekly plans are billed every 7 days. Fortnightly plans every 14 days. And if you've signed up for a monthly plan, you'll be billed every 30 days.
 
-    **Shipping & Delivery** - We will ship your first box within 2-3 business days of receiving your order. You can choose to receive your boxes weekly, fortnightly or monthly. We deliver Tuesdays and Thursdays *TBC*
+    **Shipping & Delivery** - We will ship your first box within 2-3 business days of receiving your order. Your regular boxes will be delivered according to the schedule you request - weekly, fortnightly or monthly.
 
     We deliver Australia wide for FREE to all major metropolitan centres. If you live outside Sydney, Melbourne, Brisbane, Perth, or Adelaide, please get in touch (include link to Contact page ) and we'll provide a quote for delivery to your area.
 
-    **Returns** - *TBC*
+    **Returns** - : If you are dissatisfied with a product for any reason, we will endeavour never to send you the same product in future deliveries. If a product is unsatisfactory due to a product defect we will replace the defective product and include the replacement in your next delivery. To report defective products you must contact Customer Service in writing via email at info@gnibl.com.au within 5 days of receiving the product.
 - question: " How can I change or cancel my order?"
   answer text: |-
-    You can cancel your recurring deliveries at any time by giving us a call, or sending an email to <info@gnibl.com>. If we have already packed and dispatched your box before we receive your request, that box will be your final charge.
+    You can cancel your recurring deliveries at any time by giving us a call, or sending an email to <info@gnibl.com.au>. If we have already packed and dispatched your box before we receive your request, that box will be your final charge.
 
-    We require two business days’ notice to cancel or make changes to your shipment.
-    Note: If your renewal date falls between the 28th-31st, we require notice prior to the 26th of the month.
+    We require five (5) business days’ notice to cancel or make changes to your shipment.
 - question: " Can I try just one box?"
   answer text: |
-    If you’re interested in trying out the Gniblbox before purchasing your subscription, you can try our Free Trial Box.
+    If you’re interested in trying out the Gnibl Box before purchasing your subscription, you can try our Free Trial Box.
 
 
-    If you have already tried out the free Gniblbox, you can sign up for a subscription which can be cancelled at anytime. Don’t forget, you’ll have to give us two days notice before your subscription renewal to cancel your upcoming order.
+    If you have already tried out the free Gnibl Box, you can sign up for a subscription which can be cancelled at anytime. Don’t forget, you’ll have to give us five days notice before your subscription renewal to cancel your upcoming order.
 - question: What if I don’t like some of the snacks?
   answer text: 'If you ever receive anything you don''t LOVE, let us know and we’ll
     make sure you don’t ever receive that snack again. '

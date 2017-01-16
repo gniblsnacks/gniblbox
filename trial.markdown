@@ -1,7 +1,7 @@
 ---
 title: Trial
 date: 2016-12-14 11:03:00 +11:00
-header: Claim your free Gniblbox
+header: Claim your free Gnibl Box
 steps:
 - Tell us more about yourself. Fill in the form and let’s get your trial under way.
 - A friendly call from the  Gnibl team will confirm your order and give you the chance

@@ -23,16 +23,16 @@ about:
   intro: The only thing standing between you and nutritious nibbles are these three
     simple steps.
   steps:
-  - header: 1. Select Your Team Size
+  - header: Select Your Team Size
     sub text: We work with businesses big and small, who recognise that great teams
       deserve great snacks.
-  - header: '2. Select Your Subscription '
+  - header: 'Select Your Subscription '
     sub text: We offer flexible delivery options so you can enjoy a nutritious snack
       drop every week, fortnight or month.
-  - header: 3. Delight in Delicious Snacks
+  - header: Delight in Delicious Snacks
     sub text: Your colleagues will love their healthy, delicious new snack options
       and they’ll have you to thank. No more trips to the supermarket or fumbling
-      over receipts , just nutritious snacks delivered direct.
+      over receipts, just nutritious snacks delivered direct.
   cta: Join the Gnibl Club
 promise:
   employers:
@@ -52,8 +52,8 @@ promise:
       of snacks brings adventure back to the snack table.
     image: "/uploads/new.svg"
   - header: It’s Healthy!
-    sub text: Trust us to care of your well-being with whilst you take care of your
-      deadlines.
+    sub text: Trust us & our dietitian to care for your well-being whilst you take
+      care of your deadlines.
     image: "/uploads/apple.svg"
   - header: " It’s Full of Goodness"
     sub text: 'We offer a variety of 15 or more full-size snackables in each delivery. '

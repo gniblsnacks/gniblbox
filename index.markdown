@@ -20,16 +20,16 @@ clients:
 - name: Insight Fundraising
   image: "/uploads/ificon.png"
 about:
-  intro: The only thing sitting between you and snack time are these three simple
-    steps.
+  intro: The only thing standing between you and nutritious nibbles are these three
+    simple steps.
   steps:
-  - header: Select Your Team Size
+  - header: 1. Select Your Team Size
     sub text: We work with businesses big and small, who recognise that great teams
       deserve great snacks.
-  - header: 'Select Your Subscription '
+  - header: '2. Select Your Subscription '
     sub text: We offer flexible delivery options so you can enjoy a nutritious snack
       drop every week, fortnight or month.
-  - header: Delight in Delicious Snacks
+  - header: 3. Delight in Delicious Snacks
     sub text: Your colleagues will love their healthy, delicious new snack options
       and they’ll have you to thank. No more trips to the supermarket or fumbling
       over receipts , just nutritious snacks delivered direct.

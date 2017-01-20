@@ -61,27 +61,27 @@ promise:
 products:
 - name: Pure Coconut Water & Protein
   image: "/uploads/Raw%20C.png"
-  is vegan?: false
-  is high in protein?: true
-  is dairy free?: true
-  is gluten free?: true
-  has no added sugar?: 
-  custom feature: 
-- name: Natural Popcorn with Sea Salt
-  image: "/uploads/cobs-popcorn.png"
-  is vegan?: true
-  is high in protein?: true
-  is dairy free?: false
-  is gluten free?: true
-  has no added sugar?: 
-  custom feature: 
-- name: Emma & Tom's Cacao & Coconut Life Bar
-  image: "/uploads/cacao-coconut.png"
   is vegan?: true
   is high in protein?: true
   is dairy free?: true
   is gluten free?: false
   has no added sugar?: 
+  custom feature: 
+- name: Natural Popcorn with Sea Salt
+  image: "/uploads/cobs-popcorn.png"
+  is vegan?: true
+  is high in protein?: false
+  is dairy free?: false
+  is gluten free?: true
+  has no added sugar?: true
+  custom feature: 
+- name: Emma & Tom's Cacao & Coconut Life Bar
+  image: "/uploads/cacao-coconut.png"
+  is vegan?: true
+  is high in protein?: false
+  is dairy free?: true
+  is gluten free?: false
+  has no added sugar?: true
   custom feature: 
 - name: 100% Freeze-dried Strawberries
   image: "/uploads/crispyfruits.png"

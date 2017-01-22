@@ -63,29 +63,61 @@
   <h1 class="handdrawn main-header">Snack Better, <span class="green">Work Better.</span></h1>
     <p>Join the Gnibl Club for healthy, tasty snacks delivered to your office. Nourish your body and fuel your brain for a full and productive work day.</p>
     <form id="landing-form">
-      <input type="email" name="email" placeholder="Your email address" />
+      <input type="email" name="email" placeholder="Your work email" />
       <a class="btn btn-red" onclick="$('#landing-form').submit()" style="max-width: none !important"><span>Try Gnibl for Free</span></a>
         <input type="submit" style="position: absolute; left: -2000px" />
         <div class="validation"></div>
     </form>
+    <div class="visible-xs"><p style="margin-top: 20px; font-style: italic">or <a href="/pricing">see our prices</a></p></div>
   </div>
   </div>
 </section>
 
   <section class="clients" style="text-align: center"> <!--CLIENTS-->
-  <div class="client-icons" style="display: inline">
+  <span class="hidden-xs" style="display: block; color: #cccccc; margin-bottom: 10px">Companies we work with</span>
+  <div class="client-icons" style="display: inline;">
   
+  <div class="client tooltip-container">
     <img src="/uploads/employsure-logo.png" alt="Employsure" />
+    <div style="margin-top: 10px;" class="hidden-xs tooltip">
+      <span style="display: block; text-align: center">Employsure</span>
+    </div>
+  </div>
   
+  <div class="client tooltip-container">
     <img src="/uploads/workclub.png" alt="Work Club Sydney" />
+    <div style="margin-top: 10px;" class="hidden-xs tooltip">
+      <span style="display: block; text-align: center">Work Club Sydney</span>
+    </div>
+  </div>
   
+  <div class="client tooltip-container">
     <img src="/uploads/superconcepts.png" alt="SuperConcepts" />
+    <div style="margin-top: 10px;" class="hidden-xs tooltip">
+      <span style="display: block; text-align: center">SuperConcepts</span>
+    </div>
+  </div>
   
+  <div class="client tooltip-container">
     <img src="/uploads/AMP.png" alt="AMP" />
+    <div style="margin-top: 10px;" class="hidden-xs tooltip">
+      <span style="display: block; text-align: center">AMP</span>
+    </div>
+  </div>
   
+  <div class="client tooltip-container">
     <img src="/uploads/aon.png" alt="AON" />
+    <div style="margin-top: 10px;" class="hidden-xs tooltip">
+      <span style="display: block; text-align: center">AON</span>
+    </div>
+  </div>
   
+  <div class="client tooltip-container">
     <img src="/uploads/ificon.png" alt="Insight Fundraising" />
+    <div style="margin-top: 10px;" class="hidden-xs tooltip">
+      <span style="display: block; text-align: center">Insight Fundraising</span>
+    </div>
+  </div>
   
   </div>
 </section>
@@ -137,7 +169,7 @@
 
   <section id="promise" class="offwhite-bg"> <!--OUR PROMISE-->
   <div class="container">
-    <h2 class="alt-header">Our Promise</h2>
+    <h2 class="alt-header">Our promise</h2>
     <div class="col-sm-6">
       <h3>Employers</h3>
       
@@ -232,14 +264,14 @@
       <div class="product">
         <div class="info">
           
+          <div class="feature"><img src="/assets/images/vegan.svg" /><p>Vegan</p></div>
+          
           
           <div class="feature"><img src="/assets/images/protein.svg" /><p>High Protein</p></div>
           
           
           <div class="feature"><img src="/assets/images/dairy.svg" /><p>Dairy Free</p></div>
           
-          
-          <div class="feature"><img src="/assets/images/gluten.svg" /><p>Gluten Free</p></div>
           
           
           
@@ -255,12 +287,12 @@
           <div class="feature"><img src="/assets/images/vegan.svg" /><p>Vegan</p></div>
           
           
-          <div class="feature"><img src="/assets/images/protein.svg" /><p>High Protein</p></div>
-          
           
           
           <div class="feature"><img src="/assets/images/gluten.svg" /><p>Gluten Free</p></div>
           
+          
+          <div class="feature"><img src="/assets/images/sugar.svg" /><p>No Added Sugar</p></div>
           
           
         </div>
@@ -275,12 +307,12 @@
           <div class="feature"><img src="/assets/images/vegan.svg" /><p>Vegan</p></div>
           
           
-          <div class="feature"><img src="/assets/images/protein.svg" /><p>High Protein</p></div>
-          
           
           <div class="feature"><img src="/assets/images/dairy.svg" /><p>Dairy Free</p></div>
           
           
+          
+          <div class="feature"><img src="/assets/images/sugar.svg" /><p>No Added Sugar</p></div>
           
           
         </div>
@@ -542,6 +574,8 @@ The custom box can be configured to include as many snacks needed to suit your u
           <a href="/#faqs">FAQs</a>
           
           <a href="/pricing">Pricing</a>
+          
+          <a href="gniblbox.com.au/officeworkoutchallenge/">Enter To Win!</a>
           
           <a target="blank" href="/uploads/Gnibl%20Box%20Terms%20and%20Conditions%201.0.pdf" class="visible-xs">Terms &amp; Conditions</a>
           <a class="visible-xs" href="mailto:info@gnibl.com.au">info@gnibl.com.au</a>

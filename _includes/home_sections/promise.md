@@ -1,6 +1,6 @@
 <section id="promise" class="offwhite-bg"> <!--OUR PROMISE-->
   <div class="container">
-    <h2 class="alt-header">Our Promise</h2>
+    <h2 class="alt-header">{{page['promise header']}}</h2>
     <div class="col-sm-6">
       <h3>Employers</h3>
       {% for benefit in page.promise.employers %}

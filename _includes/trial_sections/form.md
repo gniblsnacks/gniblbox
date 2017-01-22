@@ -20,7 +20,7 @@
       <form id="trial-form" style="margin-top: 20px">
       <input class="half" type="text" name="first_name" placeholder="First name" required>
       <input class="half" type="text" name="last_name" placeholder="Last name" required>
-      <input type="email" name="email" placeholder="Email" required>
+      <input type="email" name="email" placeholder="Work email" required>
       <input type="text" name="company" placeholder="Company" required>
       <input type="text" name="job_title" placeholder="Job title" required>
       <input type="text" name="phone" placeholder="Work phone" required>

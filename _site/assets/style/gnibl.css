@@ -217,6 +217,18 @@ ul.collapsible {
     .tabs .btn-tab:hover {
       cursor: pointer; }
 
+.tooltip-container .tooltip {
+  display: none;
+  position: absolute;
+  top: calc(100% + 20px);
+  left: 0;
+  width: 100%;
+  text-align: center; }
+  .tooltip-container .tooltip span {
+    color: #cccccc; }
+.tooltip-container:hover .tooltip {
+  display: block; }
+
 .modal-container {
   display: none;
   position: fixed;
@@ -403,6 +415,10 @@ ul.collapsible {
     /* IE6-9 */ }
 
 /*--CLIENTS*/
+.client {
+  display: inline;
+  position: relative; }
+
 .clients img {
   width: 60px;
   margin: 10px;

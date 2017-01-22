@@ -297,6 +297,25 @@ ul.collapsible {
   }
 }
 
+.tooltip-container {
+	.tooltip {
+		display: none;
+		position: absolute;
+		top: calc(100% + 20px);
+		left: 0;
+		width: 100%;
+		text-align: center;
+		span {	
+			color: $midgrey;
+		}
+	}
+	&:hover {
+		.tooltip {
+			display: block;
+		}
+	}
+}
+
 .modal-container {
   display: none;
   position: fixed;
@@ -531,6 +550,10 @@ ul.collapsible {
     }
 }
 /*--CLIENTS*/
+.client {
+	display: inline;
+	position: relative;
+}
 .clients img {
   width: 60px;
   margin: 10px;

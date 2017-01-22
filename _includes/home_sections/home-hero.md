@@ -4,11 +4,12 @@
   <h1 class="handdrawn main-header">{{page.landing.headline}}</h1>
     <p>{{page.landing["sub text"]}}</p>
     <form id="landing-form">
-      <input type="email" name="email" placeholder="Your email address">
+      <input type="email" name="email" placeholder="Your work email">
       <a class="btn btn-red" onclick="$('#landing-form').submit()" style="max-width: none !important"><span>{{page.landing.cta}}</span></a>
         <input type="submit" style="position: absolute; left: -2000px">
         <div class="validation"></div>
     </form>
+    <div class="visible-xs"><p style="margin-top: 20px; font-style: italic">or <a href="/pricing">{{page.landing['mobile pricing link']}}</a></p></div>
   </div>
   </div>
 </section>

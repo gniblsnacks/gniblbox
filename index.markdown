@@ -34,6 +34,7 @@ about:
       and they’ll have you to thank. No more trips to the supermarket or fumbling
       over receipts, just nutritious snacks delivered direct.
   cta: Join the Gnibl Club
+promise header: Our promise
 promise:
   employers:
   - header: Boost Office-Wide Productivity

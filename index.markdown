@@ -5,8 +5,8 @@ landing:
   headline: Snack Better, <span class="green">Work Better.</span>
   sub text: Join the Gnibl Club for healthy, tasty snacks delivered to your office.
     Nourish your body and fuel your brain for a full and productive work day.
-  cta: Try Gnibl for Free  
-  mobile pricing link: 'see our prices'
+  cta: Try Gnibl for Free
+  mobile pricing link: see our prices
 clients:
 - name: Employsure
   image: "/uploads/employsure-logo.png"
@@ -67,8 +67,8 @@ products:
   is high in protein?: true
   is dairy free?: true
   is gluten free?: false
-  has no added sugar?:
-  custom feature:
+  has no added sugar?: 
+  custom feature: 
 - name: Natural Popcorn with Sea Salt
   image: "/uploads/cobs-popcorn.png"
   is vegan?: true
@@ -76,7 +76,7 @@ products:
   is dairy free?: false
   is gluten free?: true
   has no added sugar?: true
-  custom feature:
+  custom feature: 
 - name: Emma & Tom's Cacao & Coconut Life Bar
   image: "/uploads/cacao-coconut.png"
   is vegan?: true
@@ -84,31 +84,31 @@ products:
   is dairy free?: true
   is gluten free?: false
   has no added sugar?: true
-  custom feature:
+  custom feature: 
 - name: 100% Freeze-dried Strawberries
   image: "/uploads/crispyfruits.png"
-  is vegan?:
+  is vegan?: 
   is high in protein?: true
   is dairy free?: false
   is gluten free?: false
   has no added sugar?: true
-  custom feature:
+  custom feature: 
 - name: Emma & Tom's Cacao & Chia Bar
   image: "/uploads/chia-cacao.png"
   is vegan?: true
-  is high in protein?:
+  is high in protein?: 
   is dairy free?: true
-  is gluten free?:
+  is gluten free?: 
   has no added sugar?: false
-  custom feature:
+  custom feature: 
 - name: Choc Almond Clif Bar
   image: "/uploads/Clif%20Bar%20Chocolate%20Almond%20Fudge%2068g.png"
   is vegan?: true
   is high in protein?: true
-  is dairy free?:
-  is gluten free?:
-  has no added sugar?:
-  custom feature:
+  is dairy free?: 
+  is gluten free?: 
+  has no added sugar?: 
+  custom feature: 
 has testimonials?: true
 testimonials:
 - name: David

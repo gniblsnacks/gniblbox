@@ -101,13 +101,29 @@ products:
   is gluten free?: 
   has no added sugar?: false
   custom feature: 
-- name: Choc Almond Clif Bar
-  image: "/uploads/Clif%20Bar%20Chocolate%20Almond%20Fudge%2068g.png"
+- name: Spicy Roast Green Peas
+  image: "/uploads/DJA%20Green%20Pea%20Protein.png"
   is vegan?: true
-  is high in protein?: true
-  is dairy free?: 
+  is high in protein?: false
+  is dairy free?: true
   is gluten free?: 
   has no added sugar?: 
+  custom feature: Source of Protein
+- name: Beef Biltong
+  image: "/uploads/9421019339317.png"
+  is vegan?: 
+  is high in protein?: true
+  is dairy free?: true
+  is gluten free?: 
+  has no added sugar?: 
+  custom feature: 96% Fat Free New Zealand Beef
+- name: Blue Dinosaur Mac Lemon Paleo Bars
+  image: "/uploads/9349125000047.png"
+  is vegan?: true
+  is high in protein?: 
+  is dairy free?: true
+  is gluten free?: true
+  has no added sugar?: true
   custom feature: 
 has testimonials?: true
 testimonials:

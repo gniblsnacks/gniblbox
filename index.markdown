@@ -61,14 +61,14 @@ promise:
     sub text: 'We offer a variety of 15 or more full-size snackables in each delivery. '
     image: "/uploads/heart.svg"
 products:
-- name: Pure Coconut Water & Protein
-  image: "/uploads/Raw%20C.png"
+- name: Loving Earth Dark Chocolate
+  image: "/uploads/Loving%20Earth%20Dark%20Chocolate%2072%25%2030g.png"
   is vegan?: true
-  is high in protein?: true
+  is high in protein?: 
   is dairy free?: true
-  is gluten free?: false
+  is gluten free?: true
   has no added sugar?: 
-  custom feature: 
+  custom feature: Raw & Organic
 - name: Natural Popcorn with Sea Salt
   image: "/uploads/cobs-popcorn.png"
   is vegan?: true
@@ -84,6 +84,14 @@ products:
   is dairy free?: true
   is gluten free?: false
   has no added sugar?: true
+  custom feature: 
+- name: Pure Coconut Water & Protein
+  image: "/uploads/Raw%20C.png"
+  is vegan?: true
+  is high in protein?: true
+  is dairy free?: true
+  is gluten free?: false
+  has no added sugar?: 
   custom feature: 
 - name: 100% Freeze-dried Strawberries
   image: "/uploads/crispyfruits.png"

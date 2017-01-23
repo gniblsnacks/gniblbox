@@ -99,10 +99,10 @@ products:
   is high in protein?: 
   is dairy free?: true
   is gluten free?: 
-  has no added sugar?: false
+  has no added sugar?: true
   custom feature: 
 - name: Spicy Roast Green Peas
-  image: "/uploads/DJA%20Green%20Pea%20Protein.png"
+  image: "/uploads/DJ&A%20Green%20Pea%20Protein%20Snack%2045g.png"
   is vegan?: true
   is high in protein?: false
   is dairy free?: true
@@ -118,7 +118,7 @@ products:
   has no added sugar?: 
   custom feature: 96% Fat Free New Zealand Beef
 - name: Blue Dinosaur Mac Lemon Paleo Bars
-  image: "/uploads/9349125000047.png"
+  image: "/uploads/Blue%20Dinosaur%20Paleo%20bar%20Mac'%20Lemon.png"
   is vegan?: true
   is high in protein?: 
   is dairy free?: true

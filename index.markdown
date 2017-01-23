@@ -118,7 +118,7 @@ products:
   has no added sugar?: 
   custom feature: 96% Fat Free New Zealand Beef
 - name: Blue Dinosaur Mac Lemon Paleo Bars
-  image: "/uploads/Blue%20Dinosaur%20Paleo%20bar%20Mac'%20Lemon.png"
+  image: "/uploads/Blue%20Dinosaur%20Paleo%20bar%20Mac'%20Lemon-d6cef6.png"
   is vegan?: true
   is high in protein?: 
   is dairy free?: true

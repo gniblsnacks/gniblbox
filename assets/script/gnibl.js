@@ -322,7 +322,7 @@ function validationInit() {
           url: "https://hooks.zapier.com/hooks/catch/1745150/hocx2n/",
           data: $(form).serialize(),
           complete: function() {
-            window.location.href="/trial?email="+ data[0]['value'];
+            window.location.href="/trial/?email="+ data[0]['value'];
           }
         })
       }

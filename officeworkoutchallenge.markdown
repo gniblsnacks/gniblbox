@@ -4,8 +4,8 @@ date: 2017-01-05 11:24:00 +11:00
 Header: Office <span class="green">Workout Challenge</span>
 Promotion Description: Gnibl proudly supports healthy and fun workspaces – so shed
   those silly season kilos the silly way with our Office Workout Challenge. Bring
-  exercise into your office for the chance to win a one year subscription to Gnibl
-  Box!
+  exercise into your office for the chance to** win a one year subscription to Gnibl
+  Box!**
 Has Instagram Posts?: false
 Steps:
 - Bring exercise into your office – the wackier, the better.

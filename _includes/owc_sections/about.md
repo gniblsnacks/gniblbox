@@ -2,7 +2,7 @@
   <div class="container divers">
     <div class="col-xs-12 col-md-5 hero-content">
       <h1 class="handdrawn main-header">{{page.Header}}</h1>
-      <p>{{page['Promotion Description']}}</p>
+      {{page['Promotion Description'] | markdownify}}
     </div>
     <div class="visible-sm visible-xs col-xs-12">
       <img src="/assets/images/office-divers.png" style='width: 100%; max-width: 540px;'>

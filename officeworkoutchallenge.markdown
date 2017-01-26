@@ -13,8 +13,8 @@ Steps:
 - Share it on Instagram with the following hashtag for your chance to win.
 Legal Description: Winner will be selected and notified on 14 March, 2017. The winning
   workspace will receive a Small Gnibl Box Monthly Subscription – approximately 50
-  snacks delivered monthly – for 12 months (ARV $1668). View the full terms and conditions
-  here.
+  snacks delivered monthly – for 12 months (ARV $1668). [View the full terms and conditions
+  here](/uploads/Gnibl%20Office%20Workout%20Challenge%20Terms%20and%20Conditions.pdf).
 layout: default
 ---
 

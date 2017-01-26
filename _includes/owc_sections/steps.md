@@ -16,7 +16,7 @@
       <img src="/assets/images/gnibl-prize.png" style="width: 100%; max-width: 540px;">
     </div>
     <div class="col-xs-12" style="clear:both; margin-top: 40px">
-      <div style="color: white !important">{{page['Legal Description'] | markdownify | strip_html}}</div>
+      <div class="legal">{{page['Legal Description'] | markdownify}}</div>
     </div>
   </div>
 </section>
@@ -25,5 +25,17 @@
 .box-bg {
   padding: 10px 25px 10px 0;
   background-position: center right;
+}
+.legal p {
+  color: white;
+  font-size: 14px;
+}
+.legal a {
+  color: white;
+}
+.legal a:hover {
+  color: white;
+  text-decoration: underline;
+  opacity: .8;
 }
 </style>

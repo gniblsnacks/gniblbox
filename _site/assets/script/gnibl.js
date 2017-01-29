@@ -173,7 +173,7 @@ function instafeedInit() {
     var feed = new Instafeed({
           get: 'user',
           userId: '3615844428',
-          accessToken: '3615844428.1677ed0.b7c62a8f299c43c183314869687e56e8',
+          accessToken: '3615844428.1677ed0.54772e4a76544063baff670523ca2a4e',
           resolution: 'low_resolution',
           template: '<div class="instafeed-image"><a href="{{link}}"><img src="{{image}}" /></a></div>',
           limit: 4

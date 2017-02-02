@@ -26,11 +26,11 @@ custom box:
 size selection:
   lead: What size is your company?
   breakpoints:
-  - company size: "<25"
+  - company size: "<25 staff"
     box: small box
-  - company size: 25 – 50
+  - company size: 25 – 50 staff
     box: medium box
-  - company size: ">50"
+  - company size: ">50 staff"
     box: custom box
 frequency selection:
   lead: 'Select your delivery frequency:'

@@ -2,7 +2,9 @@
 title: Thank You!
 date: 2017-01-17 09:37:00 +11:00
 header: Thank you for your order!
-script text: fbq('track', 'Lead');
+script text: 'fbq(''track'', ''Purchase'');
+
+'
 layout: textual-page
 ---
 

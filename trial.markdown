@@ -6,7 +6,7 @@ steps:
 - Tell us more about yourself. Fill in the form and let’s get your trial under way.
 - A friendly call from the  Gnibl team will confirm your order and give you the chance
   to ask any questions about the service.
-- 'We’ll send you 25 delicious snacks! '
+- 'We’ll send you 15+ delicious snacks! '
 subscribe now offer: 50% off your first order
 form lead: You're just a few clicks away from nourishing, tasty snacks.
 subsection:

@@ -374,6 +374,9 @@ function validationInit() {
           $.post("https://hooks.zapier.com/hooks/catch/1745150/te6aiw/", json, function() {
             $("#trial-form").fadeOut(200, function() {
               $(".trial-success").fadeIn();
+              fbq('track', 'Lead', {
+                 content_name: 'form sent',
+              });
             });
           }).fail(function() {
             $("#trial-form").fadeOut(200, function() {

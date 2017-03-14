@@ -41,8 +41,6 @@ frequency selection:
 value props:
 - value: Free shipping to metro areas
   image: "/uploads/truck.svg"
-- value: 50% off your first order
-  image: "/uploads/sale.svg"
 cta: Sign up now
 cta custom box: Request a quote
 layout: default

@@ -47,7 +47,7 @@
 var snack_num = {{page['small box']['number of snacks']}};
 
 // set cost to default
-var cost = {{page['small box'].cost['per week']}};
+var cost = {{page['small box'].cost['per month']}};
 
 // set CTAs for reference in JS
 var cta = "{{page.cta}}";

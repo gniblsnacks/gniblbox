@@ -1,5 +1,5 @@
 ---
-title: Pricing
+title: Sign Up
 date: 2016-12-14 11:16:00 +11:00
 header: Join the Gnibl club
 subheader: Select your preferences and find the Gnibl membership most suited to your

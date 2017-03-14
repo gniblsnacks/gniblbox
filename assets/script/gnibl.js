@@ -182,7 +182,7 @@ function instafeedInit() {
   }
 }
 
-var box_size = "small box", delivery_frequency = "week", custom_box = false;
+var box_size = "small box", delivery_frequency = "month", custom_box = false;
 function pricingFunctions() {
   if ($('main').first().hasClass('pricing')) {
     updatePricingHTML();

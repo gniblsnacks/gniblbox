@@ -15,7 +15,7 @@
     <h4>{{page['frequency selection'].lead | markdownify | strip_html}}</h4>
     <div class="tabs frequency-selection">
       {% for option in page['frequency selection'].options %}
-      <div class="btn-tab {% if forloop.first %} selected-tab {% endif %}">
+      <div class="btn-tab {% if forloop.last %} selected-tab {% endif %}">
         {{option}}
       </div>
       {%endfor%}
@@ -28,7 +28,7 @@
   </h2>
   <div class="row">
   {% for prop in page['value props'] %}
-  <div class="col-xs-12 col-sm-6"  style="margin-bottom: 20px">
+  <div class="col-xs-12 {% if forloop.length > 1 %}col-sm-6 {%endif%}"  style="margin-bottom: 20px">
     <img src="{{prop.image}}" style="width: 60px; float: left;">
     <p style="font-size: 14px;font-weight: bold; width: calc(100% - 70px); margin-left: 10px; float: left">{{prop.value | markdownify | strip_html}}</p>
   </div>

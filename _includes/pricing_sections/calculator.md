@@ -23,16 +23,18 @@
   </div>
   <div class="hidden-sm hidden-xs">
   <hr>
-  <h2 class="price" style="text-transform: none; text-align: center;">
-    <span class="cost"></span> / <span class="frequency"></span>
-  </h2>
   <div class="row">
-  {% for prop in page['value props'] %}
-  <div class="col-xs-12 {% if forloop.length > 1 %}col-sm-6 {%endif%}"  style="margin-bottom: 20px">
-    <img src="{{prop.image}}" style="width: 60px; float: left;">
-    <p style="font-size: 14px;font-weight: bold; width: calc(100% - 70px); margin-left: 10px; float: left">{{prop.value | markdownify | strip_html}}</p>
-  </div>
-  {% endfor %}
+    <div class="col-xs-12 col-sm-6">
+      <h2 class="price" style="text-transform: none; text-align: center;">
+        <span class="cost"></span> / <span class="frequency"></span>
+      </h2>
+    </div>
+    {% for prop in page['value props'] %}
+    <div class="col-xs-12 col-sm-6"  style="margin-bottom: 20px">
+      <img src="{{prop.image}}" style="width: 60px; float: left;">
+      <p style="font-size: 14px;font-weight: bold; width: calc(100% - 70px); margin-left: 10px; float: left">{{prop.value | markdownify | strip_html}}</p>
+    </div>
+    {% endfor %}
   </div>
   <a class="product-link btn btn-red" style="max-width: none"><span class="pricing-cta">{{page.cta | markdownify | strip_html}}</span></a>
   <p class="additional-info" style="font-size: 14px; font-weight: bold; text-align: center">
@@ -41,6 +43,13 @@
     delivered <span class="frequency-ly"></span></p>
   </div>
 </div>
+<style>
+@media (min-width: 992px) {
+  .price {
+    margin-top: 5px;
+  }
+}
+</style>
 
 <script>
 // set number of snacks to default

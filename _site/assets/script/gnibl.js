@@ -54,29 +54,36 @@ function faqHeightInit() {
     container.css("height", container[0].clientHeight);
   }
 }
-
+var fading = false;
 function scrollFunctions() {
   if ($(".subnav").length) {
     subNavCheck();
   }
-  if ($("main").first().hasClass("fixed-header")) {
-    $("header").addClass("visible");
-    $("nav").css({"display":"flex", "display":"-webkit-flex"});
-  } else {
-    menuFade();
-  }
+  // if ($("main").first().hasClass("fixed-header")) {
+  //   $("header").addClass("visible");
+  //   $("nav").css({"display":"flex", "display":"-webkit-flex"});
+  // } else {
+  //   menuFade();
+  // }
   if ($("body").hasClass("home")) {
-    homeMenuFade();
+    if (!fading) {
+      homeMenuFade();
+    }
   }
 }
 
 function homeMenuFade() {
   if ($(window).scrollTop() > $(window).height() * .7) {
-    $(".subnav").fadeIn(500);
+    fading = true;
+    $(".subnav").fadeIn(500, function() {
+      fading = false;
+    });
+    $(".header-trial-button").show();
     $(".fixed-cta").fadeIn(500);
   } else {
     $(".subnav").fadeOut(500);
     $(".fixed-cta").fadeOut(500);
+    $(".header-trial-button").hide();
   }
 }
 function menuFade() {
@@ -173,7 +180,7 @@ function instafeedInit() {
     var feed = new Instafeed({
           get: 'user',
           userId: '3615844428',
-          accessToken: '3615844428.1677ed0.54772e4a76544063baff670523ca2a4e',
+          accessToken: '3615844428.1677ed0.13409801673b4b8685ad556e3cfd6c40',
           resolution: 'low_resolution',
           template: '<div class="instafeed-image"><a href="{{link}}"><img src="{{image}}" /></a></div>',
           limit: 4
@@ -182,7 +189,7 @@ function instafeedInit() {
   }
 }
 
-var box_size = "small box", delivery_frequency = "week", custom_box = false;
+var box_size = "small box", delivery_frequency = "month", custom_box = false;
 function pricingFunctions() {
   if ($('main').first().hasClass('pricing')) {
     updatePricingHTML();
@@ -374,6 +381,9 @@ function validationInit() {
           $.post("https://hooks.zapier.com/hooks/catch/1745150/te6aiw/", json, function() {
             $("#trial-form").fadeOut(200, function() {
               $(".trial-success").fadeIn();
+              fbq('track', 'Lead', {
+                 content_name: 'form sent',
+              });
             });
           }).fail(function() {
             $("#trial-form").fadeOut(200, function() {

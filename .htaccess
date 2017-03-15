@@ -1,0 +1,2 @@
+RewriteCond %{REQUEST_URI} ^/index.htm$     # If REQUEST_URI == "/index.htm"
+RewriteRule (.*) / [R=301,L]                # Then 301 redirect to "/"

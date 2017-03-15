@@ -40,6 +40,9 @@ body.home {
   @media (max-width: 767px) {
     padding-bottom: 80px;
   }
+	.header-trial-button {
+		display: none;
+	}
 }
 @font-face {
     font-family: "HelloLucky";
@@ -305,7 +308,7 @@ ul.collapsible {
 		left: 0;
 		width: 100%;
 		text-align: center;
-		span {	
+		span {
 			color: $midgrey;
 		}
 	}
@@ -928,6 +931,11 @@ ul.collapsible {
     height: 50px;
   }
 }
+@media (min-width: 768px) {
+	body {
+		padding-top: 60px;
+	}
+}
 
 /*HEADER*/
 header {
@@ -938,7 +946,6 @@ header {
   height: 60px;
   z-index: 10000;
   transition: .5s;
-  background: none;
   a {
     padding: 0 10px;
   }
@@ -949,9 +956,12 @@ header {
   nav {
     float: right;
     margin: 10px 20px;
-     @media (min-width: 768px) {
-      display: none;
-     }
+
+		display: -webkit-flex;
+		display: flex;
+    //  @media (min-width: 768px) {
+    //   display: none;
+    //  }
     @media (max-width: 767px) {
       display: none !important;
     }
@@ -1018,17 +1028,17 @@ header {
     }
   }
 
-  &.visible {
+  // &.visible {
     background: white;
     box-shadow: 0 2px 5px rgba(0,0,0,.2);
-  }
+  // }
 
   @media(max-width: 767px) {
     position: absolute;
-    &.visible {
+    // &.visible {
       background: none;
       box-shadow: none;
-    }
+    // }
   }
 
   .logo {

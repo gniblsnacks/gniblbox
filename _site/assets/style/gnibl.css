@@ -9,6 +9,8 @@ html, body {
 @media (max-width: 767px) {
   body.home {
     padding-bottom: 80px; } }
+body.home .header-trial-button {
+  display: none; }
 
 @font-face {
   font-family: "HelloLucky";
@@ -767,6 +769,9 @@ ul.collapsible {
       width: 50px;
       height: 50px; } }
 
+@media (min-width: 768px) {
+  body {
+    padding-top: 60px; } }
 /*HEADER*/
 header {
   position: fixed;
@@ -776,17 +781,17 @@ header {
   height: 60px;
   z-index: 10000;
   transition: .5s;
-  background: none; }
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); }
   header a {
     padding: 0 10px; }
   header a.selected {
     background: rgba(0, 0, 0, 0.05); }
   header nav {
     float: right;
-    margin: 10px 20px; }
-    @media (min-width: 768px) {
-      header nav {
-        display: none; } }
+    margin: 10px 20px;
+    display: -webkit-flex;
+    display: flex; }
     @media (max-width: 767px) {
       header nav {
         display: none !important; } }
@@ -837,15 +842,11 @@ header {
     @media (max-width: 767px) {
       header .subnav {
         display: none !important; } }
-  header.visible {
-    background: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); }
   @media (max-width: 767px) {
     header {
-      position: absolute; }
-      header.visible {
-        background: none;
-        box-shadow: none; } }
+      position: absolute;
+      background: none;
+      box-shadow: none; } }
   header .logo {
     width: 100px;
     height: 100px;

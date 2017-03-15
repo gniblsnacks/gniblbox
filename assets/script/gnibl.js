@@ -54,29 +54,36 @@ function faqHeightInit() {
     container.css("height", container[0].clientHeight);
   }
 }
-
+var fading = false;
 function scrollFunctions() {
   if ($(".subnav").length) {
     subNavCheck();
   }
-  if ($("main").first().hasClass("fixed-header")) {
-    $("header").addClass("visible");
-    $("nav").css({"display":"flex", "display":"-webkit-flex"});
-  } else {
-    menuFade();
-  }
+  // if ($("main").first().hasClass("fixed-header")) {
+  //   $("header").addClass("visible");
+  //   $("nav").css({"display":"flex", "display":"-webkit-flex"});
+  // } else {
+  //   menuFade();
+  // }
   if ($("body").hasClass("home")) {
-    homeMenuFade();
+    if (!fading) {
+      homeMenuFade();
+    }
   }
 }
 
 function homeMenuFade() {
   if ($(window).scrollTop() > $(window).height() * .7) {
-    $(".subnav").fadeIn(500);
+    fading = true;
+    $(".subnav").fadeIn(500, function() {
+      fading = false;
+    });
+    $(".header-trial-button").show();
     $(".fixed-cta").fadeIn(500);
   } else {
     $(".subnav").fadeOut(500);
     $(".fixed-cta").fadeOut(500);
+    $(".header-trial-button").hide();
   }
 }
 function menuFade() {

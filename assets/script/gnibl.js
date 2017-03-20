@@ -248,7 +248,7 @@ function updateProductLink() {
     } else if (delivery_frequency == "fortnight") {
       link.attr("href", "https://gnibl.samcart.com/products/small-box-fortnightly/");
     } else {
-      link.attr("href", "https://gnibl.samcart.com/products/small-box-monthly/");
+      link.attr("href", "https://gnibl.samcart.com/products/small-monthly-box/");
     }
   } else if (box_size == "medium box") {
     link.removeAttr("onclick");

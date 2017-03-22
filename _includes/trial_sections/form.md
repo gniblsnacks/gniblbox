@@ -13,7 +13,7 @@
         </div>
         {% endfor %}
         <div class="offer">
-        <p style="font-style: italic; font-size: 14px">Already decided? <a href="/pricing">Subscribe now</a>{% if page['subscribe now offer'] %} and receive {{page['subscribe now offer'] | markdownify | strip_html}}{%endif%}.</p>
+        <p style="font-style: italic; font-size: 14px">Already decided? <a href="/signup/">Subscribe now</a>{% if page['subscribe now offer'] %} and receive {{page['subscribe now offer'] | markdownify | strip_html}}{%endif%}.</p>
         </div>
       </div>
       <div class="col-xs-12 col-md-6">

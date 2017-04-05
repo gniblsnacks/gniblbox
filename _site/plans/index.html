@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Gnibl Box - Healthy Snack Boxes Delivered – Thank You!</title>
+  <title>Gnibl Box - Healthy Snack Boxes Delivered – Plans</title>
   <meta name="description" content="Snack Better, Work Better. Gnibl Box is the new snack subscription service delivering healthy, delicious snacks to your office. Try it for free.">
   <meta property="og:title" content="Gnibl Box - Healthy Snack Boxes Delivered" />
   <meta property="og:url" content="http://gniblbox.com.au" />
@@ -95,17 +95,205 @@ drift.load('v5d3tfy9ms3a');
     
   </header>
 
-<main class="fixed-header dotted-bg">
-  <section>
-    <h2 class="handdrawn green-header page-header">Thank you for your order!</h2>
-    <div class="container">
-      <div class="col-xs-12 col-sm-8 col-sm-offset-2 box-bg">
-        <p>We’ve successfully processed your order. Your email confirmation should come through shortly. Thanks again for choosing Gnibl Box!</p>
-
+<main class="pricing fixed-header dotted-bg">
+<div class="desktop">
+<div class="table"></div>
+<div class="col-xs-12 col-md-5 calculator">
+  <!--SIZE SELECTION-->
+  <div class="col-xs-12 col-sm-6 col-md-12">
+    <h4>How many snacks?
+</h4>
+    <div class="tabs size-selection">
+      
+      <div class="btn-tab  selected-tab " data-box-size="small box">
+        24
       </div>
+      
+      <div class="btn-tab " data-box-size="medium box">
+        50
+      </div>
+      
+      <div class="btn-tab " data-box-size="custom box">
+        50+
+      </div>
+      
     </div>
-  </section>
+  </div>
+  <!--FREQUENCY SELECTION-->
+  <div class="col-xs-12 col-sm-6 col-md-12">
+    <h4>Select your delivery frequency:
+</h4>
+    <div class="tabs frequency-selection">
+      
+      <div class="btn-tab ">
+        weekly
+      </div>
+      
+      <div class="btn-tab ">
+        fortnightly
+      </div>
+      
+      <div class="btn-tab  selected-tab ">
+        monthly
+      </div>
+      
+    </div>
+  </div>
+  <div class="hidden-sm hidden-xs">
+  <hr />
+  <div class="row">
+    <div class="col-xs-12">
+      <h2 class="price" style="text-transform: none; text-align: center;">
+        <span class="cost"></span> / <span class="frequency"></span>
+      </h2>
+    </div>
+    
+    <div class="col-xs-12 col-sm-6" style="margin-bottom: 20px">
+      <img src="/uploads/truck.svg" style="width: 60px; float: left;" />
+      <p style="font-size: 14px;font-weight: bold; width: calc(100% - 70px); margin-left: 10px; float: left">Free shipping to metro areas
+</p>
+    </div>
+    
+    <div class="col-xs-12 col-sm-6" style="margin-bottom: 20px">
+      <img src="/uploads/collection.svg" style="width: 60px; float: left;" />
+      <p style="font-size: 14px;font-weight: bold; width: calc(100% - 70px); margin-left: 10px; float: left">Optional contribution box
+</p>
+    </div>
+    
+  </div>
+  <a class="product-link btn btn-red" style="max-width: none"><span class="pricing-cta">Sign up now
+</span></a>
+  <p class="additional-info" style="font-size: 14px; font-weight: bold; text-align: center">
+    <span class="snack-num"></span> snacks
+    (<span class="per-snack"></span> each)
+    delivered <span class="frequency-ly"></span></p>
+  </div>
+</div>
+<style>
+@media (min-width: 992px) {
+  .price {
+    margin-top: 5px;
+  }
+}
+</style>
+
+<script>
+// set number of snacks to default
+var snack_num = 24;
+
+// set cost to default
+var cost = 69;
+
+// set CTAs for reference in JS
+var cta = "Sign up now";
+var custom_cta = "Request a quote";
+
+var smallboxname = "Starter";
+var mediumboxname = "Classic";
+var customboxname = "Custom";
+
+
+function calculatePrice() {
+  if (box_size == "small box") {
+    snack_num = 24;
+    if (delivery_frequency == "week") {
+      cost = 66;
+    } else if (delivery_frequency == "month") {
+      cost = 69;
+    } else {
+      cost = 67;
+    }
+    custom_box = false;
+  } else if (box_size == "medium box") {
+    snack_num = 50;
+    if (delivery_frequency == "week") {
+      cost = 132;
+    } else if (delivery_frequency == "month") {
+      cost = 139;
+    } else {
+      cost = 134;
+    }
+    custom_box = false;
+  } else if (box_size == "custom box") {
+    cost = 400;
+    custom_box = true;
+  }
+}
+</script>
+
+<section class="boxes">
+  <h2 id="box-label" class="handdrawn green-header left-header">Starter</h2>
+  <div class="box-carousel">
+    <div class="box-slide">
+      <div style="width: 100vw"><img src="/uploads/starter-box.png" alt="Starter" /></div>
+    </div>
+    <div class="box-slide">
+      <div style="width: 100vw"><img src="/uploads/small-box.png" alt="Classic" /></div>
+    </div>
+    <div class="box-slide">
+      <div style="width: 100vw"><img src="/uploads/medium-box.png" alt="Custom" /></div>
+    </div>
+  </div>
+</section>
+
+</div>
+<div class="table-bg mobile-container">
+<div class="visible-sm visible-xs container box-bg mobile-pricing">
+<h2 class="price" style="text-transform: none; text-align: center;">
+  <span class="cost"></span> / <span class="frequency"></span>
+</h2>
+<div class="row">
+
+<div class="col-xs-12 col-sm-6" style="margin-bottom: 20px">
+  <img src="/uploads/truck.svg" style="width: 60px; float: left;" />
+  <p style="font-size: 14px;font-weight: bold; width: calc(100% - 70px); margin-left: 10px; float: left">Free shipping to metro areas
+</p>
+</div>
+
+<div class="col-xs-12 col-sm-6" style="margin-bottom: 20px">
+  <img src="/uploads/collection.svg" style="width: 60px; float: left;" />
+  <p style="font-size: 14px;font-weight: bold; width: calc(100% - 70px); margin-left: 10px; float: left">Optional contribution box
+</p>
+</div>
+
+</div>
+<a class="btn btn-red product-link" style="max-width: none"><span class="pricing-cta">Sign up now
+</span></a>
+<p class="additional-info" style="font-size: 14px; font-weight: bold; text-align: center">
+  <span class="snack-num"></span> snacks
+  (<span class="per-snack"></span> each)
+  delivered <span class="frequency-ly"></span></p>
+</div>
+</div>
+
+  <div class="modal-container" id="quote-modal">
+  <div class="modal">
+    <div class="modal-close modal-back">&lt; BACK</div>
+    <form id="quote-form" style="margin-top: 20px">
+    <p style="text-align: center">We just need a bit of information from you to prepare your quote.</p>
+    <div>
+    <input class="half" type="text" name="first_name" placeholder="First name" required="" />
+    <input class="half" type="text" name="last_name" placeholder="Last name" required="" />
+    </div>
+    <input type="email" name="email" placeholder="Email" required="" />
+    <input type="text" name="phone" placeholder="Work phone" required="" />
+    <div>
+    <input class="half" type="text" name="company" placeholder="Company" required="" />
+    <input class="half" type="number" name="employees" placeholder="# of employees" required="" />
+    </div>
+    <textarea name="description" rows="4" required="" placeholder="Tell us what you're looking for. How many snacks? How frequent delivery?"></textarea>
+    <input type="text" class="honeypot" style="position: absolute; left: -2000px" placeholder="Please leave this empty. Thanks!" />
+    <a class="btn btn-red" style="max-width: none" onclick="$('#quote-form').submit()"><span>Request your quote</span></a>
+    <input type="submit" style="position: absolute; left: -2000px" />
+    </form>    
+    <p style="display: none" class="quote-success">Great! We've received your request and will reach out to you shortly.</p>
+    <p style="display: none" class="quote-error">Uh oh. Something went wrong. Please try again shortly.</p>
+    <a class="modal-close modal-close-btn btn btn-green" style="max-width: none; display: none;"><span>Close window</span></a>
+  </div>
+</div>
+
 </main>
+
 <footer class="cardboard-bg">
   <div class="footer-wave wave cardboard-bg"></div>
   <div class="container">
@@ -181,37 +369,6 @@ drift.load('v5d3tfy9ms3a');
 <script src="/assets/script/instafeed.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!--PAGE SCRIPTS-->
-<script>
-fbq('track', 'Purchase');
-
-</script>
-
 
 </body>
-<style>
-  .page-header {
-    margin: 0 auto;
-    left: 0;
-    transform: none;
-    float: none;
-    position: relative;
-    text-align: center;
-  }
-  main {
-    min-height: 90vh;
-    padding-top: 40px;
-    margin-bottom: -40px;
-  }
-  .container {
-    margin-top: -30px;
-  }
-  .box-bg {
-    padding: 30px 60px;
-  }
-  @media (max-width: 480px) {
-    .box-bg {
-      padding: 30px;
-    }
-  }
 </html>

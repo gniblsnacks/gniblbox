@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Gnibl Box - Healthy Snack Boxes Delivered – Sign Up</title>
+  <title>Gnibl Box - Healthy Snack Boxes Delivered – Boxes</title>
   <meta name="description" content="Snack Better, Work Better. Gnibl Box is the new snack subscription service delivering healthy, delicious snacks to your office. Try it for free.">
   <meta property="og:title" content="Gnibl Box - Healthy Snack Boxes Delivered" />
   <meta property="og:url" content="http://gniblbox.com.au" />
@@ -101,20 +101,20 @@ drift.load('v5d3tfy9ms3a');
 <div class="col-xs-12 col-md-5 calculator">
   <!--SIZE SELECTION-->
   <div class="col-xs-12 col-sm-6 col-md-12">
-    <h4>What size is your company?
+    <h4>How many snacks?
 </h4>
     <div class="tabs size-selection">
       
       <div class="btn-tab  selected-tab " data-box-size="small box">
-        &lt;25 staff
+        24
       </div>
       
       <div class="btn-tab " data-box-size="medium box">
-        25 – 50 staff
+        50
       </div>
       
       <div class="btn-tab " data-box-size="custom box">
-        &gt;50 staff
+        50+
       </div>
       
     </div>
@@ -142,7 +142,7 @@ drift.load('v5d3tfy9ms3a');
   <div class="hidden-sm hidden-xs">
   <hr />
   <div class="row">
-    <div class="col-xs-12 col-sm-6">
+    <div class="col-xs-12">
       <h2 class="price" style="text-transform: none; text-align: center;">
         <span class="cost"></span> / <span class="frequency"></span>
       </h2>
@@ -151,6 +151,12 @@ drift.load('v5d3tfy9ms3a');
     <div class="col-xs-12 col-sm-6" style="margin-bottom: 20px">
       <img src="/uploads/truck.svg" style="width: 60px; float: left;" />
       <p style="font-size: 14px;font-weight: bold; width: calc(100% - 70px); margin-left: 10px; float: left">Free shipping to metro areas
+</p>
+    </div>
+    
+    <div class="col-xs-12 col-sm-6" style="margin-bottom: 20px">
+      <img src="/uploads/collection.svg" style="width: 60px; float: left;" />
+      <p style="font-size: 14px;font-weight: bold; width: calc(100% - 70px); margin-left: 10px; float: left">Optional contribution box
 </p>
     </div>
     
@@ -173,7 +179,7 @@ drift.load('v5d3tfy9ms3a');
 
 <script>
 // set number of snacks to default
-var snack_num = 50;
+var snack_num = 24;
 
 // set cost to default
 var cost = 139;
@@ -182,14 +188,14 @@ var cost = 139;
 var cta = "Sign up now";
 var custom_cta = "Request a quote";
 
-var smallboxname = "Small box";
-var mediumboxname = "Medium box";
-var customboxname = "Custom box";
+var smallboxname = "Starter";
+var mediumboxname = "Classic";
+var customboxname = "Custom";
 
 
 function calculatePrice() {
   if (box_size == "small box") {
-    snack_num = 50;
+    snack_num = 24;
     if (delivery_frequency == "week") {
       cost = 132;
     } else if (delivery_frequency == "month") {
@@ -199,7 +205,7 @@ function calculatePrice() {
     }
     custom_box = false;
   } else if (box_size == "medium box") {
-    snack_num = 100;
+    snack_num = 50;
     if (delivery_frequency == "week") {
       cost = 259;
     } else if (delivery_frequency == "month") {
@@ -216,13 +222,16 @@ function calculatePrice() {
 </script>
 
 <section class="boxes">
-  <h2 id="box-label" class="handdrawn green-header left-header">Small box</h2>
+  <h2 id="box-label" class="handdrawn green-header left-header">Starter</h2>
   <div class="box-carousel">
     <div class="box-slide">
-      <div style="width: 100vw"><img src="/uploads/small-box.png" alt="Small box" /></div>
+      <div style="width: 100vw"><img src="/uploads/starter-box.png" alt="Starter" /></div>
     </div>
     <div class="box-slide">
-      <div style="width: 100vw"><img src="/uploads/medium-box.png" alt="Medium box" /></div>
+      <div style="width: 100vw"><img src="/uploads/small-box.png" alt="Classic" /></div>
+    </div>
+    <div class="box-slide">
+      <div style="width: 100vw"><img src="/uploads/medium-box.png" alt="Custom" /></div>
     </div>
   </div>
 </section>
@@ -238,6 +247,12 @@ function calculatePrice() {
 <div class="col-xs-12 col-sm-6" style="margin-bottom: 20px">
   <img src="/uploads/truck.svg" style="width: 60px; float: left;" />
   <p style="font-size: 14px;font-weight: bold; width: calc(100% - 70px); margin-left: 10px; float: left">Free shipping to metro areas
+</p>
+</div>
+
+<div class="col-xs-12 col-sm-6" style="margin-bottom: 20px">
+  <img src="/uploads/collection.svg" style="width: 60px; float: left;" />
+  <p style="font-size: 14px;font-weight: bold; width: calc(100% - 70px); margin-left: 10px; float: left">Optional contribution box
 </p>
 </div>
 
@@ -300,7 +315,9 @@ function calculatePrice() {
           
           <a href="/#faqs">FAQs</a>
           
-          <a href="/signup">Pricing</a>
+          <a href="/plans">Plans</a>
+          
+          <a href="/boxes">Boxes</a>
           
           <a target="blank" href="/uploads/Gnibl%20Box%20Terms%20and%20Conditions%201.0.pdf" class="visible-xs">Terms &amp; Conditions</a>
           <a class="visible-xs" href="mailto:info@gnibl.com.au">info@gnibl.com.au</a>

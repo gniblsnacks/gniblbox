@@ -5,7 +5,7 @@
     <div class="tabs size-selection">
       {% for breakpoint in page['size selection'].breakpoints %}
       <div class="btn-tab {% if forloop.first %} selected-tab {% endif %}" data-box-size="{{breakpoint.box}}">
-        {{breakpoint['company size']}}
+        {{breakpoint['snacks']}}
       </div>
       {%endfor%}
     </div>
@@ -24,7 +24,7 @@
   <div class="hidden-sm hidden-xs">
   <hr>
   <div class="row">
-    <div class="col-xs-12 col-sm-6">
+    <div class="col-xs-12">
       <h2 class="price" style="text-transform: none; text-align: center;">
         <span class="cost"></span> / <span class="frequency"></span>
       </h2>

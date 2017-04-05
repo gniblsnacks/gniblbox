@@ -210,7 +210,7 @@ function pricingFunctions() {
           $('.box-carousel').slick('slickGoTo', 1);
           $('#box-label').html(mediumboxname);
         } else {
-          $('.box-carousel').slick('slickGoTo', 1);
+          $('.box-carousel').slick('slickGoTo', 2);
           $('#box-label').html(customboxname);
         }
       });

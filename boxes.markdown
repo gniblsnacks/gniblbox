@@ -1,36 +1,37 @@
 ---
-title: Sign Up
+title: Boxes
 date: 2016-12-14 11:16:00 +11:00
 header: Join the Gnibl club
 subheader: Select your preferences and find the Gnibl membership most suited to your
   team.
 small box:
-  name: Small box
-  image: "/uploads/small-box.png"
+  name: Starter
+  image: "/uploads/starter-box.png"
   cost:
     per week: 132
     per fortnight: 134.5
     per month: 139
-  number of snacks: 50
+  number of snacks: 24
 medium box:
-  name: Medium box
-  image: "/uploads/medium-box.png"
+  name: Classic
+  image: "/uploads/small-box.png"
   cost:
     per week: 259
     per fortnight: 264
     per month: 269
-  number of snacks: 100
+  number of snacks: 50
 custom box:
-  name: Custom box
+  name: Custom
   starting cost: 400
+  image: "/uploads/medium-box.png"
 size selection:
-  lead: What size is your company?
+  lead: How many snacks?
   breakpoints:
-  - company size: "<25 staff"
+  - snacks: 24
     box: small box
-  - company size: 25 – 50 staff
+  - snacks: 50
     box: medium box
-  - company size: ">50 staff"
+  - snacks: 50+
     box: custom box
 frequency selection:
   lead: 'Select your delivery frequency:'
@@ -41,6 +42,8 @@ frequency selection:
 value props:
 - value: Free shipping to metro areas
   image: "/uploads/truck.svg"
+- value: Optional contribution box
+  image: "/uploads/collection.svg"
 cta: Sign up now
 cta custom box: Request a quote
 layout: default

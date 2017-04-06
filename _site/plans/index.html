@@ -105,16 +105,20 @@ drift.load('v5d3tfy9ms3a');
 </h4>
     <div class="tabs size-selection">
       
-      <div class="btn-tab  selected-tab " data-box-size="small box">
+      <div class="btn-tab  selected-tab " data-box-size="starter box" style="width: 25%">
         24
       </div>
       
-      <div class="btn-tab " data-box-size="medium box">
+      <div class="btn-tab " data-box-size="small box" style="width: 25%">
         50
       </div>
       
-      <div class="btn-tab " data-box-size="custom box">
-        50+
+      <div class="btn-tab " data-box-size="medium box" style="width: 25%">
+        100
+      </div>
+      
+      <div class="btn-tab " data-box-size="custom box" style="width: 25%">
+        100+
       </div>
       
     </div>
@@ -182,29 +186,20 @@ drift.load('v5d3tfy9ms3a');
 var snack_num = 24;
 
 // set cost to default
-var cost = 69;
+var cost = 139;
 
 // set CTAs for reference in JS
 var cta = "Sign up now";
 var custom_cta = "Request a quote";
 
-var smallboxname = "Starter";
-var mediumboxname = "Classic";
+var starterboxname = "Starter";
+var smallboxname = "Classic";
+var mediumboxname = "Midi";
 var customboxname = "Custom";
 
 
 function calculatePrice() {
   if (box_size == "small box") {
-    snack_num = 24;
-    if (delivery_frequency == "week") {
-      cost = 66;
-    } else if (delivery_frequency == "month") {
-      cost = 69;
-    } else {
-      cost = 67;
-    }
-    custom_box = false;
-  } else if (box_size == "medium box") {
     snack_num = 50;
     if (delivery_frequency == "week") {
       cost = 132;
@@ -212,6 +207,26 @@ function calculatePrice() {
       cost = 139;
     } else {
       cost = 134;
+    }
+    custom_box = false;
+  } else if (box_size == "medium box") {
+    snack_num = 100;
+    if (delivery_frequency == "week") {
+      cost = 259;
+    } else if (delivery_frequency == "month") {
+      cost = 269;
+    } else {
+      cost = 264;
+    }
+    custom_box = false;
+  } else if (box_size == "starter box") {
+    snack_num = 24;
+    if (delivery_frequency == "week") {
+      cost = 66;
+    } else if (delivery_frequency == "month") {
+      cost = 69;
+    } else {
+      cost = 67;
     }
     custom_box = false;
   } else if (box_size == "custom box") {
@@ -231,7 +246,7 @@ function calculatePrice() {
       <div style="width: 100vw"><img src="/uploads/small-box.png" alt="Classic" /></div>
     </div>
     <div class="box-slide">
-      <div style="width: 100vw"><img src="/uploads/medium-box.png" alt="Custom" /></div>
+      <div style="width: 100vw"><img src="/uploads/medium-box.png" alt="Midi" /></div>
     </div>
   </div>
 </section>

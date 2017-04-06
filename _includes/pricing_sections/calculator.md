@@ -4,7 +4,7 @@
     <h4>{{page['size selection'].lead | markdownify | strip_html}}</h4>
     <div class="tabs size-selection">
       {% for breakpoint in page['size selection'].breakpoints %}
-      <div class="btn-tab {% if forloop.first %} selected-tab {% endif %}" data-box-size="{{breakpoint.box}}">
+      <div class="btn-tab {% if forloop.first %} selected-tab {% endif %}" data-box-size="{{breakpoint.box}}" style="width: 25%">
         {{breakpoint['snacks']}}
       </div>
       {%endfor%}
@@ -53,7 +53,7 @@
 
 <script>
 // set number of snacks to default
-var snack_num = {{page['small box']['number of snacks']}};
+var snack_num = {{page['starter box']['number of snacks']}};
 
 // set cost to default
 var cost = {{page['small box'].cost['per month']}};
@@ -62,6 +62,7 @@ var cost = {{page['small box'].cost['per month']}};
 var cta = "{{page.cta}}";
 var custom_cta = "{{page['cta custom box']}}";
 
+var starterboxname = "{{page['starter box'].name}}";
 var smallboxname = "{{page['small box'].name}}";
 var mediumboxname = "{{page['medium box'].name}}";
 var customboxname = "{{page['custom box'].name}}";
@@ -86,6 +87,16 @@ function calculatePrice() {
       cost = {{page['medium box'].cost['per month']}};
     } else {
       cost = {{page['medium box'].cost['per fortnight']}};
+    }
+    custom_box = false;
+  } else if (box_size == "starter box") {
+    snack_num = {{page['starter box']['number of snacks']}};
+    if (delivery_frequency == "week") {
+      cost = {{page['starter box'].cost['per week']}};
+    } else if (delivery_frequency == "month") {
+      cost = {{page['starter box'].cost['per month']}};
+    } else {
+      cost = {{page['starter box'].cost['per fortnight']}};
     }
     custom_box = false;
   } else if (box_size == "custom box") {

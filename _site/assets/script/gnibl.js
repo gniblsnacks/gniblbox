@@ -204,11 +204,14 @@ function pricingFunctions() {
         updateProductLink();
 
         if (box_size == "small box") {
-          $('.box-carousel').slick('slickGoTo', 0);
+          $('.box-carousel').slick('slickGoTo', 1);
           $('#box-label').html(smallboxname);
         } else if (box_size == "medium box") {
-          $('.box-carousel').slick('slickGoTo', 1);
+          $('.box-carousel').slick('slickGoTo', 2);
           $('#box-label').html(mediumboxname);
+        } else if (box_size == "starter box") {
+          $('.box-carousel').slick('slickGoTo', 0);
+          $('#box-label').html(starterboxname);
         } else {
           $('.box-carousel').slick('slickGoTo', 2);
           $('#box-label').html(customboxname);

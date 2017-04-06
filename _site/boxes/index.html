@@ -105,15 +105,15 @@ drift.load('v5d3tfy9ms3a');
 </h4>
     <div class="tabs size-selection">
       
-      <div class="btn-tab  selected-tab " data-box-size="small box">
+      <div class="btn-tab  selected-tab " data-box-size="small box" style="width: 25%">
         24
       </div>
       
-      <div class="btn-tab " data-box-size="medium box">
+      <div class="btn-tab " data-box-size="medium box" style="width: 25%">
         50
       </div>
       
-      <div class="btn-tab " data-box-size="custom box">
+      <div class="btn-tab " data-box-size="custom box" style="width: 25%">
         50+
       </div>
       
@@ -179,7 +179,7 @@ drift.load('v5d3tfy9ms3a');
 
 <script>
 // set number of snacks to default
-var snack_num = 24;
+var snack_num = ;
 
 // set cost to default
 var cost = 139;
@@ -188,6 +188,7 @@ var cost = 139;
 var cta = "Sign up now";
 var custom_cta = "Request a quote";
 
+var starterboxname = "";
 var smallboxname = "Starter";
 var mediumboxname = "Classic";
 var customboxname = "Custom";
@@ -214,6 +215,16 @@ function calculatePrice() {
       cost = 264;
     }
     custom_box = false;
+  } else if (box_size == "starter box") {
+    snack_num = ;
+    if (delivery_frequency == "week") {
+      cost = ;
+    } else if (delivery_frequency == "month") {
+      cost = ;
+    } else {
+      cost = ;
+    }
+    custom_box = false;
   } else if (box_size == "custom box") {
     cost = 400;
     custom_box = true;
@@ -222,16 +233,16 @@ function calculatePrice() {
 </script>
 
 <section class="boxes">
-  <h2 id="box-label" class="handdrawn green-header left-header">Starter</h2>
+  <h2 id="box-label" class="handdrawn green-header left-header"></h2>
   <div class="box-carousel">
+    <div class="box-slide">
+      <div style="width: 100vw"><img src="" alt="" /></div>
+    </div>
     <div class="box-slide">
       <div style="width: 100vw"><img src="/uploads/starter-box.png" alt="Starter" /></div>
     </div>
     <div class="box-slide">
       <div style="width: 100vw"><img src="/uploads/small-box.png" alt="Classic" /></div>
-    </div>
-    <div class="box-slide">
-      <div style="width: 100vw"><img src="/uploads/medium-box.png" alt="Custom" /></div>
     </div>
   </div>
 </section>

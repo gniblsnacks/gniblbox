@@ -1064,7 +1064,7 @@ main.pricing {
   main.pricing .boxes {
     height: 100vh; }
     main.pricing .boxes #box-label {
-      top: 120px;
+      top: 80px;
       position: absolute; }
       @media (max-width: 991px) {
         main.pricing .boxes #box-label {
@@ -1143,7 +1143,7 @@ main.pricing {
   @media (min-width: 992px) {
     .calculator {
       position: absolute;
-      top: 50%;
+      top: 45%;
       right: 20px;
       -moz-transform: translateY(-50%);
       -o-transform: translateY(-50%);

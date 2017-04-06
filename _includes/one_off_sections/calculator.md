@@ -1,24 +1,14 @@
 <div class="col-xs-12 col-md-5 calculator">
+  <p style="margin-bottom: 0">Want to impress at your next meeting? Or need a tasty team reward? Or just don't want the commitment of a subscription? Gnibl's one-off boxes to the rescue.</p>
   <!--SIZE SELECTION-->
   <div class="col-xs-12 col-sm-6 col-md-12">
     <h4>{{page['size selection'].lead | markdownify | strip_html}}</h4>
     <div class="tabs size-selection">
-      {% for breakpoint in page['size selection'].breakpoints %}
-      <div class="btn-tab {% if forloop.first %} selected-tab {% endif %}" data-box-size="{{breakpoint.box}}" style="width: 25%">
-        {{breakpoint['snacks']}}
-      </div>
-      {%endfor%}
+    {% for breakpoint in page['size selection'].breakpoints %}
+    <div class="btn-tab {% if forloop.first %} selected-tab {% endif %}" data-box-size="{{breakpoint.box}}" style="width: 25%">
+      {{breakpoint['snacks']}}
     </div>
-  </div>
-  <!--FREQUENCY SELECTION-->
-  <div class="col-xs-12 col-sm-6 col-md-12">
-    <h4>{{page['frequency selection'].lead | markdownify | strip_html}}</h4>
-    <div class="tabs frequency-selection">
-      {% for option in page['frequency selection'].options %}
-      <div class="btn-tab {% if forloop.last %} selected-tab {% endif %}">
-        {{option}}
-      </div>
-      {%endfor%}
+    {%endfor%}
     </div>
   </div>
   <div class="hidden-sm hidden-xs">
@@ -26,7 +16,7 @@
   <div class="row">
     <div class="col-xs-12">
       <h2 class="price" style="text-transform: none; text-align: center;">
-        <span class="cost"></span> / <span class="frequency"></span>
+        <span class="cost"></span> <small style='font-size: 16px'>per box</small>
       </h2>
     </div>
     {% for prop in page['value props'] %}
@@ -39,8 +29,7 @@
   <a class="product-link btn btn-red" style="max-width: none"><span class="pricing-cta">{{page.cta | markdownify | strip_html}}</span></a>
   <p class="additional-info" style="font-size: 14px; font-weight: bold; text-align: center">
     <span class="snack-num"></span> snacks
-    (<span class="per-snack"></span> each)
-    delivered <span class="frequency-ly"></span></p>
+    (<span class="per-snack"></span> each)</p>
   </div>
 </div>
 <style>
@@ -56,52 +45,34 @@
 var snack_num = {{page['starter box']['number of snacks']}};
 
 // set cost to default
-var cost = {{page['starter box'].cost['per month']}};
+var cost = {{page['starter box'].cost}};
 
 // set CTAs for reference in JS
 var cta = "{{page.cta}}";
-var custom_cta = "{{page['cta custom box']}}";
 
 var starterboxname = "{{page['starter box'].name}}";
 var smallboxname = "{{page['small box'].name}}";
 var mediumboxname = "{{page['medium box'].name}}";
-var customboxname = "{{page['custom box'].name}}";
+var customboxname = "{{page['jumbo box'].name}}";
 
-var oneoff = false;
+var oneoff = true;
 function calculatePrice() {
   if (box_size == "small box") {
     snack_num = {{page['small box']['number of snacks']}};
-    if (delivery_frequency == "week") {
-      cost = {{page['small box'].cost['per week']}};
-    } else if (delivery_frequency == "month") {
-      cost = {{page['small box'].cost['per month']}};
-    } else {
-      cost = {{page['small box'].cost['per fortnight']}};
-    }
+    cost = {{page['small box']['cost']}};
     custom_box = false;
   } else if (box_size == "medium box") {
     snack_num = {{page['medium box']['number of snacks']}};
-    if (delivery_frequency == "week") {
-      cost = {{page['medium box'].cost['per week']}};
-    } else if (delivery_frequency == "month") {
-      cost = {{page['medium box'].cost['per month']}};
-    } else {
-      cost = {{page['medium box'].cost['per fortnight']}};
-    }
+    cost = {{page['medium box']['cost']}};
     custom_box = false;
   } else if (box_size == "starter box") {
     snack_num = {{page['starter box']['number of snacks']}};
-    if (delivery_frequency == "week") {
-      cost = {{page['starter box'].cost['per week']}};
-    } else if (delivery_frequency == "month") {
-      cost = {{page['starter box'].cost['per month']}};
-    } else {
-      cost = {{page['starter box'].cost['per fortnight']}};
-    }
+    cost = {{page['starter box']['cost']}};
     custom_box = false;
-  } else if (box_size == "custom box") {
-    cost = {{page['custom box']['starting cost']}};
-    custom_box = true;
+  } else if (box_size == "jumbo box") {
+    snack_num = {{page['jumbo box']['number of snacks']}};
+    cost = {{page['jumbo box']['cost']}};
+    custom_box = false;
   }
 }
 </script>

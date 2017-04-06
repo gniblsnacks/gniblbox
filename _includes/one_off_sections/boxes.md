@@ -11,7 +11,7 @@
       <div style="width: 100vw"><img src="{{page['medium box'].image}}" alt="{{page['medium box'].name}}"></div>
     </div>
     <div class="box-slide">
-      <div style="width: 100vw"><img src="{{page['custom box'].image}}" alt="{{page['jumbo box'].name}}"></div>
+      <div style="width: 100vw"><img src="{{page['jumbo box'].image}}" alt="{{page['jumbo box'].name}}"></div>
     </div>
   </div>
 </section>

@@ -30,6 +30,7 @@ medium box:
   number of snacks: 100
 custom box:
   name: Custom
+  image: "/uploads/jumbo-box.png"
   starting cost: 400
 size selection:
   lead: How many snacks?

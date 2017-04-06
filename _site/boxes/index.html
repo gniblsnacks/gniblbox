@@ -99,44 +99,29 @@ drift.load('v5d3tfy9ms3a');
 <div class="desktop">
 <div class="table"></div>
 <div class="col-xs-12 col-md-5 calculator">
+  <p style="margin-bottom: 0">Want to impress at your next meeting? Or need a tasty team reward? Or just don't want the commitment of a subscription? Gnibl's one-off boxes to the rescue.</p>
   <!--SIZE SELECTION-->
   <div class="col-xs-12 col-sm-6 col-md-12">
     <h4>How many snacks?
 </h4>
     <div class="tabs size-selection">
-      
-      <div class="btn-tab  selected-tab " data-box-size="small box" style="width: 25%">
-        24
-      </div>
-      
-      <div class="btn-tab " data-box-size="medium box" style="width: 25%">
-        50
-      </div>
-      
-      <div class="btn-tab " data-box-size="custom box" style="width: 25%">
-        50+
-      </div>
-      
+    
+    <div class="btn-tab  selected-tab " data-box-size="starter box" style="width: 25%">
+      24
     </div>
-  </div>
-  <!--FREQUENCY SELECTION-->
-  <div class="col-xs-12 col-sm-6 col-md-12">
-    <h4>Select your delivery frequency:
-</h4>
-    <div class="tabs frequency-selection">
-      
-      <div class="btn-tab ">
-        weekly
-      </div>
-      
-      <div class="btn-tab ">
-        fortnightly
-      </div>
-      
-      <div class="btn-tab  selected-tab ">
-        monthly
-      </div>
-      
+    
+    <div class="btn-tab " data-box-size="small box" style="width: 25%">
+      50
+    </div>
+    
+    <div class="btn-tab " data-box-size="medium box" style="width: 25%">
+      100
+    </div>
+    
+    <div class="btn-tab " data-box-size="jumbo box" style="width: 25%">
+      200
+    </div>
+    
     </div>
   </div>
   <div class="hidden-sm hidden-xs">
@@ -144,7 +129,7 @@ drift.load('v5d3tfy9ms3a');
   <div class="row">
     <div class="col-xs-12">
       <h2 class="price" style="text-transform: none; text-align: center;">
-        <span class="cost"></span> / <span class="frequency"></span>
+        <span class="cost"></span> <small style="font-size: 16px">per box</small>
       </h2>
     </div>
     
@@ -161,12 +146,11 @@ drift.load('v5d3tfy9ms3a');
     </div>
     
   </div>
-  <a class="product-link btn btn-red" style="max-width: none"><span class="pricing-cta">Sign up now
+  <a class="product-link btn btn-red" style="max-width: none"><span class="pricing-cta">Order now
 </span></a>
   <p class="additional-info" style="font-size: 14px; font-weight: bold; text-align: center">
     <span class="snack-num"></span> snacks
-    (<span class="per-snack"></span> each)
-    delivered <span class="frequency-ly"></span></p>
+    (<span class="per-snack"></span> each)</p>
   </div>
 </div>
 <style>
@@ -179,70 +163,55 @@ drift.load('v5d3tfy9ms3a');
 
 <script>
 // set number of snacks to default
-var snack_num = ;
+var snack_num = 24;
 
 // set cost to default
-var cost = 139;
+var cost = 75;
 
 // set CTAs for reference in JS
-var cta = "Sign up now";
-var custom_cta = "Request a quote";
+var cta = "Order now";
 
-var starterboxname = "";
-var smallboxname = "Starter";
-var mediumboxname = "Classic";
-var customboxname = "Custom";
+var starterboxname = "Starter";
+var smallboxname = "Classic";
+var mediumboxname = "Medium";
+var customboxname = "Jumbo";
 
-
+var oneoff = true;
 function calculatePrice() {
   if (box_size == "small box") {
-    snack_num = 24;
-    if (delivery_frequency == "week") {
-      cost = 132;
-    } else if (delivery_frequency == "month") {
-      cost = 139;
-    } else {
-      cost = 134.5;
-    }
+    snack_num = 50;
+    cost = 149;
     custom_box = false;
   } else if (box_size == "medium box") {
-    snack_num = 50;
-    if (delivery_frequency == "week") {
-      cost = 259;
-    } else if (delivery_frequency == "month") {
-      cost = 269;
-    } else {
-      cost = 264;
-    }
+    snack_num = 100;
+    cost = 289;
     custom_box = false;
   } else if (box_size == "starter box") {
-    snack_num = ;
-    if (delivery_frequency == "week") {
-      cost = ;
-    } else if (delivery_frequency == "month") {
-      cost = ;
-    } else {
-      cost = ;
-    }
+    snack_num = 24;
+    cost = 75;
     custom_box = false;
-  } else if (box_size == "custom box") {
-    cost = 400;
-    custom_box = true;
+  } else if (box_size == "jumbo box") {
+    snack_num = 200;
+    cost = 569;
+    custom_box = false;
   }
 }
 </script>
 
 <section class="boxes">
-  <h2 id="box-label" class="handdrawn green-header left-header"></h2>
+  <h2 id="box-label" class="handdrawn green-header left-header">Starter</h2>
   <div class="box-carousel">
-    <div class="box-slide">
-      <div style="width: 100vw"><img src="" alt="" /></div>
-    </div>
     <div class="box-slide">
       <div style="width: 100vw"><img src="/uploads/starter-box.png" alt="Starter" /></div>
     </div>
     <div class="box-slide">
       <div style="width: 100vw"><img src="/uploads/small-box.png" alt="Classic" /></div>
+    </div>
+    <div class="box-slide">
+      <div style="width: 100vw"><img src="/uploads/medium-box.png" alt="Medium" /></div>
+    </div>
+    <div class="box-slide">
+      <div style="width: 100vw"><img src="/uploads/jumbo-box.png" alt="Jumbo" /></div>
     </div>
   </div>
 </section>
@@ -251,7 +220,7 @@ function calculatePrice() {
 <div class="table-bg mobile-container">
 <div class="visible-sm visible-xs container box-bg mobile-pricing">
 <h2 class="price" style="text-transform: none; text-align: center;">
-  <span class="cost"></span> / <span class="frequency"></span>
+  <span class="cost"></span> <small style="font-size: 16px">per box</small>
 </h2>
 <div class="row">
 
@@ -268,12 +237,11 @@ function calculatePrice() {
 </div>
 
 </div>
-<a class="btn btn-red product-link" style="max-width: none"><span class="pricing-cta">Sign up now
+<a class="btn btn-red product-link" style="max-width: none"><span class="pricing-cta">Order now
 </span></a>
 <p class="additional-info" style="font-size: 14px; font-weight: bold; text-align: center">
   <span class="snack-num"></span> snacks
-  (<span class="per-snack"></span> each)
-  delivered <span class="frequency-ly"></span></p>
+  (<span class="per-snack"></span> each)</p>
 </div>
 </div>
 

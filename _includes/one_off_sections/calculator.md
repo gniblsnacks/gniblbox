@@ -14,7 +14,7 @@
   <div class="hidden-sm hidden-xs">
   <hr>
   <div class="row">
-    <div class="col-xs-12">
+    <div class="col-xs-12 col-sm-6">
       <h2 class="price" style="text-transform: none; text-align: center;">
         <span class="cost"></span> <small style='font-size: 16px'>per box</small>
       </h2>

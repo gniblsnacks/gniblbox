@@ -52,7 +52,7 @@ frequency selection:
 value props:
 - value: Free shipping to metro areas
   image: "/uploads/truck.svg"
-- value: Optional contribution box
+- value: Optional collaboration box
   image: "/uploads/collection.svg"
 cta: Sign up now
 cta custom box: Request a quote

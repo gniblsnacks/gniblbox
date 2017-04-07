@@ -38,8 +38,6 @@ size selection:
 value props:
 - value: Free shipping to metro areas
   image: "/uploads/truck.svg"
-- value: Optional contribution box
-  image: "/uploads/collection.svg"
 cta: Order now
 layout: default
 ---

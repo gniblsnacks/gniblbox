@@ -163,17 +163,17 @@ testimonials:
 faqs:
 - question: What is Gnibl Box?
   answer text: 'A Gniblbox is a one-stop snack drop which includes a collection of
-    nourishing, tasty, dietician-curated snacks delivered directly to your office
-    weekly, fortnightly or monthly. A Gniblbox will include a range of different full-sized
-    snacks that are specifically chosen for their nutritional value and ability to
-    boost the brain for a full day of productivity. New snacks are included in each
-    delivery which makes the Gniblbox the most exciting thing to ever happen to your
-    snack time. '
+    nourishing, tasty, dietitian-curated snacks delivered directly to your office
+    weekly, fortnightly or monthly. A Gnibl Box will include a range of different
+    full-sized snacks that are specifically chosen for their nutritional value and
+    ability to boost the brain for a full day of productivity. New snacks are included
+    in each delivery which makes the Gnibl Box the most exciting thing to happen to
+    snack time since sliced bread! '
 - question: How Many Snacks Come in Each Box?
   answer text: |-
-    The small box includes 50\+ snacks.
-    The medium box comes with 100\+ snacks.
-    The custom box can be configured to include as many snacks needed to suit your unique needs.
+    The Starter Box includes 24 snacks. The Classic Box has 50+ snacks.
+    The Midi Box comes with 100+ snacks.
+    The Custom Box can be configured to include as many snacks as you require.
 - question: What About Billing / Shipping & Delivery / Returns ?
   answer text: |-
     **Billing** - You will be billed on the day that you sign up to Gnibl Box. Following this, you will be placed on our advanced billing cycle: Weekly plans are billed every 7 days. Fortnightly plans every 14 days. And if you've signed up for a monthly plan, you'll be billed every 30 days.
@@ -189,14 +189,18 @@ faqs:
 
     We require five (5) business days’ notice to cancel or make changes to your shipment.
 - question: " Can I try just one box?"
-  answer text: |
-    If you’re interested in trying out the Gnibl Box before purchasing your subscription, you can try our Free Trial Box.
-
-
-    If you have already tried out the free Gnibl Box, you can sign up for a subscription which can be cancelled at anytime. Don’t forget, you’ll have to give us five days notice before your subscription renewal to cancel your upcoming order.
+  answer text: 'If you’re not ready to commit, that''s OK! You can try one of our
+    single boxes and see how you go. Single Boxes are also perfect for meetings, or
+    team rewards. Check out the single box options [here](http://gniblbox.com.au/boxes). '
 - question: What if I don’t like some of the snacks?
   answer text: 'If you ever receive anything you don''t LOVE, let us know and we’ll
     make sure you don’t ever receive that snack again. '
+- question: What is the free Honesty Box?
+  answer text: With all our subscriptions plans, we can include a free honesty box
+    for you to use. It's a little cardboard money box which sits next to your Gnibl
+    Box and allows you to share the cost of the snacks with your team. The box has
+    a place for you to write a suggested contribution e.g. $2. It's a great way for
+    small teams to jump start their health kick.
 layout: default
 ---
 

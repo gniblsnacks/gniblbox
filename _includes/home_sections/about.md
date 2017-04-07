@@ -12,7 +12,7 @@
       </div>
       {{step['sub text'] | markdownify }}
       {% endfor %}
-      <a href="/pricing" class="btn btn-green" href="/pricing"><span>{{page.about.cta | markdownify | strip_html}}</span></a>
+      <a href="/plans" class="btn btn-green"><span>{{page.about.cta | markdownify | strip_html}}</span></a>
     </div>
   </div>
   <div class="wave wave-bottom offwhite-bg">

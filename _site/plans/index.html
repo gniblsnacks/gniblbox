@@ -160,14 +160,14 @@ drift.load('v5d3tfy9ms3a');
     
     <div class="col-xs-12 col-sm-6" style="margin-bottom: 20px">
       <img src="/uploads/collection.svg" style="width: 60px; float: left;" />
-      <p style="font-size: 14px;font-weight: bold; width: calc(100% - 70px); margin-left: 10px; float: left">Optional collaboration box
+      <p style="font-size: 14px;font-weight: bold; width: calc(100% - 70px); margin-left: 10px; float: left">Optional honesty box
 </p>
     </div>
     
   </div>
   <a class="product-link btn btn-red" style="max-width: none"><span class="pricing-cta">Sign up now
 </span></a>
-  <p class="additional-info" style="font-size: 14px; font-weight: bold; text-align: center">
+  <p class="additional-info">
     <span class="snack-num"></span> snacks
     (<span class="per-snack"></span> each)
     delivered <span class="frequency-ly"></span></p>
@@ -230,7 +230,13 @@ function calculatePrice() {
     }
     custom_box = false;
   } else if (box_size == "custom box") {
-    cost = 400;
+    if (delivery_frequency == "week") {
+      cost = 380;
+    } else if (delivery_frequency == "month") {
+      cost = 400;
+    } else {
+      cost = 390;
+    }
     custom_box = true;
   }
 }
@@ -270,7 +276,7 @@ function calculatePrice() {
 
 <div class="col-xs-12 col-sm-6" style="margin-bottom: 20px">
   <img src="/uploads/collection.svg" style="width: 60px; float: left;" />
-  <p style="font-size: 14px;font-weight: bold; width: calc(100% - 70px); margin-left: 10px; float: left">Optional collaboration box
+  <p style="font-size: 14px;font-weight: bold; width: calc(100% - 70px); margin-left: 10px; float: left">Optional honesty box
 </p>
 </div>
 
@@ -351,8 +357,6 @@ function calculatePrice() {
         <img src="/uploads/Mastercard.svg" alt="MasterCard"></a>
         
         <img src="/uploads/amex.svg" alt="American Express"></a>
-        
-        <img src="/uploads/discover.svg" alt="Discover"></a>
         
       </div>
     </div>

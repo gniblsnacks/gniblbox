@@ -31,7 +31,10 @@ medium box:
 custom box:
   name: Custom
   image: "/uploads/jumbo-box.png"
-  starting cost: 400
+  cost:
+    per week: 380
+    per fortnight: 390
+    per month: 400
 size selection:
   lead: How many snacks?
   breakpoints:
@@ -52,7 +55,7 @@ frequency selection:
 value props:
 - value: Free shipping to metro areas
   image: "/uploads/truck.svg"
-- value: Optional collaboration box
+- value: Optional honesty box
   image: "/uploads/collection.svg"
 cta: Sign up now
 cta custom box: Request a quote

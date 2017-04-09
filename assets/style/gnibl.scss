@@ -292,7 +292,8 @@ ul.collapsible {
     font-weight: bold;
     transition: .2s;
     &.selected-tab {
-      background: rgba(0,0,0,.1);
+      background: rgba(0,0,0,.18);
+			color: white;
     }
     &:hover {
       cursor: pointer;
@@ -1417,4 +1418,8 @@ main.pricing {
       width: calc(100% - 55px) !important;
     }
   }
+}
+
+.additional-info {
+	font-size: 16px; font-weight: bold; text-align: center
 }

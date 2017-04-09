@@ -1,5 +1,5 @@
 <div class="col-xs-12 col-md-5 calculator">
-  <p style="margin-bottom: 0">Want to impress at your next meeting? Or need a tasty team reward? Or just don't want the commitment of a subscription? Gnibl's one-off boxes to the rescue.</p>
+  <p style="margin-bottom: 0">{{page['intro copy']}}</p>
   <!--SIZE SELECTION-->
   <div class="col-xs-12 col-sm-6 col-md-12">
     <h4>{{page['size selection'].lead | markdownify | strip_html}}</h4>
@@ -27,7 +27,7 @@
     {% endfor %}
   </div>
   <a class="product-link btn btn-red" style="max-width: none"><span class="pricing-cta">{{page.cta | markdownify | strip_html}}</span></a>
-  <p class="additional-info" style="font-size: 14px; font-weight: bold; text-align: center">
+  <p class="additional-info">
     <span class="snack-num"></span> snacks
     (<span class="per-snack"></span> each)</p>
   </div>

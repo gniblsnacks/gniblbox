@@ -215,7 +215,8 @@ ul.collapsible {
     font-weight: bold;
     transition: .2s; }
     .tabs .btn-tab.selected-tab {
-      background: rgba(0, 0, 0, 0.1); }
+      background: rgba(0, 0, 0, 0.18);
+      color: white; }
     .tabs .btn-tab:hover {
       cursor: pointer; }
 
@@ -1164,5 +1165,10 @@ main.pricing {
       width: 45px !important; }
     .calculator .value-prop p {
       width: calc(100% - 55px) !important; } }
+
+.additional-info {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center; }
 
 /*# sourceMappingURL=gnibl.css.map */

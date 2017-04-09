@@ -37,7 +37,7 @@
     {% endfor %}
   </div>
   <a class="product-link btn btn-red" style="max-width: none"><span class="pricing-cta">{{page.cta | markdownify | strip_html}}</span></a>
-  <p class="additional-info" style="font-size: 14px; font-weight: bold; text-align: center">
+  <p class="additional-info">
     <span class="snack-num"></span> snacks
     (<span class="per-snack"></span> each)
     delivered <span class="frequency-ly"></span></p>
@@ -100,7 +100,13 @@ function calculatePrice() {
     }
     custom_box = false;
   } else if (box_size == "custom box") {
-    cost = {{page['custom box']['starting cost']}};
+    if (delivery_frequency == "week") {
+      cost = {{page['custom box'].cost['per week']}};
+    } else if (delivery_frequency == "month") {
+      cost = {{page['custom box'].cost['per month']}};
+    } else {
+      cost = {{page['custom box'].cost['per fortnight']}};
+    }
     custom_box = true;
   }
 }

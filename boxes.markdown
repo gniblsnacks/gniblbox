@@ -4,7 +4,9 @@ date: 2016-12-14 11:16:00 +11:00
 header: Join the Gnibl club
 subheader: Select your preferences and find the Gnibl membership most suited to your
   team.
-intro copy: Want to impress at your next meeting? Need a tasty team reward? Or just don't want the commitment of a subscription? Try a single Gnibl Box - any size you like!
+intro copy: Want to impress at your next meeting? Need a tasty team reward? Or just
+  don't want the commitment of a subscription? Try a single Gnibl Box - any size you
+  like!
 starter box:
   name: Starter
   image: "/uploads/starter-box.png"

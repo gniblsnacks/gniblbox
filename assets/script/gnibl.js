@@ -215,7 +215,7 @@ function pricingFunctions() {
         } else {
           $('.box-carousel').slick('slickGoTo', 3);
           $('#box-label').html(customboxname);
-        } 
+        }
       });
     });
 
@@ -262,7 +262,7 @@ function updateProductLink() {
       } else if (delivery_frequency == "fortnight") {
         link.attr("href", "https://gnibl.samcart.com/products/classic-box-fortnightly/");
       } else {
-        link.attr("href", "https://gnibl.samcart.com/products/classic-monthly-box/");
+        link.attr("href", "https://gnibl.samcart.com/products/classic-box-monthly/");
       }
     } else if (box_size == "medium box") {
       link.removeAttr("onclick");

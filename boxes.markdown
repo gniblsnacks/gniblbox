@@ -18,7 +18,7 @@ small box:
   cost: 149
   number of snacks: 50
 medium box:
-  name: Medium
+  name: Midi
   image: "/uploads/medium-box.png"
   cost: 289
   number of snacks: 100

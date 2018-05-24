@@ -201,7 +201,6 @@ faqs:
     Box and allows you to share the cost of the snacks with your team. The box has
     a place for you to write a suggested contribution e.g. $2. It's a great way for
     small teams to jump start their health kick.
-File: "/uploads/google82ca02e8bd96397e.html"
 layout: default
 ---
 

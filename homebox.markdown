@@ -11,7 +11,13 @@ Clients:
 - name: Employsure
   image: "/uploads/employsure-logo.png"
   link: http://employsure.com.au/
-- 
+- name: Work Club Sydney
+  image: "/uploads/workclub.png"
+- name: SuperConcepts
+  image: "/uploads/superconcepts.png"
+about:
+  intro: The only thing standing between you and nutritious nibbles are these three
+    simple steps.
 layout: default
 ---
 

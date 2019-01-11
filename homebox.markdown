@@ -1,7 +1,7 @@
 ---
 title: Homebox
 date: 2019-01-10 23:17:00 +11:00
-landing:
+landing1:
   headline: EAT WELL, <span class="green">FEEL WELL.</span>
   sub text: "Try out the Gnibl Box for healthy, tasty snacks delivered to your home.
     Taking care of yourself and loved ones has never been so easy. We have snacks

@@ -3,8 +3,8 @@ title: Homebox
 date: 2019-01-10 23:17:00 +11:00
 landing:
   headline: Snack Better, <span class="green">Work Better.</span>
-sub text: Join the Gnibl Club for healthy, tasty snacks delivered to your office.
-  Nourish your body and fuel your brain for a full and productive work day.
+  sub text: Join the Gnibl Club for healthy, tasty snacks delivered to your office.
+    Nourish your body and fuel your brain for a full and productive work day.
 layout: default
 ---
 

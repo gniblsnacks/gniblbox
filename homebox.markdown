@@ -135,6 +135,31 @@ products:
   has no added sugar?: true
   custom feature: 
 has testimonials?: true
+testimonials:
+- name: David
+  position: HR Business Partner
+  company: Peakbound
+  image: "/uploads/peakbound.png"
+  review text: Being based in an office it is easy to snack on bad foods, Gnibl offers
+    a healthy alternative to staff that always tastes great – plus you don’t feel
+    guilty after your 3pm snack!
+- name: Amie
+  position: Concierge
+  company: Work Club Sydney
+  image: "/uploads/workclub.png"
+  review text: Gnibl are wonderful at tailoring our healthy snack boxes. They listen
+    to what we like and what works well for us and keep those items in the box but
+    also make great suggestions for new things to try. We are never disappointed with
+    what we receive.
+- name: Julie
+  position: Facilities Manager
+  company: Employsure
+  image: "/uploads/employsure-logo.png"
+  review text: The Gnibl offering is just what we needed as it is healthy. The staff
+    love the variety and the prices are competitive. We also love that there is a
+    change of items to bring in new ones. Together with fabulous service, Gnibl is
+    a great choice.
+Field name: 
 layout: default
 ---
 

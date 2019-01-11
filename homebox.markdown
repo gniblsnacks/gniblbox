@@ -7,8 +7,10 @@ landing:
     Nourish your body and fuel your brain for a full and productive work day.
   cta: See our plans
   mobile pricing link: see our prices
-clients:
-- 
+Clients:
+- name: Employsure
+  image: "/uploads/employsure-logo.png"
+  link: http://employsure.com.au/
 - 
 layout: default
 ---

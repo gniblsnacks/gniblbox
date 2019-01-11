@@ -1,7 +1,7 @@
 <section class="home-hero"> <!--HOME HERO-->
   <div class="container">
   <div class="col-xs-12 col-sm-5 col-sm-offset-7 hero-content">
-  <h1 class="handdrawn main-header">{{page.landing1.headline}}</h1>
+  <h1 class="handdrawn main-header">{{page.landingnew.headline}}</h1>
     <p>{{page.landing1["sub text"]}}</p>
     {% if page["free trial"] %}
     <form id="landing-form">

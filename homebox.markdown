@@ -159,7 +159,47 @@ testimonials:
     love the variety and the prices are competitive. We also love that there is a
     change of items to bring in new ones. Together with fabulous service, Gnibl is
     a great choice.
-Field name: 
+faqs:
+- question: What is Gnibl Box?
+  answer text: 'A Gniblbox is a one-stop snack drop which includes a collection of
+    nourishing, tasty, dietitian-curated snacks delivered directly to your office
+    weekly, fortnightly or monthly. A Gnibl Box will include a range of different
+    full-sized snacks that are specifically chosen for their nutritional value and
+    ability to boost the brain for a full day of productivity. New snacks are included
+    in each delivery which makes the Gnibl Box the most exciting thing to happen to
+    snack time since sliced bread! '
+- question: How Many Snacks Come in Each Box?
+  answer text: |-
+    The Starter Box includes 24 snacks. The Classic Box has 50+ snacks.
+    The Midi Box comes with 100+ snacks.
+    The Custom Box can be configured to include as many snacks as you require.
+- question: What About Billing / Shipping & Delivery / Returns ?
+  answer text: |-
+    **Billing** - You will be billed on the day that you sign up to Gnibl Box. Following this, you will be placed on our advanced billing cycle: Weekly plans are billed every 7 days. Fortnightly plans every 14 days. And if you've signed up for a monthly plan, you'll be billed every 30 days.
+
+    **Shipping & Delivery** - We will ship your first box within 2-3 business days of receiving your order. Your regular boxes will be delivered according to the schedule you request - weekly, fortnightly or monthly.
+
+    We deliver Australia wide for FREE to all major metropolitan centres. If you live outside Sydney, Melbourne, Brisbane, Perth, or Adelaide, please get in touch and we'll provide a quote for delivery to your area.
+
+    **Returns** - : If you are dissatisfied with a product for any reason, we will endeavour never to send you the same product in future deliveries. If a product is unsatisfactory due to a product defect we will replace the defective product and include the replacement in your next delivery. To report defective products you must contact Customer Service in writing via email at info@gnibl.com.au within 5 days of receiving the product.
+- question: " How can I change or cancel my order?"
+  answer text: |-
+    You can cancel your recurring deliveries at any time by giving us a call, or sending an email to <info@gnibl.com.au>. If we have already packed and dispatched your box before we receive your request, that box will be your final charge.
+
+    We require five (5) business days’ notice to cancel or make changes to your shipment.
+- question: " Can I try just one box?"
+  answer text: 'If you’re not ready to commit, that''s OK! You can try one of our
+    single boxes and see how you go. Single Boxes are also perfect for meetings, or
+    team rewards. Check out the single box options [here](http://gniblbox.com.au/boxes). '
+- question: What if I don’t like some of the snacks?
+  answer text: 'If you ever receive anything you don''t LOVE, let us know and we’ll
+    make sure you don’t ever receive that snack again. '
+- question: What is the free Honesty Box?
+  answer text: With all our subscriptions plans, we can include a free honesty box
+    for you to use. It's a little cardboard money box which sits next to your Gnibl
+    Box and allows you to share the cost of the snacks with your team. The box has
+    a place for you to write a suggested contribution e.g. $2. It's a great way for
+    small teams to jump start their health kick.
 layout: default
 ---
 

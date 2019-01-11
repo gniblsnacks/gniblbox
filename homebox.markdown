@@ -22,7 +22,7 @@ Clients:
   image: "/uploads/aon.png"
 - name: Insight Fundraising
   image: "/uploads/ificon.png"
-about:
+about1:
   intro: The only thing standing between you and nutritious nibbles are these three
     simple steps.
   steps:

@@ -1,7 +1,6 @@
 ---
 title: Homebox
 date: 2019-01-10 23:17:00 +11:00
-published: false
 landing:
   headline: EAT WELL, <span class="green">FEEL WELL.</span>
   sub text: Join the Gnibl Club for healthy, tasty snacks delivered to your office.

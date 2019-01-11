@@ -8,7 +8,7 @@ landing:
     for your kids, big kids AND \ngrown up kids-at-heart!"
   cta: See our plans
   mobile pricing link: see our prices
-Clients:
+client:
 - name: Employsure
   image: "/uploads/employsure-logo.png"
   link: http://employsure.com.au/
@@ -22,7 +22,7 @@ Clients:
   image: "/uploads/aon.png"
 - name: Insight Fundraising
   image: "/uploads/ificon.png"
-about1:
+about:
   intro: The only thing standing between you and nutritious nibbles are these three
     simple steps.
   steps:

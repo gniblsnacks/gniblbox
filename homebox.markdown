@@ -15,6 +15,12 @@ Clients:
   image: "/uploads/workclub.png"
 - name: SuperConcepts
   image: "/uploads/superconcepts.png"
+- name: AMP
+  image: "/uploads/AMP.png"
+- name: AON
+  image: "/uploads/aon.png"
+- name: Insight Fundraising
+  image: "/uploads/ificon.png"
 about:
   intro: The only thing standing between you and nutritious nibbles are these three
     simple steps.

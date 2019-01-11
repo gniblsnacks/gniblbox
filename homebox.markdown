@@ -3,8 +3,9 @@ title: Homebox
 date: 2019-01-10 23:17:00 +11:00
 landing:
   headline: EAT WELL, <span class="green">FEEL WELL.</span>
-  sub text: Join the Gnibl Club for healthy, tasty snacks delivered to your office.
-    Nourish your body and fuel your brain for a full and productive work day.
+  sub text: "Try out the Gnibl Box for healthy, tasty snacks delivered to your home.
+    Taking care of yourself and loved ones has never been so easy. We have snacks
+    for your kids, big kids AND \ngrown up kids-at-heart!"
   cta: See our plans
   mobile pricing link: see our prices
 Clients:
@@ -25,17 +26,17 @@ about:
   intro: The only thing standing between you and nutritious nibbles are these three
     simple steps.
   steps:
-  - header: Select Your Team Size
-    sub text: We work with businesses big and small, who recognise that great teams
-      deserve great snacks.
-  - header: 'Select Your Subscription '
-    sub text: We offer flexible delivery options so you can enjoy a nutritious snack
-      drop every week, fortnight or month.
+  - header: Select your Box Size Size
+    sub text: We have boxes of all sizes - whether you're 'hoping for yourself, your
+      title ones, or your whole family - we've got you covered
+  - header: 'Select your dietary requirements '
+    sub text: We can cater to al your dietary neds whether gluten free, nut free,
+      vegan or other - just let us know.
   - header: Delight in Delicious Snacks
-    sub text: Your colleagues will love their healthy, delicious new snack options
-      and they’ll have you to thank. No more trips to the supermarket or fumbling
-      over receipts, just nutritious snacks delivered direct.
-  cta: Join the Gnibl Club
+    sub text: You and your home will love their newhealthy and delicious snacks options
+      each and e every month. Well surprise you with new snacks you'd never believe
+      tasted so good! Snack time's about to get exciting again!
+  cta: START HEALTHY SNACKING
 promise header: Our promise
 promise:
   employers:
@@ -59,7 +60,8 @@ promise:
       care of your deadlines.
     image: "/uploads/apple.svg"
   - header: " It’s Full of Goodness"
-    sub text: 'We offer a variety of 15 or more full-size snackables in each delivery. '
+    sub text: Well jam pack your boxes full of full-size snacks to keep you and your
+      family full of the good stuff
     image: "/uploads/heart.svg"
 products:
 - name: Loving Earth Dark Chocolate

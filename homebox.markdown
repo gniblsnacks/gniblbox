@@ -207,11 +207,11 @@ layout: default
 
 <main>
 {% include homebox_sections/home-hero.md %}
-{% include home_sections/clients.md %}
-{% include home_sections/about.md %}
-{% include home_sections/promise.md %}
-{% include home_sections/products.md %}
-{% include home_sections/instagram.md %}
-{% include home_sections/testimonials.md %}
-{% include home_sections/faqs.md %}
+{% include homebox_sections/clients.md %}
+{% include homebox_sections/about.md %}
+{% include homebox_sections/promise.md %}
+{% include homebox_sections/products.md %}
+{% include homebox_sections/instagram.md %}
+{% include homebox_sections/testimonials.md %}
+{% include homebox_sections/faqs.md %}
 </main>

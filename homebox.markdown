@@ -8,7 +8,7 @@ landing:
     for your kids, big kids AND \ngrown up kids-at-heart!"
   cta: See our plans
   mobile pricing link: see our prices
-client:
+clients:
 - name: Employsure
   image: "/uploads/employsure-logo.png"
   link: http://employsure.com.au/

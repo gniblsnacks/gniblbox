@@ -19,10 +19,11 @@
   </div>
 </div>
 <div class="row">
-  <div class="col-xs-12 col-sm-5 col-sm-offset-2"><p style="color:black;margin-top: -95px;
-    margin-left: -76px;">Not sold on this art... just neds to show kids  and mum and the box friendlyly, fun bright.</p>
-  <p  style="color:black;margin-top: -95px;
-    margin-left: -76px;">Overall, art should maybe have a few more kid friendly elements below:</p></div>
+  <div class="col-xs-12 col-sm-5 col-sm">
+    <div class="handdrawn">
+    <p style="color:black;">Not sold on this art... just needs to show kids  and mum and the box friendly, fun bright.<br>Overall, art should maybe have a few more kid friendly elements below:</p>
+  </div>
+  </div>
   </div>
 </div>
 </section>

@@ -2,13 +2,13 @@
 title: Homebox
 date: 2019-01-10 23:17:00 +11:00
 landing:
-  headline: EAT WELL, <span class="green">FEEL WELL.</span>
+  headline: Eat Well, <span class="green">Feel Well.</span>
   sub text: "Try out the Gnibl Box for healthy, tasty snacks delivered to your home.
     Taking care of yourself and loved ones has never been so easy. We have snacks
     for your kids, big kids AND \ngrown up kids-at-heart!"
   cta: See our plans
   mobile pricing link: see our prices
-clients:
+client:
 - name: Employsure
   image: "/uploads/employsure-logo.png"
   link: http://employsure.com.au/
@@ -207,7 +207,6 @@ layout: default
 
 <main>
 {% include homebox_sections/home-hero.md %}
-{% include homebox_sections/clients.md %}
 {% include homebox_sections/about.md %}
 {% include homebox_sections/promise.md %}
 {% include homebox_sections/products.md %}

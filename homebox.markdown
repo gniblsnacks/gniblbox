@@ -38,9 +38,6 @@ promise:
     sub text: Well jam pack your boxes full of full-size snacks to keep you and your
       family full of the good stuff
     image: "/uploads/heart.svg"
-  - header: asdasdasd
-    sub text: asdasdasd
-    image: 
 products:
 - name: Loving Earth Dark Chocolate
   image: "/uploads/Loving%20Earth%20Dark%20Chocolate%2072%25%2030g.png"

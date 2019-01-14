@@ -113,10 +113,10 @@ products:
   custom feature: 
 has testimonials?: true
 testimonials:
-- name: 
-  position: Lana (New Mum)
-  company: Peakbound
-  image: "/uploads/peakbound.png"
+- name: Richard
+  position: 
+  company: Company
+  image: "/uploads/3.jpg"
   review text: Being based in an office it is easy to snack on bad foods, Gnibl offers
     a healthy alternative to staff that always tastes great – plus you don’t feel
     guilty after your 3pm snack!

@@ -12,35 +12,24 @@ about:
   intro: The only thing standing between you and nutritious nibbles are these three
     simple steps.
   steps:
-  - header: Select your Box Size Size
-    sub text: We have boxes of all sizes - whether you're 'hoping for yourself, your
+  - header: Select your Box Size
+    sub text: We have boxes of all sizes - whether you're shopping for yourself, your
       title ones, or your whole family - we've got you covered
   - header: 'Select your dietary requirements '
-    sub text: We can cater to al your dietary neds whether gluten free, nut free,
-      vegan or other - just let us know.
+    sub text: We can cater to all your dietary needs - whether gluten free, nut free,
+      vegan - just let us know.
   - header: Delight in Delicious Snacks
     sub text: You and your home will love their newhealthy and delicious snacks options
-      each and e every month. Well surprise you with new snacks you'd never believe
+      each and every month. We'll surprise you with new snacks you'd never believe
       tasted so good! Snack time's about to get exciting again!
   cta: START HEALTHY SNACKING
 promise header: Our promise
 promise:
-  employers:
-  - header: Boost Office-Wide Productivity
-    sub text: Power your team with the fuel they need to stay focused and productive.
-    image: "/uploads/lightbulb.svg"
-  - header: Recruiting and Retention
-    sub text: Value your staff and become an employer of choice with an everyday perk
-      that attracts top talent.
-    image: "/uploads/checkboard.svg"
-  - header: Excitement at Snack Time
-    sub text: Enjoy a new and rotating range of genuinely healthy snacks in each delivery.
-    image: "/uploads/rocket.svg"
   employees:
-  - header: It Never Gets Old
+  - header: Excitement at Snack Time
     sub text: Look forward to something new with every delivery. A rotating range
       of snacks brings adventure back to the snack table.
-    image: "/uploads/new.svg"
+    image: "/uploads/rocket.svg"
   - header: It’s Healthy!
     sub text: Trust us & our dietitian to care for your well-being whilst you take
       care of your deadlines.
@@ -49,6 +38,9 @@ promise:
     sub text: Well jam pack your boxes full of full-size snacks to keep you and your
       family full of the good stuff
     image: "/uploads/heart.svg"
+  - header: asdasdasd
+    sub text: asdasdasd
+    image: 
 products:
 - name: Loving Earth Dark Chocolate
   image: "/uploads/Loving%20Earth%20Dark%20Chocolate%2072%25%2030g.png"

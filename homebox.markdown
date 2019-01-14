@@ -5,7 +5,7 @@ landing:
   headline: Eat Well, <span class="green">Feel Well.</span>
   sub text: "Try out the Gnibl Box for healthy, tasty snacks delivered to your home.
     Taking care of yourself and loved ones has never been so easy. We have snacks
-    for your kids, big kids AND \ngrown up kids-at-heart!"
+    for your kids, big kids and \ngrown up kids-at-heart!"
   cta: See our plans
   mobile pricing link: see our prices
 client:

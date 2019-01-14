@@ -20,5 +20,5 @@
   <img class="popcorn" src="assets/images/popcorn.png">
   <img class="nuts" src="assets/images/nuts.png">
     <img class="edamame" src="assets/images/edamame.png">
-  <img class="overhead-box" src="assets/images/overhead-box.png">
+  <img class="overhead-box" src="../images/overhead-box.png">
 </section>

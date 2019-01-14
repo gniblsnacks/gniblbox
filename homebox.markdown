@@ -113,8 +113,8 @@ products:
   custom feature: 
 has testimonials?: true
 testimonials:
-- name: David
-  position: HR Business Partner
+- name: 
+  position: Lana (New Mum)
   company: Peakbound
   image: "/uploads/peakbound.png"
   review text: Being based in an office it is easy to snack on bad foods, Gnibl offers

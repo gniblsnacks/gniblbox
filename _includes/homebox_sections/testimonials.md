@@ -12,7 +12,7 @@
         <div class="testimonial-photo hidden-xs" style="background-image:url({{testimonial.image}})">
         </div>  
         <div style="margin-top: 10px;" class="hidden-xs">
-          <span style="display: block; text-align: center">{{testimonial['name']}} from {{testimonial['company']}}</span>
+          <span style="display: block; text-align: center">{{testimonial['name']}}<!--  from {{testimonial['company']}} --></span>
         </div>
       </div>
       <div class="col-xs-3 visible-xs photo-container {% if mod == 1 %}left{%endif%}">

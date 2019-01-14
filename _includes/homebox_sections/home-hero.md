@@ -18,13 +18,13 @@
     {% endif %}
   </div>
 </div>
-<!-- <div class="row">
+<div class="row">
   <div class="col-xs-12 col-sm-5 col-sm">
     <div class="light-box">
     <p style="color:black;">Not sold on this art... just needs to show kids  and mum and the box friendly, fun bright.<br>Overall, art should maybe have a few more kid friendly elements below:</p>
   </div>
   </div>
-  </div> -->
+  </div>
 </div>
 <style type="text/css">
   .light-box{

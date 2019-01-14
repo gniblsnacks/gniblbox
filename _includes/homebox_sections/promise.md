@@ -1,7 +1,7 @@
 <section id="promise" class="offwhite-bg"> <!--OUR PROMISE-->
   <div class="container">
     <h2 class="alt-header">{{page['promise header']}}</h2>
-    <div class="col-sm-6">
+    <!-- <div class="col-sm-6">
       <h3>Employers</h3>
       {% for benefit in page.promise.employers %}
       <div class="row" style="margin: 20px 0; min-height: 160px">
@@ -14,9 +14,9 @@
         </div>
       </div>
       {% endfor %}
-    </div>
+    </div> -->
     <div class="col-sm-6">
-      <h3>Employees</h3>
+      <!-- <h3>Employees</h3> -->
       {% for benefit in page.promise.employees %}
       <div class="row" style="margin: 20px 0; min-height: 160px">
         <div class="col-xs-2" style="padding: 0">

@@ -82,7 +82,7 @@ drift.load('v5d3tfy9ms3a');
 </script>
 <!-- End of Async Drift Code -->
 </head>
-<body {% if page.title == "Homebox" %} class="home" {% endif %} >
+<body {% if page.title == "Homebox" || "Home" %} class="home" {% endif %} >
   <header>
     <a href="/"><img class="logo" src="/assets/images/logo.svg"></a>
     <nav>
@@ -92,7 +92,7 @@ drift.load('v5d3tfy9ms3a');
         <a class="btn btn-red header-trial-button" href="/trial"><span>Try Gnibl for free</span></a>
       {% endif %}
     </nav>
-    {% if page.title == "Homebox" %}
+    {% if page.title == "Homebox" || "Home" %}
     <div class="subnav">
       <div class="links">
         <a href="#about">How it works</a>

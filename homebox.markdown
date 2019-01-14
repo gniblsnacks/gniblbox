@@ -8,20 +8,6 @@ landing:
     for your kids, big kids and \ngrown up kids-at-heart!"
   cta: See our plans
   mobile pricing link: see our prices
-client:
-- name: Employsure
-  image: "/uploads/employsure-logo.png"
-  link: http://employsure.com.au/
-- name: Work Club Sydney
-  image: "/uploads/workclub.png"
-- name: SuperConcepts
-  image: "/uploads/superconcepts.png"
-- name: AMP
-  image: "/uploads/AMP.png"
-- name: AON
-  image: "/uploads/aon.png"
-- name: Insight Fundraising
-  image: "/uploads/ificon.png"
 about:
   intro: The only thing standing between you and nutritious nibbles are these three
     simple steps.

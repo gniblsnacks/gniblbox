@@ -17,8 +17,8 @@
   </div>
   <div class="wave wave-bottom offwhite-bg">
   </div>
-  <img class="popcorn" src="assets/images/popcorn.png">
-  <img class="nuts" src="assets/images/nuts.png">
-    <img class="edamame" src="assets/images/edamame.png">
+  <img class="popcorn" src="/uploads/popcorn.png">
+  <img class="nuts" src="/uploads/nuts.png">
+    <img class="edamame" src="/uploads/edamame.png">
   <img class="overhead-box" src="/uploads/overhead-box.png">
 </section>

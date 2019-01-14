@@ -1,6 +1,11 @@
 <section class="home-hero"> <!--HOME HERO-->
   <div class="container">
     <div class="row">
+      <div class="col-xs-12 col-sm-5 col-sm">
+    <div class="light-box">
+    <p style="color:black;">Not sold on this art... just needs to show kids  and mum and the box friendly, fun bright.<br>Overall, art should maybe have a few more kid friendly elements below:</p>
+  </div>
+  </div>
   <div class="col-xs-12 col-sm-5 col-sm-offset-7 hero-content">
   <h1 class="handdrawn main-header">{{page.landing.headline}}</h1>
     <p>{{page.landing["sub text"]}}</p>
@@ -17,11 +22,7 @@
     <p style="margin-top: 20px; font-style: italic; text-align: center">or <a href="/boxes">purchase a single box</a></p>
     {% endif %}
   </div>
-  <div class="col-xs-12 col-sm-5 col-sm">
-    <div class="light-box">
-    <p style="color:black;">Not sold on this art... just needs to show kids  and mum and the box friendly, fun bright.<br>Overall, art should maybe have a few more kid friendly elements below:</p>
-  </div>
-  </div>
+  
   </div>
 </div>
 <style type="text/css">

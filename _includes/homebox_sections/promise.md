@@ -18,6 +18,7 @@
     <div class="col-sm-12">
       <!-- <h3>Employees</h3> -->
       {% for benefit in page.promise.employees %}
+      <div class="col-sm-6">
       <div class="row" style="margin: 20px 0; min-height: 160px">
         <div class="col-xs-2" style="padding: 0">
           <img src="{{benefit.image}}">
@@ -27,6 +28,7 @@
             {{benefit['sub text'] | markdownify }}
         </div>
       </div>
+    </div>
       {% endfor %}
     </div>
   </div>

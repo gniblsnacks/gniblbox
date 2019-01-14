@@ -29,7 +29,7 @@
 <style type="text/css">
   .light-box{
     background: rgba(255, 255, 255, 0.75);
-    padding: 10px 15px;
+    padding: 5px 25px;
   }
 </style>
 </section>

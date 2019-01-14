@@ -113,14 +113,14 @@ products:
   custom feature: 
 has testimonials?: true
 testimonials:
-- name: Richard (Richard Father of two)
+- name: Richard
   position: 
   company: 
   image: "/uploads/3.jpg"
   review text: Being based in an office it is easy to snack on bad foods, Gnibl offers
     a healthy alternative to staff that always tastes great – plus you don’t feel
     guilty after your 3pm snack!
-- name: Lana (New Mum)
+- name: Lana
   position: 
   company: 
   image: "/uploads/1.jpg"
@@ -128,7 +128,7 @@ testimonials:
     to what we like and what works well for us and keep those items in the box but
     also make great suggestions for new things to try. We are never disappointed with
     what we receive.
-- name: Sarah (Design Student)
+- name: Sarah
   position: 
   company: 
   image: "/uploads/2.jpg"

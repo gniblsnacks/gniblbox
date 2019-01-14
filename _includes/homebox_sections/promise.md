@@ -15,7 +15,7 @@
       </div>
       {% endfor %}
     </div> -->
-    <div class="col-sm-6">
+    <div class="col-sm-12">
       <!-- <h3>Employees</h3> -->
       {% for benefit in page.promise.employees %}
       <div class="row" style="margin: 20px 0; min-height: 160px">

@@ -16,6 +16,5 @@
     <p style="margin-top: 20px; font-style: italic; text-align: center">or <a href="/boxes">purchase a single box</a></p>
     {% endif %}
   </div>
-  <div class="col-xs-12 col-sm-5 col-sm-offset-2"><h1 style="color:black;">testing</h1></div>
   </div>
 </section>

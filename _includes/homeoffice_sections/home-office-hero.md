@@ -35,4 +35,7 @@
 .section{
     position: inherit !important;
 }
+.or{
+  font-size: 60px;
+}
 </style>

@@ -29,9 +29,6 @@
     padding: 0;
     height: auto;
 }
-.red {
-    color: #e63a3a;
-}
 .section{
     position: inherit !important;
 }

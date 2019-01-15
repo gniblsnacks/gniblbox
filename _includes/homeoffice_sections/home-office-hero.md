@@ -18,3 +18,15 @@
   </div>
   </div>
 </section>
+<style>
+  .home-hero {
+    background: url(/uploads/APB240091.png), url(../images/dotted.jpg);
+    background-size: cover, auto;
+    min-height: 70vh;
+    background-repeat: no-repeat, repeat;
+    background-position: left center;
+    overflow-y: hidden;
+    padding: 0;
+    height: auto;
+}
+</style>

@@ -4,7 +4,7 @@ date: 2019-01-15 21:02:00 +11:00
 ---
 
 <main>
-{% include homeoffice_sections/home-hero.md %}
+{% include homeoffice_sections/home-office-hero.md %}
 {% include homeoffice_sections/about.md %}
 {% include homeoffice_sections/promise.md %}
 {% include homeoffice_sections/products.md %}

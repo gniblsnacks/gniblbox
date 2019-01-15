@@ -33,7 +33,7 @@ section{
     position: inherit !important;
 }
 .or{
-  font-size: 13px;
+  font-size: 16px;
   font-family: brandon-grotesque, sans-serif;
   font-style: normal;
   font-weight: 100;

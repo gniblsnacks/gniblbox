@@ -33,6 +33,6 @@
     color: #e63a3a;
 }
 .section{
-    position: inherit;
+    position: inherit !important;
 }
 </style>

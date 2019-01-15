@@ -2,7 +2,7 @@
   <div class="container">
   <div class="col-xs-12 col-sm-5 hero-content">
   <h1 class="main-header">{{page.landing.headline}}</h1>
-    <p>{{page.landing["sub text"]}}</p>
+    <p style="text-align: center;">{{page.landing["sub text"]}}</p>
     {% if page["free trial"] %}
     <form id="landing-form">
       <input type="email" name="email" placeholder="Your work email">

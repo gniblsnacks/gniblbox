@@ -30,6 +30,6 @@
     height: auto;
 }
 .red {
-    color: red;
+    color: #e63a3a;
 }
 </style>

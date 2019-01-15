@@ -87,13 +87,11 @@ drift.load('v5d3tfy9ms3a');
     {% if page.title !="Home Office" %}
     <a href="/"><img class="logo" src="/assets/images/logo.svg"></a>
     {% else if %}
-    <center>
-    <a href="/"><img class="logo" src="/assets/images/logo.svg"></a>
-    </center>
+    <a href="/"><center><img class="logo" src="/assets/images/logo.svg"></center></a>
     {% endif %}
     {% if page.title !="Home Office" %}
     <nav>
-      <a href="/plans" style="text-transform: uppercase">Plans{{ page.title }}</a>
+      <a href="/plans" style="text-transform: uppercase">Plans</a>
       <a href="/boxes" style="text-transform: uppercase">Single Boxes</a>
       {% if page["free-trial"] %}
         <a class="btn btn-red header-trial-button" href="/trial"><span>Try Gnibl for free</span></a>

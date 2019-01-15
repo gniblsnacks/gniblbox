@@ -181,11 +181,11 @@ layout: default
 ---
 
 <main>
-{% include HomeOffice_sections/home-hero.md %}
-{% include HomeOffice_sections/about.md %}
-{% include HomeOffice_sections/promise.md %}
-{% include HomeOffice_sections/products.md %}
-{% include HomeOffice_sections/instagram.md %}
-{% include HomeOffice_sections/testimonials.md %}
-{% include HomeOffice_sections/faqs.md %}
+{% include homebox_sections/home-hero.md %}
+{% include homebox_sections/about.md %}
+{% include homebox_sections/promise.md %}
+{% include homebox_sections/products.md %}
+{% include homebox_sections/instagram.md %}
+{% include homebox_sections/testimonials.md %}
+{% include homebox_sections/faqs.md %}
 </main>

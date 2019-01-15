@@ -29,7 +29,7 @@
     padding: 0;
     height: auto;
 }
-.section{
+section{
     position: inherit !important;
 }
 .or{
@@ -37,6 +37,7 @@
   font-family: brandon-grotesque, sans-serif;
   font-style: normal;
   font-weight: 100;
+  vertical-align: middle;
 }
 .home-hero .hero-content{
   background-color: #ffffff;

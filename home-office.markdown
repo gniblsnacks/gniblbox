@@ -5,8 +5,8 @@ landing:
   headline: <span class="red">Home</span> <span class="green">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Office</span>
   sub text: "Join the Gnibl Club for healthy, tasty snacks delivered to your home
     or office. \nNourish your body and fuel your brain for a full and productive day."
-  cta: SHOP HOME
-  mobile pricing link: see our prices
+  cta red: SHOP HOME
+  cta green: SHOP OFFICE
 layout: default
 ---
 

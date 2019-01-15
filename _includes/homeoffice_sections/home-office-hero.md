@@ -36,6 +36,9 @@
     position: inherit !important;
 }
 .or{
-  font-size: 60px;
+  font-size: 18px;
+  font-family: brandon-grotesque, sans-serif;
+  font-style: normal;
+  font-weight: 100;
 }
 </style>

@@ -43,4 +43,7 @@ section{
   background-color: #ffffff;
 opacity: 0.87;
 }
+header .logo{
+  left: auto;
+}
 </style>

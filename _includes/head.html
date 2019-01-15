@@ -85,7 +85,7 @@ drift.load('v5d3tfy9ms3a');
 <body {% if page.title == "Homebox" %} class="home" {% endif %} {% if page.title == "Home" %} class="home" {% endif %} >
   <header>
     <a href="/"><img class="logo" src="/assets/images/logo.svg"></a>
-    {{ page.title }}
+    {% if page.title !="Home Office" %}
     <nav>
       <a href="/plans" style="text-transform: uppercase">Plans{{ page.title }}</a>
       <a href="/boxes" style="text-transform: uppercase">Single Boxes</a>
@@ -93,6 +93,7 @@ drift.load('v5d3tfy9ms3a');
         <a class="btn btn-red header-trial-button" href="/trial"><span>Try Gnibl for free</span></a>
       {% endif %}
     </nav>
+    {% endif %}
     {% if page.title == "Homebox" %}
     <div class="subnav">
       <div class="links">

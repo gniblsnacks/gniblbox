@@ -84,7 +84,13 @@ drift.load('v5d3tfy9ms3a');
 </head>
 <body {% if page.title == "Homebox" %} class="home" {% endif %} {% if page.title == "Home" %} class="home" {% endif %} >
   <header>
+    {% if page.title !="Home Office" %}
     <a href="/"><img class="logo" src="/assets/images/logo.svg"></a>
+    {% elseif %}
+    <center>
+    <a href="/"><img class="logo" src="/assets/images/logo.svg"></a>
+    </center>
+    {% endif %}
     {% if page.title !="Home Office" %}
     <nav>
       <a href="/plans" style="text-transform: uppercase">Plans{{ page.title }}</a>

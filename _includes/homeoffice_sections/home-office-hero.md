@@ -1,7 +1,7 @@
 <section class="home-hero"> <!--HOME HERO-->
   <div class="container">
   <div class="col-xs-12 col-sm-5 hero-content">
-  <h1 class="handdrawn main-header" style="text-align: center;">{{page.landing.headline}}</h1>
+  <h1 class="main-header" style="position:relative;">{{page.landing.headline}}</h1>
     <p style="text-align: center;">{{page.landing["sub text"]}}</p>
     {% if page["free trial"] %}
     <form id="landing-form">
@@ -37,5 +37,9 @@
   font-family: brandon-grotesque, sans-serif;
   font-style: normal;
   font-weight: 100;
+}
+.home-hero .hero-content{
+  background-color: #ffffff;
+opacity: 0.87;
 }
 </style>

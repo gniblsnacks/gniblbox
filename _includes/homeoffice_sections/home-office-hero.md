@@ -12,8 +12,8 @@
     </form>
     <div class="visible-xs"><p style="margin-top: 20px; font-style: italic">or <a href="/plans">{{page.landing['mobile pricing link']}}</a></p></div>
     {% else %}
-    <a class="btn btn-red" href="/plans" style="max-width: none !important"><span>{{page.landing.ctared}}</span></a>
-    <a class="btn btn-green" href="/plans" style="max-width: none !important"><span>{{page.landing.ctagreen}}</span></a>
+    <a class="btn btn-red" href="/plans"><span>{{page.landing.ctared}}</span></a><br>
+    <a class="btn btn-green" href="/plans"><span>{{page.landing.ctagreen}}</span></a>
     {% endif %}
   </div>
   </div>

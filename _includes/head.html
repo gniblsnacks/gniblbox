@@ -82,7 +82,7 @@ drift.load('v5d3tfy9ms3a');
 </script>
 <!-- End of Async Drift Code -->
 </head>
-<body {% if page.title == "Homebox" %} class="home" {% endif %} >
+<body {% if page.title == "Homebox" %} class="home" {% endif %} {% if page.title == "Home" %} class="home" {% endif %} >
   <header>
     <a href="/"><img class="logo" src="/assets/images/logo.svg"></a>
     <nav>
@@ -93,6 +93,17 @@ drift.load('v5d3tfy9ms3a');
       {% endif %}
     </nav>
     {% if page.title == "Homebox" %}
+    <div class="subnav">
+      <div class="links">
+        <a href="#about">How it works</a>
+        <a href="#promise">Our promise</a>
+        <a href="#products">Products</a>
+        {% if page['has testimonials?']%}<a href="#testimonials">Testimonials</a>{%endif%}
+        <a href="#faqs">FAQs</a>
+      </div>
+    </div>
+    {% endif %}
+    {% if page.title == "Home" %}
     <div class="subnav">
       <div class="links">
         <a href="#about">How it works</a>

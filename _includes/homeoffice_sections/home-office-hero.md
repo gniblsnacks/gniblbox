@@ -29,4 +29,7 @@
     padding: 0;
     height: auto;
 }
+.red {
+    color: red;
+}
 </style>

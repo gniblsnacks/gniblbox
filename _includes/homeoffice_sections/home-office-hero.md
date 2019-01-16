@@ -62,10 +62,9 @@ header .logo{
       font-size: 65px !important;
     }
   }
-  @media (min-width: 320px) and (max-width: 480px){}
+  @media (min-width: 320px) and (max-width: 480px){
     .main-header{
-      /*font-size: 50px !important;*/
-      display: none;
+      font-size: 50px !important;
     }
   }
 </style>

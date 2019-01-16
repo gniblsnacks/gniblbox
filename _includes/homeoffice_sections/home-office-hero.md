@@ -39,10 +39,6 @@ section{
   font-weight: 100;
   vertical-align: middle;
 }
-.home-hero .hero-content{
-  background-color: #ffffff;
-opacity: 0.87;
-}
 header .logo{
   left: auto;
 }

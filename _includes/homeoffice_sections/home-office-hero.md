@@ -59,4 +59,9 @@ header .logo{
       background-image: none;
     }
   }
+  @media (min-width: 320px) (max-width: 480px){
+    .main-header{
+      font-size: 50px;
+    }
+  }
 </style>

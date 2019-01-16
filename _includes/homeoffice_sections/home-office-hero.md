@@ -50,7 +50,7 @@ header .logo{
 .home-hero {
     max-height: none;
     height: auto;
-    background-image: url(../images/mobile-header.jpg);
+    background-image: url(/uploads/mobile-header.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: top;

@@ -54,4 +54,9 @@ header .logo{
     padding-top: 100px;
     }
   }
+  @media (min-width: 1024px){
+    .handdrawn{
+      background-image: none;
+    }
+  }
 </style>

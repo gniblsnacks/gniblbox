@@ -46,4 +46,16 @@ opacity: 0.87;
 header .logo{
   left: auto;
 }
+@media (max-width: 1023px), (orientation: portrait){
+.home-hero {
+    max-height: none;
+    height: auto;
+    background-image: url(../images/mobile-header.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    text-align: center;
+    padding-top: 100px;
+    }
+  }
 </style>

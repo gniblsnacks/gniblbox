@@ -64,7 +64,8 @@ header .logo{
   }
   @media (min-width: 320px) and (max-width: 480px){}
     .main-header{
-      font-size: 50px !important;
+      /*font-size: 50px !important;*/
+      display: none;
     }
   }
 </style>

@@ -69,7 +69,7 @@ header .logo{
   }
   @media (min-width: 320px) and (max-width: 10230px){
     .btn-green{
-      margin-bottom: 20px;
+      margin-bottom: 40px;
     }
   }
 </style>

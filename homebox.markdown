@@ -111,14 +111,6 @@ products:
   is gluten free?: true
   has no added sugar?: true
   custom feature: 
-- name: Dairy Milk
-  image: "/uploads/80664.png"
-  is vegan?: true
-  is high in protein?: true
-  is dairy free?: true
-  is gluten free?: 
-  has no added sugar?: 
-  custom feature: 
 has testimonials?: true
 testimonials:
 - name: Richard

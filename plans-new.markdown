@@ -59,6 +59,7 @@ value props:
   image: "/uploads/collection.svg"
 cta: Sign up now
 cta custom box: Request a quote
+layout: default
 ---
 
 <main class="pricing fixed-header dotted-bg">

@@ -5,7 +5,7 @@ header: Join the Gnibl club
 subheader: Select your preferences and find the Gnibl membership most suited to your
   team.
 starter box:
-- name: Starter
+  name: Starter
   image: "/uploads/starter-box.png"
   cost:
     per week: 66

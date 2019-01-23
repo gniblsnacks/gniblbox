@@ -59,6 +59,9 @@
     margin-top: 5px;
   }
 }
+.Brandon{
+display:none
+}
 </style>
 
 <script>

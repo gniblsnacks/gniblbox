@@ -47,7 +47,7 @@ size selection:
   - snacks: 100+
     box: custom box
 frequency selection:
-  lead: 'Select your delivery frequency:'
+  lead: Any dietary requirements?
   options:
   - weekly
   - fortnightly

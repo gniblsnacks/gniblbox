@@ -81,7 +81,7 @@ function calculatePrice() {
     snack_num = {{page['small box']['number of snacks']}};
     if (delivery_frequency == "week") {
       cost = {{page['small box'].cost['once']}};
-    } else (delivery_frequency == "month") {
+    } else /*(delivery_frequency == "month") */{
       cost = {{page['small box'].cost['per month']}};
     } 
 
@@ -90,7 +90,7 @@ function calculatePrice() {
     snack_num = {{page['medium box']['number of snacks']}};
     if (delivery_frequency == "week") {
       cost = {{page['medium box'].cost['once']}};
-    } else (delivery_frequency == "month") {
+    } else /*(delivery_frequency == "month")*/ {
       cost = {{page['medium box'].cost['per month']}};
     }
 
@@ -99,7 +99,7 @@ function calculatePrice() {
     snack_num = {{page['starter box']['number of snacks']}};
     if (delivery_frequency == "week") {
       cost = {{page['starter box'].cost['once']}};
-    } else (delivery_frequency == "month") {
+    } else /*(delivery_frequency == "month")*/ {
       cost = {{page['starter box'].cost['per month']}};
     }
   //   custom_box = false;

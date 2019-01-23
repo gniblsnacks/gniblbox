@@ -5,7 +5,7 @@ header: Join the Gnibl club
 subheader: Select your preferences and find the Gnibl membership most suited to your
   team.
 starter box:
-  name: Small, Medium or Family
+  name: Small
   image: "/uploads/starter-box.png"
   cost:
     per week: 66
@@ -13,7 +13,7 @@ starter box:
     per month: 69
   number of snacks: 10
 small box:
-  name: Classic
+  name: Medium
   image: "/uploads/small-box.png"
   cost:
     per week: 132
@@ -21,7 +21,7 @@ small box:
     per month: 139
   number of snacks: 20
 medium box:
-  name: Midi
+  name: Family
   image: "/uploads/medium-box.png"
   cost:
     per week: 259
@@ -53,10 +53,8 @@ frequency selection:
   - fortnightly
   - monthly
 value props:
-- value: Free shipping to metro areas
+- value: "$9 Flat Shipping"
   image: "/uploads/truck.svg"
-- value: Optional honesty box
-  image: "/uploads/collection.svg"
 cta: Sign up now
 cta custom box: Request a quote
 layout: default

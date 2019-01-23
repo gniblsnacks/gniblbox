@@ -52,6 +52,10 @@
 </style>
 
 <script>
+
+// weekly = one off
+// fortnightly = monthly
+
 // set number of snacks to default
 var snack_num = {{page['starter box']['number of snacks']}};
 
@@ -111,3 +115,4 @@ function calculatePrice() {
   }
 }
 </script>
+

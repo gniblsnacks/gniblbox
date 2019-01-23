@@ -38,14 +38,12 @@ custom box:
 size selection:
   lead: How many snacks?
   breakpoints:
-  - snacks: 24
+  - snacks: 10
     box: starter box
-  - snacks: 50
+  - snacks: 20
     box: small box
-  - snacks: 100
+  - snacks: 30
     box: medium box
-  - snacks: 100+
-    box: custom box
 frequency selection:
   lead: Any dietary requirements?
   options:

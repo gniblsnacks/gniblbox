@@ -11,7 +11,7 @@ starter box:
     per week: 66
     per fortnight: 67
     per month: 69
-  number of snacks: 24
+  number of snacks: 10
 small box:
   name: Medium
   image: "/uploads/small-box.png"
@@ -19,7 +19,7 @@ small box:
     per week: 132
     per fortnight: 134
     per month: 139
-  number of snacks: 50
+  number of snacks: 20
 medium box:
   name: Family
   image: "/uploads/medium-box.png"
@@ -27,7 +27,7 @@ medium box:
     per week: 259
     per fortnight: 264
     per month: 269
-  number of snacks: 100
+  number of snacks: 30
 custom box:
   name: Custom
   image: "/uploads/jumbo-box.png"
@@ -38,14 +38,12 @@ custom box:
 size selection:
   lead: How many snacks?
   breakpoints:
-  - snacks: 24
+  - snacks: 10
     box: starter box
-  - snacks: 50
+  - snacks: 20
     box: small box
-  - snacks: 100
+  - snacks: 30
     box: medium box
-  - snacks: 100+
-    box: custom box
 frequency selection:
   lead: 'Select your delivery frequency:'
   options:

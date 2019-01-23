@@ -1,7 +1,7 @@
 <div class="col-xs-12 col-md-5 calculator">
   <!--SIZE SELECTION-->
   <div class="col-xs-12 col-sm-6 col-md-12">
-    <h4>{{page['size selection'].lead | markdownify | strip_html}}</h4>
+    <h4>{{page['size selection'].lead | markdownify | strip_html}} test</h4>
     <div class="tabs size-selection">
       {% for breakpoint in page['size selection'].breakpoints %}
       <div class="btn-tab {% if forloop.first %} selected-tab {% endif %}" data-box-size="{{breakpoint.box}}" style="width: 25%">

@@ -102,16 +102,16 @@ function calculatePrice() {
     } else /*(delivery_frequency == "month")*/ {
       cost = {{page['starter box'].cost['per month']}};
     }
-  //   custom_box = false;
-  // } else if (box_size == "custom box") {
-  //   if (delivery_frequency == "week") {
-  //     cost = {{page['custom box'].cost['once']}};
-  //   } else if (delivery_frequency == "month") {
-  //     cost = {{page['custom box'].cost['per month']}};
-  //   } else {
-  //     cost = {{page['custom box'].cost['per fortnight']}};
-  //   }
-  //   custom_box = true;
+    custom_box = false;
+  } else if (box_size == "custom box") {
+    if (delivery_frequency == "week") {
+      cost = {{page['custom box'].cost['once']}};
+    } else if (delivery_frequency == "month") {
+      cost = {{page['custom box'].cost['per month']}};
+    } else {
+      cost = {{page['custom box'].cost['per fortnight']}};
+    }
+    custom_box = true;
   }
 }
 </script>

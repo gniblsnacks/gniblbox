@@ -1,5 +1,5 @@
 ---
-title: Plans-2
+title: Plans New
 date: 2019-01-23 20:23:00 +11:00
 header: Join the Gnibl club
 subheader: Select your preferences and find the Gnibl membership most suited to your

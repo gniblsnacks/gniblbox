@@ -8,8 +8,8 @@ starter box:
   name: Small
   image: "/uploads/starter-box.png"
   cost:
-    per month: 29
     once: 32
+    per month: 29
   number of snacks: 10
 small box:
   name: Medium

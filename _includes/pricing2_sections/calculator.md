@@ -4,7 +4,7 @@
     <h4>{{page['size selection'].lead | markdownify | strip_html}}</h4>
     <div class="tabs size-selection">
       {% for breakpoint in page['size selection'].breakpoints %}
-      <div class="btn-tab {% if forloop.first %} selected-tab {% endif %}" data-box-size="{{breakpoint.box}}">
+      <div class="btn-tab {% if forloop.first %} selected-tab {% endif %}" data-box-size="{{breakpoint.box}}" style="width: 25%">
         {{breakpoint['snacks']}}
       </div>
       {%endfor%}
@@ -20,16 +20,6 @@
       </div>
       {%endfor%}
     </div>
-  </div>
-  <div class="col-xs-12 col-sm-6 col-md-12">
-    <h4>{{page['dietary requirements'].title | markdownify | strip_html}}</h4>
-    <!-- <div class="tabs frequency-selection">
-      {% for option in page['frequency selection'].options %}
-      <div class="btn-tab {% if forloop.last %} selected-tab {% endif %}">
-        {{option}}
-      </div>
-      {%endfor%}
-    </div> -->
   </div>
   <div class="hidden-sm hidden-xs">
   <hr>
@@ -70,10 +60,12 @@ var cost = {{page['starter box'].cost['per month']}};
 
 // set CTAs for reference in JS
 var cta = "{{page.cta}}";
+var custom_cta = "{{page['cta custom box']}}";
 
 var starterboxname = "{{page['starter box'].name}}";
 var smallboxname = "{{page['small box'].name}}";
 var mediumboxname = "{{page['medium box'].name}}";
+var customboxname = "{{page['custom box'].name}}";
 
 var oneoff = false;
 function calculatePrice() {
@@ -106,16 +98,16 @@ function calculatePrice() {
     } else {
       cost = {{page['starter box'].cost['per fortnight']}};
     }
-  //   custom_box = false;
-  // } else if (box_size == "custom box") {
-  //   if (delivery_frequency == "week") {
-  //     cost = {{page['custom box'].cost['per week']}};
-  //   } else if (delivery_frequency == "month") {
-  //     cost = {{page['custom box'].cost['per month']}};
-  //   } else {
-  //     cost = {{page['custom box'].cost['per fortnight']}};
-  //   }
-  //   custom_box = true;
+    custom_box = false;
+  } else if (box_size == "custom box") {
+    if (delivery_frequency == "week") {
+      cost = {{page['custom box'].cost['per week']}};
+    } else if (delivery_frequency == "month") {
+      cost = {{page['custom box'].cost['per month']}};
+    } else {
+      cost = {{page['custom box'].cost['per fortnight']}};
+    }
+    custom_box = true;
   }
 }
 </script>

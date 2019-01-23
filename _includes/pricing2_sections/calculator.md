@@ -79,10 +79,10 @@ var oneoff = false;
 function calculatePrice() {
   if (box_size == "small box") {
     snack_num = {{page['small box']['number of snacks']}};
-    if (delivery_frequency == "once") {
-      cost = {{page['small box'].cost['once']}};
-    } else (delivery_frequency == "month") {
+    if (delivery_frequency == "month") {
       cost = {{page['small box'].cost['per month']}};
+    } else {
+      cost = {{page['small box'].cost['once']}};
     } 
 
     custom_box = false;

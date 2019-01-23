@@ -28,13 +28,6 @@ medium box:
     per fortnight: 69
     per month: 10
   number of snacks: 30
-custom box:
-  name: Custom
-  image: "/uploads/jumbo-box.png"
-  cost:
-    per week: 380
-    per fortnight: 390
-    per month: 10
 size selection:
   lead: How many snacks?
   breakpoints:

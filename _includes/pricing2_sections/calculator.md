@@ -4,7 +4,7 @@
     <h4>{{page['size selection'].lead | markdownify | strip_html}}</h4>
     <div class="tabs size-selection">
       {% for breakpoint in page['size selection'].breakpoints %}
-      <div class="btn-tab {% if forloop.first %} selected-tab {% endif %}" data-box-size="{{breakpoint.box}}">
+      <div class="btn-tab {% if forloop.first %} selected-tab {% endif %}" data-box-size="{{breakpoint.box}}" style="width: 50%">
         {{breakpoint['snacks']}}
       </div>
       {%endfor%}

@@ -45,11 +45,13 @@ size selection:
   - snacks: 30
     box: medium box
 frequency selection:
-  lead: Any dietary requirements?
+  lead: 'Select your delivery frequency:'
   options:
   - weekly
   - fortnightly
   - monthly
+dietary requirements:
+  title: Any dietary requirements?
 value props:
 - value: "$9 Flat Shipping"
   image: "/uploads/truck.svg"

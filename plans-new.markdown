@@ -49,7 +49,6 @@ value props:
 - value: "$9 Flat Shipping"
   image: "/uploads/truck.svg"
 cta: Sign up now
-cta custom box: Request a quote
 layout: default
 ---
 

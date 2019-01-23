@@ -21,6 +21,16 @@
       {%endfor%}
     </div>
   </div>
+  <div class="col-xs-12 col-sm-6 col-md-12">
+    <h4>{{page['dietary requirements'].title | markdownify | strip_html}}</h4>
+    <!-- <div class="tabs frequency-selection">
+      {% for option in page['frequency selection'].options %}
+      <div class="btn-tab {% if forloop.last %} selected-tab {% endif %}">
+        {{option}}
+      </div>
+      {%endfor%}
+    </div> -->
+  </div>
   <div class="hidden-sm hidden-xs">
   <hr>
   <div class="row">

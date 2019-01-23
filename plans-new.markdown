@@ -47,8 +47,8 @@ size selection:
 frequency selection:
   lead: 'Select your delivery frequency:'
   options:
-  - one off
-  - monthly
+  - One Off
+  - Monthly
 dietary requirements:
   title: Any dietary requirements?
 value props:

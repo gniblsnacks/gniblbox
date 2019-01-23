@@ -8,25 +8,22 @@ starter box:
   name: Small
   image: "/uploads/starter-box.png"
   cost:
-    per week: 66
-    per fortnight: 67
-    per month: 69
+    per week: 32
+    per fortnight: 29
   number of snacks: 10
 small box:
   name: Medium
   image: "/uploads/small-box.png"
   cost:
-    per week: 132
-    per fortnight: 134
-    per month: 139
+    per week: 54
+    per fortnight: 49134
   number of snacks: 20
 medium box:
   name: Family
   image: "/uploads/medium-box.png"
   cost:
-    per week: 259
-    per fortnight: 264
-    per month: 269
+    per week: 76
+    per fortnight: 69
   number of snacks: 30
 custom box:
   name: Custom
@@ -34,7 +31,6 @@ custom box:
   cost:
     per week: 380
     per fortnight: 390
-    per month: 400
 size selection:
   lead: How many snacks?
   breakpoints:

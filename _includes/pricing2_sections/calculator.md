@@ -130,12 +130,12 @@ var cost = {{page['starter box'].cost['per month']}};
 
 // set CTAs for reference in JS
 var cta = "{{page.cta}}";
-var custom_cta = "{{page['cta custom box']}}";
+// var custom_cta = "{{page['cta custom box']}}";
 
 var starterboxname = "{{page['starter box'].name}}";
 var smallboxname = "{{page['small box'].name}}";
 var mediumboxname = "{{page['medium box'].name}}";
-var customboxname = "{{page['custom box'].name}}";
+// var customboxname = "{{page['custom box'].name}}";
 
 var oneoff = false;
 function calculatePrice() {

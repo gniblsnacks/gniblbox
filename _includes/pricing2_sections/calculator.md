@@ -47,24 +47,24 @@
       <div class="col-xs-6 col-sm-6 col-md-6 check">
         <input class="text" type="text" name="other" placeholder="Other">
       </div>
-    <!-- <div class="tabs frequency-selection">
-      {% for option in page['frequency selection'].options %}
-      <div class="btn-tab {% if forloop.last %} selected-tab {% endif %}">
-        {{option}}
-      </div>
-      {%endfor%}
-    </div> -->
     </form>
   </div>
   <div class="col-xs-12 col-sm-6 col-md-12">
     <h4>{{page['are the snacks for'].title | markdownify | strip_html}}</h4>
-    <!-- <div class="tabs frequency-selection">
-      {% for option in page['frequency selection'].options %}
-      <div class="btn-tab {% if forloop.last %} selected-tab {% endif %}">
-        {{option}}
+    <form id="quote-form" style="margin-top: 20px">
+      <div class="col-xs-12 col-sm-12 col-md-12 check">
+        <input class="checkbox" type="checkbox" name="gluten_free" value="Gluten Free">
+        <p>Gluten Free</p>
       </div>
-      {%endfor%}
-    </div> -->
+      <div class="col-xs-12 col-sm-12 col-md-12 check">
+        <input class="checkbox" type="checkbox" name="vegan" value="Vegan">
+        <p>Vegan</p>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 check">
+        <input class="checkbox" type="checkbox" name="nut_free" value="Nut Free">
+        <p>Nut Free</p>
+      </div>
+    </form>
   </div>
   <div class="hidden-sm hidden-xs">
   <hr>

@@ -89,19 +89,18 @@
   </div>
 </div>
 <style>
-main.pricing .boxes {
-    height: 175vh;
-}
-main.pricing .table{
-  height: 130vh;
-}
-
 @media (min-width: 992px) {
   .price {
     margin-top: 5px;
   }
   main.pricing .boxes .box-carousel{
   top: 30%;
+  }
+  main.pricing .boxes {
+    height: 175vh;
+  }
+  main.pricing .table{
+    height: 130vh;
   }
 }
 #root{

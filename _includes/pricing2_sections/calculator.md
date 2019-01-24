@@ -81,7 +81,7 @@
     </div>
     {% endfor %}
   </div>
-  <a class="product-link btn btn-red" style="max-width: none"><span class="pricing-cta">{{page.cta | markdownify | strip_html}}</span></a>
+  <a <!-- class="product-link btn btn-red" --> style="max-width: none"><span class="pricing-cta">{{page.cta | markdownify | strip_html}}</span></a>
   <p class="additional-info">
     <span class="snack-num"></span> snacks
     (<span class="per-snack"></span> each)
@@ -102,9 +102,6 @@
   main.pricing .table{
     height: 130vh;
   }
-}
-#root{
-  display:none !important;
 }
 .check p{
   line-height: 0px;

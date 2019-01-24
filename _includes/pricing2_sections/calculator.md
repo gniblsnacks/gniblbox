@@ -23,6 +23,8 @@
   </div>
   <div class="col-xs-12 col-sm-6 col-md-12">
     <h4>{{page['dietary requirements'].title | markdownify | strip_html}}</h4>
+    <input class="half" type="text" name="first_name" placeholder="First name" required>
+    <input class="half" type="text" name="last_name" placeholder="Last name" required>
     <!-- <div class="tabs frequency-selection">
       {% for option in page['frequency selection'].options %}
       <div class="btn-tab {% if forloop.last %} selected-tab {% endif %}">

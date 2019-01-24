@@ -87,8 +87,8 @@ display:none
   margin-left: 40px;
 }
 .checkbox{
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
   float: left;
 }
 </style>

@@ -7,6 +7,7 @@ function init() {
   instafeedInit();
   $(window).scroll(scrollFunctions);
   pricingFunctions();
+  pricingFunctionsNew();
   validationInit();
   modalInit();
   testimonialInit();
@@ -339,7 +340,7 @@ function updateProductLinkNew() {
 }
 
 var box_size = "starter box", delivery_frequency = "month", custom_box = false;
-function pricingFunctions() {
+function pricingFunctionsNew() {
   if ($('main').first().hasClass('pricing')) {
     updatePricingHTML();
     updateProductLinkNew();
@@ -374,7 +375,7 @@ function pricingFunctions() {
         $(this).addClass('selected-tab');
         delivery_frequency = $(this).html().replace("ly", "").trim();
         updatePricingHTML(calculatePrice());
-        updateProductLinkNew();
+        updateProductLink();
       });
     });
 

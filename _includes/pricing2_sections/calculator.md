@@ -92,6 +92,9 @@
 main.pricing .boxes {
     height: 190vh;
 }
+main.pricing .table{
+  height: 110vh;
+}
 @media (min-width: 992px) {
   .price {
     margin-top: 5px;

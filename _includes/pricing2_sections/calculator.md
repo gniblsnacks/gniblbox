@@ -53,16 +53,16 @@
     <h4>{{page['are the snacks for'].title | markdownify | strip_html}}</h4>
     <form id="quote-form" style="margin-top: 20px">
       <div class="col-xs-12 col-sm-12 col-md-12 check">
-        <input class="checkbox" type="checkbox" name="gluten_free" value="Gluten Free">
-        <p>Gluten Free</p>
+        <input class="checkbox" type="checkbox" name="priamry_school_kids" value="Priamry school kids">
+        <p>Priamry school kids</p>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-12 check">
-        <input class="checkbox" type="checkbox" name="vegan" value="Vegan">
-        <p>Vegan</p>
+        <input class="checkbox" type="checkbox" name="high_school_kids" value="High school kids">
+        <p>High school kids</p>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-12 check">
-        <input class="checkbox" type="checkbox" name="nut_free" value="Nut Free">
-        <p>Nut Free</p>
+        <input class="checkbox" type="checkbox" name="nut_free" value="Adults">
+        <p>Adults</p>
       </div>
     </form>
   </div>

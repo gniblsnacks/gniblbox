@@ -4,21 +4,21 @@ date: 2019-01-23 20:23:00 +11:00
 header: Join the Gnibl club
 subheader: Select your preferences and find the Gnibl membership most suited to your
   team.
-starter box:
+small box:
   name: Small
   image: "/uploads/starter-box.png"
   cost:
     per fortnight: 32
     per month: 29
   number of snacks: 10
-small box:
+medium box:
   name: Medium
   image: "/uploads/small-box.png"
   cost:
     per fortnight: 54
     per month: 49
   number of snacks: 20
-medium box:
+family box:
   name: Family
   image: "/uploads/medium-box.png"
   cost:

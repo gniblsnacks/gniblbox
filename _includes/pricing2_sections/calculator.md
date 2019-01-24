@@ -104,7 +104,7 @@ main.pricing .boxes .box-carousel{
   }
 }
 .body-font.Brandon{
-display:none;
+  display:none !important;
 }
 .check p{
   line-height: 0px;

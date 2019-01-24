@@ -95,12 +95,13 @@ main.pricing .boxes {
 main.pricing .table{
   height: 130vh;
 }
-main.pricing .boxes .box-carousel{
-  top: 30%;
-}
+
 @media (min-width: 992px) {
   .price {
     margin-top: 5px;
+  }
+  main.pricing .boxes .box-carousel{
+  top: 30%;
   }
 }
 #root{

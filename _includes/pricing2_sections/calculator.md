@@ -24,13 +24,13 @@
   <div class="col-xs-12 col-sm-6 col-md-12">
     <h4>{{page['dietary requirements'].title | markdownify | strip_html}}</h4>
     <form id="quote-form" style="margin-top: 20px">
-      <div class="col-xs-12 col-sm-6 col-md-12">
-        <input class="checkbox" type="checkbox" name="first_name" placeholder="First name" required>
+      <div class="col-xs-6 col-sm-6 col-md-6">
+        <input class="checkbox" type="checkbox" name="gluten_free" value="Gluten Free">
         <p>Gluten Free</p>
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-12">
-        <input class="checkbox" type="checkbox" name="first_name" placeholder="First name" required>
-        <p>Gluten Free</p>
+      <div class="col-xs-6 col-sm-6 col-md-6">
+        <input class="checkbox" type="checkbox" name="vegan" value="Vegan">
+        <p>Vegan</p>
       </div>
     <!-- <div class="tabs frequency-selection">
       {% for option in page['frequency selection'].options %}

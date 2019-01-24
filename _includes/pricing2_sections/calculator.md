@@ -123,16 +123,16 @@
 // fortnightly = monthly
 
 // set number of snacks to default
-var snack_num = {{page['starter box']['number of snacks']}};
+var snack_num = {{page['new small box']['number of snacks']}};
 
 // set cost to default
-var cost = {{page['starter box'].cost['per month']}};
+var cost = {{page['new small box'].cost['per month']}};
 
 // set CTAs for reference in JS
 var cta = "{{page.cta}}";
 // var custom_cta = "{{page['cta custom box']}}";
 
-var starterboxname = "{{page['starter box'].name}}";
+var starterboxname = "{{page['new small box'].name}}";
 var smallboxname = "{{page['small box'].name}}";
 var mediumboxname = "{{page['medium box'].name}}";
 // var customboxname = "{{page['custom box'].name}}";
@@ -155,12 +155,12 @@ function calculatePrice() {
       cost = {{page['medium box'].cost['per fortnight']}};
     }
     custom_box = false;
-  } else if (box_size == "starter box") {
-    snack_num = {{page['starter box']['number of snacks']}};
+  } else if (box_size == "new small box") {
+    snack_num = {{page['new small box']['number of snacks']}};
     if (delivery_frequency == "month") {
-      cost = {{page['starter box'].cost['per month']}};
+      cost = {{page['new small box'].cost['per month']}};
     } else {
-      cost = {{page['starter box'].cost['per fortnight']}};
+      cost = {{page['new small box'].cost['per fortnight']}};
     }
     custom_box = false;
   // } else if (box_size == "custom box") {

@@ -335,7 +335,7 @@ function updateProductLink() {
 
 // Code by Websensenpro developers for new plans page
 
-function updateProductLink() {
+function updateProductLinkNew() {
   var link = $(".product-link-new");
   link.removeAttr("onclick");
   if (oneoff) {

@@ -24,11 +24,11 @@
   <div class="col-xs-12 col-sm-6 col-md-12">
     <h4>{{page['dietary requirements'].title | markdownify | strip_html}}</h4>
     <form id="quote-form" style="margin-top: 20px">
-      <div class="col-xs-6 col-sm-6 col-md-6">
+      <div class="col-xs-6 col-sm-6 col-md-6 check">
         <input class="checkbox" type="checkbox" name="gluten_free" value="Gluten Free">
         <p>Gluten Free</p>
       </div>
-      <div class="col-xs-6 col-sm-6 col-md-6">
+      <div class="col-xs-6 col-sm-6 col-md-6 check">
         <input class="checkbox" type="checkbox" name="vegan" value="Vegan">
         <p>Vegan</p>
       </div>
@@ -82,8 +82,8 @@
 .Brandon{
 display:none
 }
-.check{
-  width: 50%;
+.check p{
+  line-height: 20px;
 }
 .checkbox{
   height: 30px;

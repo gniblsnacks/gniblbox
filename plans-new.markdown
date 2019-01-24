@@ -9,7 +9,7 @@ starter box:
   image: "/uploads/starter-box.png"
   cost:
     per week: 66
-    per fortnight: 321
+    per fortnight: 32
     per month: 29
   number of snacks: 10
 small box:

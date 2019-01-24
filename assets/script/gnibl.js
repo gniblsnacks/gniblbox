@@ -232,6 +232,50 @@ function pricingFunctions() {
   }
 }
 
+//my code
+var box_size = "starter box", delivery_frequency = "month", custom_box = false;
+function pricingFunctions() {
+  if ($('main').first().hasClass('pricing')) {
+    updatePricingHTML();
+    updateProductLink();
+    boxSliderInit();
+    $(".size-selection").find(".btn-tab").each(function() {
+      $(this).click(function() {
+        $(".size-selection").find(".selected-tab").removeClass('selected-tab');
+        $(this).addClass('selected-tab');
+        box_size = $(this).data("box-size");
+        updatePricingHTML(calculatePrice());
+        updateProductLink();
+
+        if (box_size == "small box") {
+          $('.box-carousel').slick('slickGoTo', 1);
+          $('#box-label').html(smallboxname);
+        } else if (box_size == "medium box") {
+          $('.box-carousel').slick('slickGoTo', 2);
+          $('#box-label').html(mediumboxname);
+        } else if (box_size == "starter box") {
+          $('.box-carousel').slick('slickGoTo', 0);
+          $('#box-label').html(starterboxname);
+        } else {
+          $('.box-carousel').slick('slickGoTo', 3);
+          $('#box-label').html(customboxname);
+        }
+      });
+    });
+
+    $(".frequency-selection").find(".btn-tab").each(function() {
+      $(this).click(function() {
+        $(".frequency-selection").find(".selected-tab").removeClass('selected-tab');
+        $(this).addClass('selected-tab');
+        delivery_frequency = $(this).html().replace("ly", "").trim();
+        updatePricingHTML(calculatePrice());
+        updateProductLink();
+      });
+    });
+
+  }
+}
+
 function boxSliderInit() {
     $('.box-carousel').slick({
       arrows: false,
@@ -288,6 +332,56 @@ function updateProductLink() {
     }
   }
 }
+
+// Code by Websensenpro developers for new plans page
+
+function updateProductLink() {
+  var link = $(".product-link-new");
+  link.removeAttr("onclick");
+  if (oneoff) {
+    if (box_size == "starter box") {
+      link.attr("href", "https://gnibl.samcart.com/products/starter-box");
+    } else if (box_size == "small box") {
+      link.attr("href", "https://gnibl.samcart.com/products/classic-box");
+    } else if (box_size == "medium box") {
+      link.attr("href", "https://gnibl.samcart.com/products/midi-box");
+    } else if (box_size == "jumbo box") {
+      link.attr("href", "https://gnibl.samcart.com/products/jumbo-box");
+    }
+  } else {
+    if (box_size == "small box") {
+      if (delivery_frequency == "week") {
+        link.attr("href", "https://gnibl.samcart.com/products/classic-box-weekly/");
+      } else if (delivery_frequency == "fortnight") {
+        link.attr("href", "https://gnibl.samcart.com/products/classic-box-fortnightly/");
+      } else {
+        link.attr("href", "https://gnibl.samcart.com/products/classic-box-monthly/");
+      }
+    } else if (box_size == "medium box") {
+      link.removeAttr("onclick");
+      if (delivery_frequency == "week") {
+        link.attr("href", "https://gnibl.samcart.com/products/midi-box-weekly/");
+      } else if (delivery_frequency == "fortnight") {
+        link.attr("href", "https://gnibl.samcart.com/products/midi-box-fortnightly/");
+      } else {
+        link.attr("href", "https://gnibl.samcart.com/products/midi-box-monthly/");
+      }
+    } else if (box_size == "starter box") {
+      link.removeAttr("onclick");
+      if (delivery_frequency == "week") {
+        link.attr("href", "https://gnibl.samcart.com/products/starter-box-weekly/");
+      } else if (delivery_frequency == "fortnight") {
+        link.attr("href", "https://gnibl.samcart.com/products/starter-box-fortnightly/");
+      } else {
+        link.attr("href", "https://gnibl.samcart.com/products/starter-box-monthly/");
+      }
+    } else {
+      link.removeAttr("href");
+      link.attr("onclick", "$('#quote-modal').fadeIn()");
+    }
+  }
+}
+
 
 function updatePricingHTML() {
   $(".frequency").html(delivery_frequency);

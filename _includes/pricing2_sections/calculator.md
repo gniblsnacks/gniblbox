@@ -25,27 +25,27 @@
     <h4>{{page['dietary requirements'].title | markdownify | strip_html}}</h4>
     <form id="quote-form" style="margin-top: 20px">
       <div class="col-xs-6 col-sm-6 col-md-6 check">
-        <input class="checkbox" type="checkbox" name="gluten_free" value="Gluten Free">
+        <input class="checkbox" type="checkbox" name="gluten_free" value="Gluten Free" style="margin-top: 10px;">
         <p>Gluten Free</p>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 check">
-        <input class="checkbox" type="checkbox" name="vegan" value="Vegan">
+        <input class="checkbox" type="checkbox" name="vegan" value="Vegan" style="margin-top: 10px;">
         <p>Vegan</p>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 check">
-        <input class="checkbox" type="checkbox" name="nut_free" value="Nut Free">
+        <input class="checkbox" type="checkbox" name="nut_free" value="Nut Free" style="margin-top: 10px;">
         <p>Nut Free</p>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 check">
-        <input class="checkbox" type="checkbox" name="soy_free" value="Soy Free">
+        <input class="checkbox" type="checkbox" name="soy_free" value="Soy Free" style="margin-top: 10px;">
         <p>Soy Free</p>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 check">
-        <input class="checkbox" type="checkbox" name="milk_free" value="Milk Free">
+        <input class="checkbox" type="checkbox" name="milk_free" value="Milk Free" style="margin-top: 10px;">
         <p>Milk Free</p>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 check">
-        <input class="text" type="text" name="other" placeholder="Other">
+        <input class="text" type="text" name="other" placeholder="Other" style="margin-top: 10px;">
       </div>
     </form>
   </div>
@@ -53,15 +53,15 @@
     <h4>{{page['are the snacks for'].title | markdownify | strip_html}}</h4>
     <form id="quote-form" style="margin-top: 20px">
       <div class="col-xs-12 col-sm-12 col-md-12 check">
-        <input class="checkbox" type="checkbox" name="priamry_school_kids" value="Priamry school kids">
+        <input class="checkbox" type="checkbox" name="priamry_school_kids" value="Priamry school kids" style="margin-top: 10px;">
         <p>Priamry school kids</p>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-12 check">
-        <input class="checkbox" type="checkbox" name="high_school_kids" value="High school kids">
+        <input class="checkbox" type="checkbox" name="high_school_kids" value="High school kids" style="margin-top: 10px;">
         <p>High school kids</p>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-12 check">
-        <input class="checkbox" type="checkbox" name="nut_free" value="Adults">
+        <input class="checkbox" type="checkbox" name="nut_free" value="Adults" style="margin-top: 10px;">
         <p>Adults</p>
       </div>
     </form>
@@ -105,7 +105,6 @@ display:none
   height: 20px;
   width: 20px;
   float: left;
-  margin-top: 10px;
 }
 .text{
   height: 40px;

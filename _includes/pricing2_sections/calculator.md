@@ -84,7 +84,7 @@ display:none
 }
 .check p{
   line-height: 0px;
-  margin-left: 40px;
+  margin-left: 30px;
 }
 .checkbox{
   height: 25px;

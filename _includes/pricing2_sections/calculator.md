@@ -32,6 +32,22 @@
         <input class="checkbox" type="checkbox" name="vegan" value="Vegan">
         <p>Vegan</p>
       </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 check">
+        <input class="checkbox" type="checkbox" name="vegan" value="Vegan">
+        <p>Vegan</p>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 check">
+        <input class="checkbox" type="checkbox" name="vegan" value="Vegan">
+        <p>Vegan</p>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 check">
+        <input class="checkbox" type="checkbox" name="vegan" value="Vegan">
+        <p>Vegan</p>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 check">
+        <input class="checkbox" type="checkbox" name="vegan" value="Vegan">
+        <p>Vegan</p>
+      </div>
     <!-- <div class="tabs frequency-selection">
       {% for option in page['frequency selection'].options %}
       <div class="btn-tab {% if forloop.last %} selected-tab {% endif %}">

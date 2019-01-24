@@ -103,7 +103,7 @@ main.pricing .boxes .box-carousel{
     margin-top: 5px;
   }
 }
-.Brandon{
+.body-font.Brandon{
 display:none;
 }
 .check p{

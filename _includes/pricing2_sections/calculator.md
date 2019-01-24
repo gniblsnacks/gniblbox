@@ -24,10 +24,14 @@
   <div class="col-xs-12 col-sm-6 col-md-12">
     <h4>{{page['dietary requirements'].title | markdownify | strip_html}}</h4>
     <form id="quote-form" style="margin-top: 20px">
-    <input class="checkbox" type="checkbox" name="first_name" placeholder="First name" required>
-    <p>Gluten Free</p>
-    <input class="checkbox" type="checkbox" name="first_name" placeholder="First name" required>
-    <p>Gluten Free</p>
+      <div class="check">
+        <input class="checkbox" type="checkbox" name="first_name" placeholder="First name" required>
+        <p>Gluten Free</p>
+      </div>
+      <div class="check">
+        <input class="checkbox" type="checkbox" name="first_name" placeholder="First name" required>
+        <p>Gluten Free</p>
+      </div>
     <!-- <div class="tabs frequency-selection">
       {% for option in page['frequency selection'].options %}
       <div class="btn-tab {% if forloop.last %} selected-tab {% endif %}">

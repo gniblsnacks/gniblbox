@@ -102,8 +102,8 @@ display:none
   margin-left: 30px;
 }
 .checkbox{
-  height: 25px;
-  width: 25px;
+  height: 20px;
+  width: 20px;
   float: left;
 }
 .text{

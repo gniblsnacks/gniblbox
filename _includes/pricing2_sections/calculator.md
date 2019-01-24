@@ -33,19 +33,19 @@
         <p>Vegan</p>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 check">
-        <input class="checkbox" type="checkbox" name="vegan" value="Vegan">
-        <p>Vegan</p>
+        <input class="checkbox" type="checkbox" name="nut_free" value="Nut Free">
+        <p>Nut Free</p>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 check">
-        <input class="checkbox" type="checkbox" name="vegan" value="Vegan">
-        <p>Vegan</p>
+        <input class="checkbox" type="checkbox" name="soy_free" value="Soy Free">
+        <p>Soy Free</p>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 check">
-        <input class="checkbox" type="checkbox" name="vegan" value="Vegan">
-        <p>Vegan</p>
+        <input class="checkbox" type="checkbox" name="milk_free" value="Milk Free">
+        <p>Milk Free</p>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 check">
-        <input class="checkbox" type="checkbox" name="vegan" value="Vegan">
+        <input type="text" name="other" value="Vegan" placeholder="Other">
         <p>Vegan</p>
       </div>
     <!-- <div class="tabs frequency-selection">

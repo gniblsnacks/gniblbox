@@ -90,7 +90,7 @@
 </div>
 <style>
 main.pricing .boxes {
-    height: 190vh;
+    height: 180vh;
 }
 main.pricing .table{
   height: 120vh;

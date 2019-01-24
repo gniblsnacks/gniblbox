@@ -29,6 +29,9 @@
         Gluten Free</p>
       </div>
       <div class="check">
+        <label><input type="checkbox" name="checkbox" value="value">Text</label>
+      </div>
+      <div class="check">
         <p><input class="checkbox" type="checkbox" name="first_name" placeholder="First name" required>
         Gluten Free</p>
       </div>

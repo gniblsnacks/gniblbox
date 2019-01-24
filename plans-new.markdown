@@ -47,8 +47,8 @@ size selection:
 frequency selection:
   lead: 'Select your delivery frequency:'
   options:
-  - One Off
-  - Monthly
+  - one off
+  - monthly
 dietary requirements:
   title: Any dietary requirements?
 are the snacks for:

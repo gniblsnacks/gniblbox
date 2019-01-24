@@ -45,8 +45,7 @@
         <p>Milk Free</p>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 check">
-        <input type="text" name="other" value="Vegan" placeholder="Other">
-        <p>Vegan</p>
+        <input class="text" type="text" name="other" placeholder="Other">
       </div>
     <!-- <div class="tabs frequency-selection">
       {% for option in page['frequency selection'].options %}
@@ -106,6 +105,9 @@ display:none
   height: 25px;
   width: 25px;
   float: left;
+}
+.text{
+  height: 40px;
 }
 </style>
 

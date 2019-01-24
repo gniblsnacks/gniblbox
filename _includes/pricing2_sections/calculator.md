@@ -86,8 +86,9 @@ display:none
   width: 50%;
 }
 .checkbox{
-  height: 35px;
-  width: 50%;
+  height: 30px;
+  width: 30px;
+  float: left;
 }
 </style>
 

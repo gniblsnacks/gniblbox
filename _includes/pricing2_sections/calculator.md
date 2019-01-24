@@ -105,6 +105,7 @@ display:none
   height: 20px;
   width: 20px;
   float: left;
+  margin-top: 10px;
 }
 .text{
   height: 40px;

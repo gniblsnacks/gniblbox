@@ -189,7 +189,7 @@ function instafeedInit() {
   }
 }
 
-var box_size = "starter box", delivery_frequency = "month", custom_box = false;
+var box_size = "small box", delivery_frequency = "month", custom_box = false;
 function pricingFunctions() {
   if ($('main').first().hasClass('pricing')) {
     updatePricingHTML();
@@ -203,15 +203,15 @@ function pricingFunctions() {
         updatePricingHTML(calculatePrice());
         updateProductLink();
 
-        if (box_size == "small box") {
+        if (box_size == "medium box") {
           $('.box-carousel').slick('slickGoTo', 1);
-          $('#box-label').html(smallboxname);
-        } else if (box_size == "medium box") {
-          $('.box-carousel').slick('slickGoTo', 2);
           $('#box-label').html(mediumboxname);
-        } else if (box_size == "starter box") {
+        } else if (box_size == "family box") {
+          $('.box-carousel').slick('slickGoTo', 2);
+          $('#box-label').html(familyboxname);
+        } else if (box_size == "small box") {
           $('.box-carousel').slick('slickGoTo', 0);
-          $('#box-label').html(starterboxname);
+          $('#box-label').html(smallboxname);
         } else {
           $('.box-carousel').slick('slickGoTo', 3);
           $('#box-label').html(customboxname);
@@ -246,30 +246,30 @@ function updateProductLink() {
   var link = $(".product-link");
   link.removeAttr("onclick");
   if (oneoff) {
-    if (box_size == "starter box") {
+    if (box_size == "small box") {
       link.attr("href", "https://gnibl.samcart.com/products/starter-box");
-    } else if (box_size == "small box") {
-      link.attr("href", "https://gnibl.samcart.com/products/classic-box");
     } else if (box_size == "medium box") {
+      link.attr("href", "https://gnibl.samcart.com/products/classic-box");
+    } else if (box_size == "family box") {
       link.attr("href", "https://gnibl.samcart.com/products/midi-box");
     } else if (box_size == "jumbo box") {
       link.attr("href", "https://gnibl.samcart.com/products/jumbo-box");
     }
   } else {
-    if (box_size == "small box") {
+    if (box_size == "medium box") {
        if (delivery_frequency == "fortnight") {
         link.attr("href", "https://gnibl.samcart.com/products/classic-box-fortnightly/");
       } else {
         link.attr("href", "https://gnibl.samcart.com/products/classic-box-monthly/");
       }
-    } else if (box_size == "medium box") {
+    } else if (box_size == "family box") {
       link.removeAttr("onclick");
       if (delivery_frequency == "fortnight") {
         link.attr("href", "https://gnibl.samcart.com/products/midi-box-fortnightly/");
       } else {
         link.attr("href", "https://gnibl.samcart.com/products/midi-box-monthly/");
       }
-    } else if (box_size == "starter box") {
+    } else if (box_size == "small box") {
       link.removeAttr("onclick");
      if (delivery_frequency == "fortnight") {
         link.attr("href", "https://gnibl.samcart.com/products/starter-box-fortnightly/");

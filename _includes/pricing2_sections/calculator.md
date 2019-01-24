@@ -93,7 +93,10 @@ main.pricing .boxes {
     height: 190vh;
 }
 main.pricing .table{
-  height: 110vh;
+  height: 120vh;
+}
+main.pricing .boxes .box-carousel{
+  top: 30%;
 }
 @media (min-width: 992px) {
   .price {

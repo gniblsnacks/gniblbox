@@ -45,7 +45,7 @@
         <p>Milk Free</p>
       </div>
       <div class="col-xs-6 col-sm-6 col-md-6 check">
-        <input class="text" type="text" name="other" placeholder="Other" style="margin-top: 10px;">
+        <input class="text" type="text" name="other" placeholder="Other">
       </div>
     </form>
   </div>
@@ -54,7 +54,7 @@
     <form id="quote-form" style="margin-top: 20px">
       <div class="col-xs-12 col-sm-12 col-md-12 check">
         <input class="checkbox" type="checkbox" name="priamry_school_kids" value="Priamry school kids" style="margin-top: 10px;">
-        <p>Priamry school kids</p>
+        <p>Primary school kids</p>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-12 check">
         <input class="checkbox" type="checkbox" name="high_school_kids" value="High school kids" style="margin-top: 10px;">
@@ -89,6 +89,9 @@
   </div>
 </div>
 <style>
+main.pricing .boxes {
+    height: 190vh;
+}
 @media (min-width: 992px) {
   .price {
     margin-top: 5px;

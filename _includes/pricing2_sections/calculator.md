@@ -82,6 +82,9 @@
 .Brandon{
 display:none
 }
+.check{
+  width: 50%;
+}
 .checkbox{
   height: 35px;
   widows: 50%;

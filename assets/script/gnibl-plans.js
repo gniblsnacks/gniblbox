@@ -281,7 +281,9 @@ function updateProductLink() {
 }
 
 function updatePricingHTML() {
-  $(".frequency").html(delivery_frequency);
+  if ((delivery_frequency).val() == "one off") {
+  $(".frequency").html(delivery_frequency);  
+  }
   $(".frequency-ly").html(delivery_frequency + "ly");
   $(".snack-num").html(snack_num);
   $(".per-snack").html("$" + (cost / snack_num).toFixed(2));

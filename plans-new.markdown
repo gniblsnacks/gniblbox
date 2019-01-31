@@ -18,7 +18,7 @@ small box:
     per fortnight: 54
     per month: 49
   number of snacks: 20
-medium box:
+family box:
   name: Family
   image: "/uploads/medium-box.png"
   cost:

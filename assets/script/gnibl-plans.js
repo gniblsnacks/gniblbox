@@ -258,23 +258,23 @@ function updateProductLink() {
   } else {
     if (box_size == "small box") {
       if (delivery_frequency == "month") {
-        link.attr("href", "https://gnibl.samcart1.com/products/classic-box-weekly/");
+        link.attr("href", "20 Monthly");
       } else {
-        link.attr("href", "https://gnibl.samcart3.com/products/classic-box-monthly/");
+        link.attr("href", "20 Once Off");
       }
     } else if (box_size == "medium box") {
       link.removeAttr("onclick");
       if (delivery_frequency == "month") {
-        link.attr("href", "https://gnibl.samcart.com/products/midi-box-weekly/");
+        link.attr("href", "30 Monthly");
       } else {
-        link.attr("href", "https://gnibl.samcart.com/products/midi-box-monthly/");
+        link.attr("href", "30 Once Off");
       }
     } else if (box_size == "starter box") {
       link.removeAttr("onclick");
       if (delivery_frequency == "month") {
-        link.attr("href", "https://gnibl.samcart.com/products/starter-box-weekly/");
+        link.attr("href", "10 Monthly");
       } else {
-        link.attr("href", "https://gnibl.samcart.com/products/starter-box-monthly/");
+        link.attr("href", "10 Once Off");
       }
     } else {
       link.removeAttr("href");

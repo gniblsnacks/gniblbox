@@ -255,23 +255,23 @@ function updateProductLink() {
   } else {
     if (box_size == "medium box") {
       if (delivery_frequency == "month") {
-        link.attr("href", "20 Monthly");
+        link.attr("href", "https://gnibl.samcart.com/products/medium-box-monthly-20-snacks");
       } else {
-        link.attr("href", "20 Once Off");
+        link.attr("href", "https://gnibl.samcart.com/products/medium-box-one-off-20-snacks");
       }
     } else if (box_size == "family box") {
       link.removeAttr("onclick");
       if (delivery_frequency == "month") {
-        link.attr("href", "30 Monthly");
+        link.attr("href", "https://gnibl.samcart.com/products/family-box-monthly-30-snacks");
       } else {
-        link.attr("href", "30 Once Off");
+        link.attr("href", "https://gnibl.samcart.com/products/family-box-one-off-30-snacks");
       }
     } else if (box_size == "small box") {
       link.removeAttr("onclick");
       if (delivery_frequency == "month") {
-        link.attr("href", "10 Monthly");
+        link.attr("href", "https://gnibl.samcart.com/products/small-box-monthly-10-snacks");
       } else {
-        link.attr("href", "10 Once Off");
+        link.attr("href", "https://gnibl.samcart.com/products/small-box-one-off-10-snacks");
       }
     } else {
       link.removeAttr("href");

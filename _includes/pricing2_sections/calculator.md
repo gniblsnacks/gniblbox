@@ -133,18 +133,18 @@ var cta = "{{page.cta}}";
 // var custom_cta = "{{page['cta custom box']}}";
 
 var starterboxname = "{{page['starter box'].name}}";
-var smallboxname = "{{page['small box'].name}}";
+var smallboxname = "{{page['medium box'].name}}";
 var mediumboxname = "{{page['family box'].name}}";
 // var customboxname = "{{page['custom box'].name}}";
 
 var oneoff = false;
 function calculatePrice() {
-  if (box_size == "small box") {
-    snack_num = {{page['small box']['number of snacks']}};
+  if (box_size == "medium box") {
+    snack_num = {{page['medium box']['number of snacks']}};
     if (delivery_frequency == "month") {
-      cost = {{page['small box'].cost['per month']}};
+      cost = {{page['medium box'].cost['per month']}};
     } else {
-      cost = {{page['small box'].cost['per fortnight']}};
+      cost = {{page['medium box'].cost['per fortnight']}};
     }
     custom_box = false;
   } else if (box_size == "family box") {

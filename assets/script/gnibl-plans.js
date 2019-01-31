@@ -257,21 +257,21 @@ function updateProductLink() {
     }
   } else {
     if (box_size == "small box") {
-      if (delivery_frequency == "forthnigh") {
+      if (delivery_frequency == "month") {
         link.attr("href", "20 Monthly");
       } else {
         link.attr("href", "20 Once Off");
       }
     } else if (box_size == "medium box") {
       link.removeAttr("onclick");
-      if (delivery_frequency == "forthnigh") {
+      if (delivery_frequency == "month") {
         link.attr("href", "30 Monthly");
       } else {
         link.attr("href", "30 Once Off");
       }
     } else if (box_size == "starter box") {
       link.removeAttr("onclick");
-      if (delivery_frequency == "forthnigh") {
+      if (delivery_frequency == "month") {
         link.attr("href", "10 Monthly");
       } else {
         link.attr("href", "10 Once Off");

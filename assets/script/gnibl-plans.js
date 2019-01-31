@@ -287,7 +287,7 @@ function updatePricingHTML() {
   // } esle{
   //     $(".frequency-ly").html(delivery_frequency + "ly");
   // }
-  $(".frequency-ly").html(delivery_frequency + "ly");
+  $(".frequency-ly").html(delivery_frequency + "lay");
   $(".snack-num").html(snack_num);
   $(".per-snack").html("$" + (cost / snack_num).toFixed(2));
 

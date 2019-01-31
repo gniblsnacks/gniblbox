@@ -256,11 +256,11 @@ function updateProductLink() {
   } else {
     if (box_size == "small box") {
       if (delivery_frequency == "week") {
-        link.attr("href", "https://gnibl.samcart.com/products/classic-box-weekly/");
+        link.attr("href", "https://gnibl.samcart1.com/products/classic-box-weekly/");
       } else if (delivery_frequency == "fortnight") {
-        link.attr("href", "https://gnibl.samcart.com/products/classic-box-fortnightly/");
+        link.attr("href", {{"https://gnibl.samcart2.com/products/classic-box-fortnightly/"}});
       } else {
-        link.attr("href", "https://gnibl.google.com/products/classic-box-monthly/");
+        link.attr("href", "https://gnibl.samcart3.com/products/classic-box-monthly/");
       }
     } else if (box_size == "medium box") {
       link.removeAttr("onclick");

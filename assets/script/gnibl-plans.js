@@ -245,28 +245,28 @@ function boxSliderInit() {
 function updateProductLink() {
   var link = $(".product-link");
   link.removeAttr("onclick");
-  // if (oneoff) {
-  //   if (box_size == "starter box") {
-  //     link.attr("href", "https://gnibl.samcart.com/products/starter-box");
-  //   } else if (box_size == "small box") {
-  //     link.attr("href", "https://gnibl.samcart.com/products/classic-box");
-  //   } else if (box_size == "medium box") {
-  //     link.attr("href", "https://gnibl.samcart.com/products/midi-box");
-  //   }
-  // } else {
+  if (oneoff) {
+    if (box_size == "starter box") {
+      link.attr("href", "https://gnibl.samcart.com/products/starter-box");
+    } else if (box_size == "small box") {
+      link.attr("href", "https://gnibl.samcart.com/products/classic-box");
+    } else if (box_size == "medium box") {
+      link.attr("href", "https://gnibl.samcart.com/products/midi-box");
+    }
+  } else {
     if (box_size == "small box") {
       if (delivery_frequency == "week") {
         link.attr("href", "https://gnibl.samcart.com/products/classic-box-weekly/");
-      } else if (delivery_frequency == "per fortnight") {
+      } else if (delivery_frequency == "fortnight") {
         link.attr("href", "https://gnibl.samcart.com/products/classic-box-fortnightly/");
       } else {
-        link.attr("href", "https://gnibl.samcart.com/products/classic-box-monthly/");
+        link.attr("href", "https://gnibl.google.com/products/classic-box-monthly/");
       }
     } else if (box_size == "medium box") {
       link.removeAttr("onclick");
       if (delivery_frequency == "week") {
         link.attr("href", "https://gnibl.samcart.com/products/midi-box-weekly/");
-      } else if (delivery_frequency == "per fortnight") {
+      } else if (delivery_frequency == "fortnight") {
         link.attr("href", "https://gnibl.samcart.com/products/midi-box-fortnightly/");
       } else {
         link.attr("href", "https://gnibl.samcart.com/products/midi-box-monthly/");
@@ -275,7 +275,7 @@ function updateProductLink() {
       link.removeAttr("onclick");
       if (delivery_frequency == "week") {
         link.attr("href", "https://gnibl.samcart.com/products/starter-box-weekly/");
-      } else if (delivery_frequency == "per fortnight") {
+      } else if (delivery_frequency == "fortnight") {
         link.attr("href", "https://gnibl.samcart.com/products/starter-box-fortnightly/");
       } else {
         link.attr("href", "https://gnibl.samcart.com/products/starter-box-monthly/");
@@ -285,7 +285,7 @@ function updateProductLink() {
       link.attr("onclick", "$('#quote-modal').fadeIn()");
     }
   }
-// }
+}
 
 function updatePricingHTML() {
   $(".frequency").html(delivery_frequency);

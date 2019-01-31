@@ -29,7 +29,7 @@ size selection:
   lead: How many snacks?
   breakpoints:
   - snacks: 10
-    box: starter box
+    box: small box
   - snacks: 20
     box: medium box
   - snacks: 30

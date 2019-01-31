@@ -9,21 +9,21 @@ small box:
   image: "/uploads/starter-box.png"
   cost:
     once off: 32
-    per month: 29
+    monthly: 29
   number of snacks: 10
 medium box:
   name: Medium
   image: "/uploads/small-box.png"
   cost:
     once off: 54
-    per month: 49
+    monthly: 49
   number of snacks: 20
 family box:
   name: Family
   image: "/uploads/medium-box.png"
   cost:
     once off: 76
-    per month: 69
+    monthly: 69
   number of snacks: 30
 size selection:
   lead: How many snacks?

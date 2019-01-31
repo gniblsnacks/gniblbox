@@ -245,17 +245,16 @@ function boxSliderInit() {
 function updateProductLink() {
   var link = $(".product-link");
   link.removeAttr("onclick");
-  if (oneoff) {
-    if (box_size == "starter box") {
-      link.attr("href", "https://gnibl.samcart.com/products/starter-box");
-    } else if (box_size == "small box") {
-      link.attr("href", "https://gnibl.samcart.com/products/classic-box");
-    } else if (box_size == "medium box") {
-      link.attr("href", "https://gnibl.samcart.com/products/midi-box");
-    } else if (box_size == "jumbo box") {
-      link.attr("href", "https://gnibl.samcart.com/products/jumbo-box");
-    }
-  } else {
+  // if (oneoff) {
+  //   if (box_size == "starter box") {
+  //     link.attr("href", "https://gnibl.samcart.com/products/starter-box");
+  //   } else if (box_size == "small box") {
+  //     link.attr("href", "https://gnibl.samcart.com/products/classic-box");
+  //   } else if (box_size == "medium box") {
+  //     link.attr("href", "https://gnibl.samcart.com/products/midi-box");
+  //   }
+  // } 
+  if {
     if (box_size == "small box") {
       if (delivery_frequency == "week") {
         link.attr("href", "https://gnibl.samcart.com/products/classic-box-weekly/");

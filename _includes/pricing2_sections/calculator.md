@@ -126,7 +126,7 @@
 var snack_num = {{page['small box']['number of snacks']}};
 
 // set cost to default
-var cost = {{page['small box'].cost['per month']}};
+var cost = {{page['small box'].cost['monthly']}};
 
 // set CTAs for reference in JS
 var cta = "{{page.cta}}";
@@ -142,7 +142,7 @@ function calculatePrice() {
   if (box_size == "medium box") {
     snack_num = {{page['medium box']['number of snacks']}};
     if (delivery_frequency == "month") {
-      cost = {{page['medium box'].cost['per month']}};
+      cost = {{page['medium box'].cost['monthly']}};
     } else {
       cost = {{page['medium box'].cost['once off']}};
     }
@@ -150,7 +150,7 @@ function calculatePrice() {
   } else if (box_size == "family box") {
     snack_num = {{page['family box']['number of snacks']}};
     if (delivery_frequency == "month") {
-      cost = {{page['family box'].cost['per month']}};
+      cost = {{page['family box'].cost['monthly']}};
     } else {
       cost = {{page['family box'].cost['once off']}};
     }
@@ -158,7 +158,7 @@ function calculatePrice() {
   } else if (box_size == "small box") {
     snack_num = {{page['small box']['number of snacks']}};
     if (delivery_frequency == "month") {
-      cost = {{page['small box'].cost['per month']}};
+      cost = {{page['small box'].cost['monthly']}};
     } else {
       cost = {{page['small box'].cost['once off']}};
     }

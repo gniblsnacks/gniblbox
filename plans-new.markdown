@@ -11,7 +11,7 @@ starter box:
     per fortnight: 32
     per month: 29
   number of snacks: 10
-small box:
+medium box:
   name: Medium
   image: "/uploads/small-box.png"
   cost:
@@ -31,7 +31,7 @@ size selection:
   - snacks: 10
     box: starter box
   - snacks: 20
-    box: small box
+    box: medium box
   - snacks: 30
     box: family box
 frequency selection:

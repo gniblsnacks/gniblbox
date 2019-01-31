@@ -253,8 +253,7 @@ function updateProductLink() {
   //   } else if (box_size == "medium box") {
   //     link.attr("href", "https://gnibl.samcart.com/products/midi-box");
   //   }
-  // } 
-  if {
+  // } else {
     if (box_size == "small box") {
       if (delivery_frequency == "week") {
         link.attr("href", "https://gnibl.samcart.com/products/classic-box-weekly/");
@@ -286,7 +285,7 @@ function updateProductLink() {
       link.attr("onclick", "$('#quote-modal').fadeIn()");
     }
   }
-}
+// }
 
 function updatePricingHTML() {
   $(".frequency").html(delivery_frequency);

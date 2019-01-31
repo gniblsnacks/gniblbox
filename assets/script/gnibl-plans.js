@@ -282,11 +282,12 @@ function updateProductLink() {
 
 function updatePricingHTML() {
   $(".frequency").html(delivery_frequency);
-  if (delivery_frequency == "one off"){
-    $(".frequency-ly").html(delivery_frequency + "ma");
-  } esle{
-      $(".frequency-ly").html(delivery_frequency + "ly");
-  }
+  // if (delivery_frequency == "one off"){
+  //   $(".frequency-ly").html(delivery_frequency + "ma");
+  // } esle{
+  //     $(".frequency-ly").html(delivery_frequency + "ly");
+  // }
+  $(".frequency-ly").html(delivery_frequency + "ly");
   $(".snack-num").html(snack_num);
   $(".per-snack").html("$" + (cost / snack_num).toFixed(2));
 

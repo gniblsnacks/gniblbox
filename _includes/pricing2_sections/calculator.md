@@ -132,9 +132,9 @@ var cost = {{page['small box'].cost['monthly']}};
 var cta = "{{page.cta}}";
 // var custom_cta = "{{page['cta custom box']}}";
 
-var starterboxname = "{{page['small box'].name}}";
-var smallboxname = "{{page['medium box'].name}}";
-var mediumboxname = "{{page['family box'].name}}";
+var smallboxname = "{{page['small box'].name}}";
+var mediumboxname = "{{page['medium box'].name}}";
+var familyboxname = "{{page['family box'].name}}";
 // var customboxname = "{{page['custom box'].name}}";
 
 var oneoff = false;

@@ -206,7 +206,7 @@ function pricingFunctions() {
         if (box_size == "small box") {
           $('.box-carousel').slick('slickGoTo', 1);
           $('#box-label').html(smallboxname);
-        } else if (box_size == "medium box") {
+        } else if (box_size == "family box") {
           $('.box-carousel').slick('slickGoTo', 2);
           $('#box-label').html(mediumboxname);
         } else if (box_size == "starter box") {
@@ -250,7 +250,7 @@ function updateProductLink() {
       link.attr("href", "https://gnibl.samcart.com/products/starter-box");
     } else if (box_size == "small box") {
       link.attr("href", "https://gnibl.samcart.com/products/classic-box");
-    } else if (box_size == "medium box") {
+    } else if (box_size == "family box") {
       link.attr("href", "https://gnibl.samcart.com/products/midi-box");
     } else if (box_size == "jumbo box") {
       link.attr("href", "https://gnibl.samcart.com/products/jumbo-box");
@@ -262,7 +262,7 @@ function updateProductLink() {
       } else {
         link.attr("href", "20 Once Off");
       }
-    } else if (box_size == "medium box") {
+    } else if (box_size == "family box") {
       link.removeAttr("onclick");
       if (delivery_frequency == "month") {
         link.attr("href", "30 Monthly");

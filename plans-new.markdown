@@ -33,7 +33,7 @@ size selection:
   - snacks: 20
     box: small box
   - snacks: 30
-    box: medium box
+    box: family box
 frequency selection:
   lead: 'Select your delivery frequency:'
   options:

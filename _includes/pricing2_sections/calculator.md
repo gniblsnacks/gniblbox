@@ -144,7 +144,7 @@ function calculatePrice() {
     if (delivery_frequency == "month") {
       cost = {{page['medium box'].cost['per month']}};
     } else {
-      cost = {{page['medium box'].cost['per fortnight']}};
+      cost = {{page['medium box'].cost['once off']}};
     }
     custom_box = false;
   } else if (box_size == "family box") {
@@ -152,7 +152,7 @@ function calculatePrice() {
     if (delivery_frequency == "month") {
       cost = {{page['family box'].cost['per month']}};
     } else {
-      cost = {{page['family box'].cost['per fortnight']}};
+      cost = {{page['family box'].cost['once off']}};
     }
     custom_box = false;
   } else if (box_size == "small box") {
@@ -160,7 +160,7 @@ function calculatePrice() {
     if (delivery_frequency == "month") {
       cost = {{page['small box'].cost['per month']}};
     } else {
-      cost = {{page['small box'].cost['per fortnight']}};
+      cost = {{page['small box'].cost['once off']}};
     }
     custom_box = false;
   // } else if (box_size == "custom box") {

@@ -10,8 +10,5 @@
     <div class="box-slide">
       <div style="width: 100vw"><img src="{{page['family box'].image}}" alt="{{page['family box'].name}}"></div>
     </div>
-    <div class="box-slide">
-      <div style="width: 100vw"><img src="{{page['custom box'].image}}" alt="{{page['jumbo box'].name}}"></div>
-    </div>
   </div>
 </section>

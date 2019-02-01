@@ -279,7 +279,7 @@ function updateProductLink() {
     }
   }
 }
-
+if (delivery_frequency == "month") {
 function updatePricingHTML() {
   $(".frequency").html(delivery_frequency);
   $(".frequency-ly").html(delivery_frequency + "ly");
@@ -295,6 +295,7 @@ function updatePricingHTML() {
     $(".pricing-cta").html(cta);
     $(".additional-info").animate({'opacity' : '1'}, 200);
   }
+}
 }
 
 

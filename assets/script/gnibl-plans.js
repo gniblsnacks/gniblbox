@@ -283,11 +283,9 @@ function updateProductLink() {
 function updatePricingHTML() {
   $(".frequency").html(delivery_frequency);
   if (delivery_frequency == "month") {
-  alert("Month");
   $(".frequency-ly").html(delivery_frequency + "ly");
 } else{
-  alert("Once");
-  $(".frequency-ly").html(delivery_frequency + "aa");
+  $(".frequency-ly").html(delivery_frequency + "");
 }
   $(".snack-num").html(snack_num);
   $(".per-snack").html("$" + (cost / snack_num).toFixed(2));

@@ -279,8 +279,10 @@ function updateProductLink() {
     }
   }
 }
-if (delivery_frequency != "month") {
-  alert("Hello! I am an alert box!!");
+if (delivery_frequency == "month") {
+  alert("Month");
+} else{
+  alert("Once");
 }
 function updatePricingHTML() {
   $(".frequency").html(delivery_frequency);

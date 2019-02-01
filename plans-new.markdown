@@ -39,10 +39,6 @@ frequency selection:
   options:
   - one off
   - monthly
-dietary requirements:
-  title: Any dietary requirements?
-are the snacks for:
-  title: Are the snacks for
 value props:
 - value: "$9 Flat Shipping"
   image: "/uploads/truck.svg"

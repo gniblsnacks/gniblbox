@@ -93,7 +93,7 @@
   .price {
     margin-top: 5px;
   }
-  main.pricing .boxes .box-carousel{
+  /*main.pricing .boxes .box-carousel{
   top: 30%;
   }
   main.pricing .boxes {
@@ -101,9 +101,9 @@
   }
   main.pricing .table{
     height: 130vh;
-  }
+  }*/
 }
-.check p{
+/*.check p{
   line-height: 0px;
   margin-left: 30px;
 }
@@ -114,7 +114,7 @@
 }
 .text{
   height: 40px;
-}
+}*/
 </style>
 
 <script>

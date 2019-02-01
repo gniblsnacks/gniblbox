@@ -5,9 +5,11 @@
 </h2>
 <div class="row">
 {% for prop in page['value props'] %}
-<div class="col-xs-12 col-sm-6"  style="margin-bottom: 20px">
+<div class="col-xs-12 col-sm-12"  style="margin-bottom: 20px">
+<div class="single-line">
   <img src="{{prop.image}}" style="width: 60px; float: left;">
   <p style="font-size: 14px;font-weight: bold; width: calc(100% - 70px); margin-left: 10px; float: left">{{prop.value | markdownify | strip_html}}</p>
+</div>
 </div>
 {% endfor %}
 </div>
@@ -18,3 +20,10 @@
   delivered <span class="frequency-ly"></span></p>
 </div>
 </div>
+
+<style>
+.single-line{
+  margin: 0 auto;
+  width: fit-content;
+}
+</style>

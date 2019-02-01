@@ -80,6 +80,7 @@
       <img src="{{prop.image}}" style="width: 60px; float: left;">
       <p style="font-size: 14px;font-weight: bold; width: calc(100% - 70px); margin-left: 10px; float: left">{{prop.value | markdownify | strip_html}}</p>
     </div>
+    </div>
     {% endfor %}
   </div>
   <a class="product-link btn btn-red" style="max-width: none"><span class="pricing-cta">{{page.cta | markdownify | strip_html}}</span></a>

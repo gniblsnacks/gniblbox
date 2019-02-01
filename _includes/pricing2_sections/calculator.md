@@ -21,7 +21,7 @@
       {%endfor%}
     </div>
   </div>
-  <div class="col-xs-12 col-sm-6 col-md-12">
+  <!-- <div class="col-xs-12 col-sm-6 col-md-12">
     <h4>{{page['dietary requirements'].title | markdownify | strip_html}}</h4>
     <form id="quote-form" style="margin-top: 20px">
       <div class="col-xs-6 col-sm-6 col-md-6 check">
@@ -65,7 +65,7 @@
         <p>Adults</p>
       </div>
     </form>
-  </div>
+  </div> -->
   <div class="hidden-sm hidden-xs">
   <hr>
   <div class="row">

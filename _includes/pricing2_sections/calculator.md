@@ -91,6 +91,10 @@
   </div>
 </div>
 <style>
+.single-line{
+  margin: 0 auto;
+  width: fit-content;
+}
 @media (min-width: 992px) {
   .price {
     margin-top: 5px;

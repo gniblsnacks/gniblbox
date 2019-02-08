@@ -13,7 +13,7 @@
     <div class="visible-xs"><p style="margin-top: 20px; font-style: italic">or <a href="/plans">{{page.landing['mobile pricing link']}}</a></p></div>
     {% else %}
     <a class="btn btn-red" href="/homebox"><span>{{page.landing.ctared}}</span></a><br>
-    <a class="btn btn-green" href="/"><span>{{page.landing.ctagreen}}</span></a><br><br>
+    <a class="btn btn-green" href="/"><span>{{page.landing.ctagreen}}</span></a>
     {% endif %}
     <p style="text-align: center;">{{page.landing["small text"]}}</p>
   </div>

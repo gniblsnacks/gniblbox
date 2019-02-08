@@ -150,7 +150,7 @@ function calculatePrice() {
     if (delivery_frequency == "month") {
       cost = {{page['medium box'].cost['monthly']}};
     } else {
-      cost = {{page['medium box'].cost['once off']}};
+      cost = {{page['medium box'].cost['single box']}};
     }
     custom_box = false;
   } else if (box_size == "family box") {
@@ -158,7 +158,7 @@ function calculatePrice() {
     if (delivery_frequency == "month") {
       cost = {{page['family box'].cost['monthly']}};
     } else {
-      cost = {{page['family box'].cost['once off']}};
+      cost = {{page['family box'].cost['single box']}};
     }
     custom_box = false;
   } else if (box_size == "small box") {
@@ -166,7 +166,7 @@ function calculatePrice() {
     if (delivery_frequency == "month") {
       cost = {{page['small box'].cost['monthly']}};
     } else {
-      cost = {{page['small box'].cost['once off']}};
+      cost = {{page['small box'].cost['single box']}};
     }
     custom_box = false;
   // } else if (box_size == "custom box") {

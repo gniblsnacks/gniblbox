@@ -7,6 +7,7 @@ landing:
     or office. \nNourish your body and fuel your brain for a full and productive day."
   ctared: SHOP HOME
   ctagreen: SHOP OFFICE
+  small text: Curated by a dietitian
 layout: default
 ---
 

@@ -13,7 +13,7 @@ small box:
   number of snacks: 10
 medium box:
   name: Medium
-  image: "/uploads/small-box.png"
+  image: "/uploads/starter-box.png"
   cost:
     single box: 54
     monthly: 49

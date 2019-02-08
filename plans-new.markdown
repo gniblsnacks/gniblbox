@@ -20,7 +20,7 @@ medium box:
   number of snacks: 20
 family box:
   name: Family
-  image: "/uploads/medium-box.png"
+  image: "/uploads/small-box.png"
   cost:
     single box: 76
     monthly: 69

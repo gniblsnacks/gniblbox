@@ -15,6 +15,7 @@
     <a class="btn btn-red" href="/homebox"><span>{{page.landing.ctared}}</span></a><br>
     <a class="btn btn-green" href="/"><span>{{page.landing.ctagreen}}</span></a><br><br>
     {% endif %}
+    <p style="text-align: center;">{{page.landing["small text"]}}</p>
   </div>
   </div>
 </section>

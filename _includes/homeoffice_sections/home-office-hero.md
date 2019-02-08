@@ -1,6 +1,6 @@
 <section class="home-hero"> <!--HOME HERO-->
   <div class="container">
-  <div class="col-xs-12 col-sm-5 hero-content">
+  <div class="col-xs-12 col-sm-5 hero-content" style="float: right;">
   <h1 class="handdrawn main-header" style="position:relative;">{{page.landing.headline}}</h1>
     <p style="text-align: center;">{{page.landing["sub text"]}}</p>
     {% if page["free trial"] %}
@@ -20,7 +20,7 @@
 </section>
 <style>
   .home-hero {
-    background: url(/uploads/APB240091.png), url(../images/dotted.jpg);
+    background: url(/uploads/new.jpg), url(../images/dotted.jpg);
     background-size: cover, auto;
     min-height: 70vh;
     background-repeat: no-repeat, repeat;

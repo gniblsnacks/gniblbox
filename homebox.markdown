@@ -13,15 +13,14 @@ about:
     simple steps.
   steps:
   - header: Select your Box Size
-    sub text: We have boxes of all sizes - whether you're shopping for yourself, your
-      title ones, or your whole family - we've got you covered
+    sub text: We have boxes of all sizes - whether you’re shopping for yourself, your
+      little ones, or your whole family - we’ve got you covered
   - header: 'Select your dietary requirements '
     sub text: We can cater to all your dietary needs - whether gluten free, nut free,
       vegan - just let us know.
   - header: Delight in Delicious Snacks
-    sub text: You and your home will love their newhealthy and delicious snacks options
-      each and every month. We'll surprise you with new snacks you'd never believe
-      tasted so good! Snack time's about to get exciting again!
+    sub text: You'll love the excitement of receiving new and delicious healthy snacks
+      each and every month. Discover just how good healthy can be.
   cta: START HEALTHY SNACKING
 promise header: Our promise
 promise:

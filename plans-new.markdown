@@ -8,21 +8,21 @@ small box:
   name: Small
   image: "/uploads/starter-box.png"
   cost:
-    once off: 32
+    single box: 32
     monthly: 29
   number of snacks: 10
 medium box:
   name: Medium
   image: "/uploads/small-box.png"
   cost:
-    once off: 54
+    single box: 54
     monthly: 49
   number of snacks: 20
 family box:
   name: Family
   image: "/uploads/medium-box.png"
   cost:
-    once off: 76
+    single box: 76
     monthly: 69
   number of snacks: 30
 size selection:
@@ -37,7 +37,7 @@ size selection:
 frequency selection:
   lead: 'Select your delivery frequency:'
   options:
-  - one off
+  - single box
   - monthly
 value props:
 - value: "$9 Flat Shipping"

@@ -170,8 +170,9 @@ faqs:
     in each delivery which makes the Gnibl Box the most exciting thing to happen to
     snack time since sliced bread! '
 - question: How Many Snacks Come in Each Box?
-  answer text: 'Home Boxes come in 3 sizes: the **Small Box** (10 snacks), the **Medium
-    Box** (20 snacks) and the **Family Box** (30 snacks).'
+  answer text: 'Office Boxes come in 4 sizes: The Starter Box (24 snacks), The Classic
+    Box (50 snacks), The Midi Box (100 snacks) or the Custom Box which can be configured
+    to include as many snacks as you require.'
 - question: What About Billing / Shipping & Delivery / Returns ?
   answer text: |-
     **Billing** - You will be billed on the day that you sign up to Gnibl Box. Following this, you will be placed on our advanced billing cycle: Weekly plans are billed every 7 days. Fortnightly plans every 14 days. And if you've signed up for a monthly plan, you'll be billed every 30 days.

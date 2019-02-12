@@ -13,7 +13,7 @@
     </form>
     <div class="visible-xs"><p style="margin-top: 20px; font-style: italic">or <a href="/family-plans">{{page.landing['mobile pricing link']}}</a></p></div>
     {% else %}
-    <a class="btn btn-red" href="/plans" style="max-width: none !important"><span>{{page.landing.cta}}</span></a>
+    <a class="btn btn-red" href="/family-plans" style="max-width: none !important"><span>{{page.landing.cta}}</span></a>
     <p style="margin-top: 20px; font-style: italic; text-align: center">or <a href="/boxes">purchase a single box</a></p>
     {% endif %}
   </div>

@@ -19,14 +19,14 @@
   </div>
   </div>
 </section>
-<style>
+<!-- <style>
   .home-hero {
     background: url(/uploads/new.jpg), url(../images/dotted.jpg);
     background-size: cover, auto;
     min-height: 70vh;
     background-repeat: no-repeat, repeat;
     background-position: left center;
-    overflow-y: hidden;
+    overflow-y: visible;
     padding: 0;
     height: auto;
 }
@@ -73,4 +73,4 @@ header .logo{
       margin-bottom: 40px;
     }
   }
-</style>
+</style> -->

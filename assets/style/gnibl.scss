@@ -490,17 +490,7 @@ ul.collapsible {
 //     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 //   }
 // }
-.home-hero {
-  background: url("../images/hero.png"), url("../images/dotted.jpg");
-  //background: url("../images/hero.jpg");
-  background-size: cover, auto;
-  min-height: 70vh;
-  background-repeat: no-repeat, repeat;
-  background-position: left center;
-//overflow-y: visible;
-  padding: 0;
-  height: auto;
-  }
+
 
   @media (max-width: 1024px) {
     background-position: -100px top;

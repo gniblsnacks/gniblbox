@@ -1,5 +1,5 @@
 ---
-title: Home Office
+title: Home
 date: 2019-01-15 21:02:00 +11:00
 permalink: "/"
 landing:

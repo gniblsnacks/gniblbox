@@ -15,7 +15,7 @@
     <a class="btn btn-red" href="/family"><span>{{page.landing.ctared}}</span></a><br>
     <a class="btn btn-green" href="/office"><span>{{page.landing.ctagreen}}</span></a>
     {% endif %}
-    <p style="text-align: center;" class="small-text"><em>{{page.landing["small text"]}}</em></p>
+    <p style="text-align: center; margin-bottom: 55px;"><em>{{page.landing["small text"]}}</em></p>
   </div>
   </div>
 </section>
@@ -71,9 +71,6 @@ header .logo{
   @media (min-width: 320px) and (max-width: 10230px){
     .btn-green{
       margin-bottom: 40px;
-    }
-    .small-text{
-      margin-bottom: 50px;
     }
   }
 </style>

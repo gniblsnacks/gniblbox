@@ -19,7 +19,7 @@
   </div>
   </div>
 </section>
-<!-- <style>
+<style>
   .home-hero {
     background: url(/uploads/new.jpg), url(../images/dotted.jpg);
     background-size: cover, auto;
@@ -73,4 +73,4 @@ header .logo{
       margin-bottom: 40px;
     }
   }
-</style> -->
+</style>

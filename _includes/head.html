@@ -88,13 +88,12 @@ drift.load('v5d3tfy9ms3a');
 </head>
 <body {% if page.title == "Home" %} class="home" {% endif %} {% if page.title == "Home" %} class="home" {% endif %} >
   <header>
-    {{page.title}}
-    {% if page.title !="Home Office" %}
+    {% if page.title !="Home" %}
     <a href="/"><img class="logo" src="/assets/images/logo.svg"></a>
     {% else if %}
     <a href="/"><center><img class="logo" src="/assets/images/logo.svg"></center></a>
     {% endif %}
-    {% if page.title !="Home Office" %}
+    {% if page.title !="Home" %}
     <nav>
       <a href="/plans" style="text-transform: uppercase">Plans</a>
       <a href="/boxes" style="text-transform: uppercase">Single Boxes</a>

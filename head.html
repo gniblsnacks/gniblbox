@@ -86,8 +86,9 @@ drift.load('v5d3tfy9ms3a');
 </script> -->
 <!-- End of Async Drift Code -->
 </head>
-<body {% if page.title == "Homebox" %} class="home" {% endif %} {% if page.title == "Home" %} class="home" {% endif %} >
+<body {% if page.title == "Home" %} class="home" {% endif %} {% if page.title == "Home" %} class="home" {% endif %} >
   <header>
+    {{page.title}}
     {% if page.title !="Home Office" %}
     <a href="/"><img class="logo" src="/assets/images/logo.svg"></a>
     {% else if %}

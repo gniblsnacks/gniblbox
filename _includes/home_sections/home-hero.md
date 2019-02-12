@@ -10,9 +10,9 @@
         <input type="submit" style="position: absolute; left: -2000px">
         <div class="validation"></div>
     </form>
-    <div class="visible-xs"><p style="margin-top: 20px; font-style: italic">or <a href="/plans">{{page.landing['mobile pricing link']}}</a></p></div>
+    <div class="visible-xs"><p style="margin-top: 20px; font-style: italic">or <a href="/office-plans">{{page.landing['mobile pricing link']}}</a></p></div>
     {% else %}
-    <a class="btn btn-red" href="/plans" style="max-width: none !important"><span>{{page.landing.cta}}</span></a>
+    <a class="btn btn-red" href="/office-plans" style="max-width: none !important"><span>{{page.landing.cta}}</span></a>
     <p style="margin-top: 20px; font-style: italic; text-align: center">or <a href="/boxes">purchase a single box</a></p>
     {% endif %}
   </div>

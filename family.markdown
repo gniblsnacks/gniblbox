@@ -112,14 +112,13 @@ products:
   custom feature: 
 has testimonials?: true
 testimonials:
-- name: Richard Ben
+- name: Richard
   position: 
   company: 
-  image: "/uploads/3.jpg"
-  review text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-    when an unknown printer took a galley of type and scrambled it to make a type
-    specimen book.
+  image: "/uploads/peakbound.png"
+  review text: Being based in an office it is easy to snack on bad foods, Gnibl offers
+    a healthy alternative to staff that always tastes great – plus you don’t feel
+    guilty after your 3pm snack!
 - name: Lana
   position: 
   company: 

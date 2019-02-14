@@ -135,14 +135,6 @@ testimonials:
     love the variety and the prices are competitive. We also love that there is a
     change of items to bring in new ones. Together with fabulous service, Gnibl is
     a great choice.
-- name: ABCD
-  position: 
-  company: 
-  image: "/uploads/1.jpg"
-  review text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-    when an unknown printer took a galley of type and scrambled it to make a type
-    specimen book.
 faqs:
 - question: What is Gnibl Box?
   answer text: 'A Gniblbox is a one-stop snack drop which includes a collection of

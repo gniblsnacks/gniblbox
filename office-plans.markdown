@@ -53,7 +53,7 @@ frequency selection:
   - fortnightly
   - monthly
 value props:
-- value: Free shipping to metro areas
+- value: "Free shipping to metro areas.  \n(We are unable to ship to WA)"
   image: "/uploads/truck.svg"
 - value: Optional honesty box
   image: "/uploads/collection.svg"

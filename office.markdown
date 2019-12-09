@@ -179,7 +179,7 @@ faqs:
 
     **Shipping & Delivery** - We will ship your first box within 2-3 business days of receiving your order. Your regular boxes will be delivered according to the schedule you request - weekly, fortnightly or monthly.
 
-    We deliver Australia wide for FREE to all major metropolitan centres. If you live outside Sydney, Melbourne, Brisbane, Perth, or Adelaide, please get in touch and we'll provide a quote for delivery to your area.
+    We deliver Australia wide for FREE to all major metropolitan centres except WA. We are currently unable to deliver to WA. If you live outside Sydney, Melbourne, Brisbane, or Adelaide, please get in touch and we'll provide a quote for delivery to your area.
 
     **Returns** - : If you are dissatisfied with a product for any reason, we will endeavour never to send you the same product in future deliveries. If a product is unsatisfactory due to a product defect we will replace the defective product and include the replacement in your next delivery. To report defective products you must contact Customer Service in writing via email at info@gnibl.com.au within 5 days of receiving the product.
 - question: " How can I change or cancel my order?"

@@ -1,16 +1,7 @@
 ---
-title: Home
-date: 2019-01-15 21:02:00 +11:00
-landing:
-  headline: <span class="red">Home</span> <span class="green"><span class="or">or</span>&nbsp;Office</span>
-  sub text: "Join the Gnibl Club for healthy, tasty snacks delivered to your home
-    or office. \nNourish your body and fuel your brain for a full and productive day."
-  ctared: SHOP HOME
-  ctagreen: SHOP OFFICE
-  small text: Curated by a dietitian
-layout: default
+title: Gnibl Box will be back...
+date: 2019-12-06 12:19:00 +11:00
 ---
 
-<main>
-{% include homeoffice_sections/home-office-hero.md %}
-</main>
+We're taking a break from snack boxes to focus on our healthy vending machines! 
+

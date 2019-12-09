@@ -40,7 +40,7 @@ frequency selection:
   - single box
   - monthly
 value props:
-- value: "$9 Flat Shipping"
+- value: "$9 Flat Shipping. (We are unable to ship to WA)"
   image: "/uploads/truck.svg"
 cta: Sign up now
 layout: default

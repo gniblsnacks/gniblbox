@@ -39,7 +39,7 @@ size selection:
   - snacks: 200
     box: jumbo box
 value props:
-- value: Free shipping to metro areas
+- value: "Free shipping to metro areas. \n(We are unable to ship to WA)"
   image: "/uploads/truck.svg"
 cta: Order now
 layout: default

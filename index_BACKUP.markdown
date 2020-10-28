@@ -11,7 +11,7 @@ landing:
 layout: default
 ---
 
-<meta http-equiv = "refresh" content = "0; url = http://gnibl.com.au/brb" />
+<meta http-equiv = "refresh" content = "0; url = http://gnibl.com.au/snackpacks" />
 <main>
 {% include homeoffice_sections/home-office-hero.md %}
 </main>
